@@ -1,0 +1,771 @@
+nohup: ignoring input
+W1015 11:33:29.316000 765755 torch/distributed/run.py:774] 
+W1015 11:33:29.316000 765755 torch/distributed/run.py:774] *****************************************
+W1015 11:33:29.316000 765755 torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1015 11:33:29.316000 765755 torch/distributed/run.py:774] *****************************************
+Overriding: run = dummy
+2025-10-15 11:33:38,523 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 8
+2025-10-15 11:33:38,525 - nanochat.checkpoint_manager - [32m[1mINFO[0m - No model tag provided, guessing model tag: d20
+2025-10-15 11:33:38,525 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Loading model from /root/.cache/nanochat/mid_checkpoints/d20 with step 765
+2025-10-15 11:33:39,381 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Building model with config: {'sequence_len': 2048, 'vocab_size': 65536, 'n_layer': 20, 'n_head': 10, 'n_kv_head': 10, 'n_embd': 1280}
+Target examples per step: 32
+Device batch size: 4
+Examples per step is device_batch_size * ddp_world_size: 32
+=> Setting grad accum steps: 1
+Scaling the LR for the AdamW parameters ∝1/√(1280/768) = 0.774597
+Muon: Grouping 80 params of shape torch.Size([1280, 1280]), device cuda:0, dtype torch.float32
+Muon: Grouping 20 params of shape torch.Size([1280, 5120]), device cuda:0, dtype torch.float32
+Muon: Grouping 20 params of shape torch.Size([5120, 1280]), device cuda:0, dtype torch.float32
+Step 00000 | Validation loss: 1.077368
+Step 00000/00651 | Training loss: 0.937128| lrm: 1.000000| num_tokens: 15,439
+Step 00001/00651 | Training loss: 0.936788| lrm: 0.998464| num_tokens: 15,906
+Step 00002/00651 | Training loss: 0.801173| lrm: 0.996928| num_tokens: 11,359
+Step 00003/00651 | Training loss: 1.301836| lrm: 0.995392| num_tokens: 16,119
+Step 00004/00651 | Training loss: 1.294267| lrm: 0.993856| num_tokens: 14,534
+Step 00005/00651 | Training loss: 1.108793| lrm: 0.992320| num_tokens: 10,303
+Step 00006/00651 | Training loss: 0.967826| lrm: 0.990783| num_tokens: 10,569
+Step 00007/00651 | Training loss: 1.395195| lrm: 0.989247| num_tokens: 15,296
+Step 00008/00651 | Training loss: 1.152250| lrm: 0.987711| num_tokens: 9,396
+Step 00009/00651 | Training loss: 0.819304| lrm: 0.986175| num_tokens: 5,528
+Step 00010/00651 | Training loss: 0.578695| lrm: 0.984639| num_tokens: 11,459
+Step 00011/00651 | Training loss: 0.993202| lrm: 0.983103| num_tokens: 11,076
+Step 00012/00651 | Training loss: 1.497452| lrm: 0.981567| num_tokens: 6,947
+Step 00013/00651 | Training loss: 1.004714| lrm: 0.980031| num_tokens: 11,349
+Step 00014/00651 | Training loss: 1.125694| lrm: 0.978495| num_tokens: 13,595
+Step 00015/00651 | Training loss: 0.809555| lrm: 0.976959| num_tokens: 7,348
+Step 00016/00651 | Training loss: 1.059998| lrm: 0.975422| num_tokens: 11,190
+Step 00017/00651 | Training loss: 0.796868| lrm: 0.973886| num_tokens: 8,159
+Step 00018/00651 | Training loss: 1.076272| lrm: 0.972350| num_tokens: 13,802
+Step 00019/00651 | Training loss: 0.388932| lrm: 0.970814| num_tokens: 9,137
+Step 00020/00651 | Training loss: 0.380978| lrm: 0.969278| num_tokens: 13,831
+Step 00021/00651 | Training loss: 0.914758| lrm: 0.967742| num_tokens: 8,440
+Step 00022/00651 | Training loss: 0.969899| lrm: 0.966206| num_tokens: 7,233
+Step 00023/00651 | Training loss: 0.508376| lrm: 0.964670| num_tokens: 8,942
+Step 00024/00651 | Training loss: 0.835200| lrm: 0.963134| num_tokens: 11,922
+Step 00025/00651 | Training loss: 0.644770| lrm: 0.961598| num_tokens: 11,863
+Step 00026/00651 | Training loss: 1.153404| lrm: 0.960061| num_tokens: 12,664
+Step 00027/00651 | Training loss: 1.109654| lrm: 0.958525| num_tokens: 9,756
+Step 00028/00651 | Training loss: 0.945321| lrm: 0.956989| num_tokens: 10,590
+Step 00029/00651 | Training loss: 0.560970| lrm: 0.955453| num_tokens: 10,393
+Step 00030/00651 | Training loss: 0.430600| lrm: 0.953917| num_tokens: 11,434
+Step 00031/00651 | Training loss: 0.905597| lrm: 0.952381| num_tokens: 7,126
+Step 00032/00651 | Training loss: 1.042657| lrm: 0.950845| num_tokens: 10,146
+Step 00033/00651 | Training loss: 0.767631| lrm: 0.949309| num_tokens: 13,292
+Step 00034/00651 | Training loss: 0.893237| lrm: 0.947773| num_tokens: 16,122
+Step 00035/00651 | Training loss: 0.887512| lrm: 0.946237| num_tokens: 10,813
+Step 00036/00651 | Training loss: 0.770500| lrm: 0.944700| num_tokens: 11,640
+Step 00037/00651 | Training loss: 1.298880| lrm: 0.943164| num_tokens: 10,466
+Step 00038/00651 | Training loss: 1.193433| lrm: 0.941628| num_tokens: 11,990
+Step 00039/00651 | Training loss: 1.042211| lrm: 0.940092| num_tokens: 12,631
+Step 00040/00651 | Training loss: 0.974649| lrm: 0.938556| num_tokens: 10,748
+Step 00041/00651 | Training loss: 0.632214| lrm: 0.937020| num_tokens: 7,041
+Step 00042/00651 | Training loss: 1.172460| lrm: 0.935484| num_tokens: 11,835
+Step 00043/00651 | Training loss: 1.288878| lrm: 0.933948| num_tokens: 13,247
+Step 00044/00651 | Training loss: 0.542500| lrm: 0.932412| num_tokens: 8,712
+Step 00045/00651 | Training loss: 1.403805| lrm: 0.930876| num_tokens: 11,699
+Step 00046/00651 | Training loss: 1.115288| lrm: 0.929339| num_tokens: 15,336
+Step 00047/00651 | Training loss: 1.135745| lrm: 0.927803| num_tokens: 11,480
+Step 00048/00651 | Training loss: 0.975275| lrm: 0.926267| num_tokens: 13,115
+Step 00049/00651 | Training loss: 0.983690| lrm: 0.924731| num_tokens: 6,127
+Step 00050/00651 | Training loss: 1.500778| lrm: 0.923195| num_tokens: 15,852
+Step 00051/00651 | Training loss: 0.796957| lrm: 0.921659| num_tokens: 8,189
+Step 00052/00651 | Training loss: 0.924704| lrm: 0.920123| num_tokens: 12,347
+Step 00053/00651 | Training loss: 0.917896| lrm: 0.918587| num_tokens: 11,689
+Step 00054/00651 | Training loss: 0.776040| lrm: 0.917051| num_tokens: 10,377
+Step 00055/00651 | Training loss: 0.504577| lrm: 0.915515| num_tokens: 12,271
+Step 00056/00651 | Training loss: 0.923070| lrm: 0.913978| num_tokens: 12,328
+Step 00057/00651 | Training loss: 0.801677| lrm: 0.912442| num_tokens: 12,996
+Step 00058/00651 | Training loss: 0.784908| lrm: 0.910906| num_tokens: 10,543
+Step 00059/00651 | Training loss: 1.029026| lrm: 0.909370| num_tokens: 10,478
+Step 00060/00651 | Training loss: 0.406721| lrm: 0.907834| num_tokens: 12,855
+Step 00061/00651 | Training loss: 0.849730| lrm: 0.906298| num_tokens: 9,832
+Step 00062/00651 | Training loss: 1.102424| lrm: 0.904762| num_tokens: 14,414
+Step 00063/00651 | Training loss: 1.022290| lrm: 0.903226| num_tokens: 12,270
+Step 00064/00651 | Training loss: 1.080375| lrm: 0.901690| num_tokens: 9,208
+Step 00065/00651 | Training loss: 0.313078| lrm: 0.900154| num_tokens: 8,682
+Step 00066/00651 | Training loss: 0.593141| lrm: 0.898618| num_tokens: 11,240
+Step 00067/00651 | Training loss: 0.513827| lrm: 0.897081| num_tokens: 11,320
+Step 00068/00651 | Training loss: 0.558692| lrm: 0.895545| num_tokens: 15,527
+Step 00069/00651 | Training loss: 1.162609| lrm: 0.894009| num_tokens: 10,756
+Step 00070/00651 | Training loss: 1.190838| lrm: 0.892473| num_tokens: 8,714
+Step 00071/00651 | Training loss: 0.768586| lrm: 0.890937| num_tokens: 11,828
+Step 00072/00651 | Training loss: 0.579928| lrm: 0.889401| num_tokens: 11,026
+Step 00073/00651 | Training loss: 0.629006| lrm: 0.887865| num_tokens: 11,166
+Step 00074/00651 | Training loss: 0.465917| lrm: 0.886329| num_tokens: 9,326
+Step 00075/00651 | Training loss: 1.035271| lrm: 0.884793| num_tokens: 11,484
+Step 00076/00651 | Training loss: 0.499107| lrm: 0.883257| num_tokens: 11,683
+Step 00077/00651 | Training loss: 0.485593| lrm: 0.881720| num_tokens: 7,879
+Step 00078/00651 | Training loss: 1.161867| lrm: 0.880184| num_tokens: 11,109
+Step 00079/00651 | Training loss: 0.891172| lrm: 0.878648| num_tokens: 12,106
+Step 00080/00651 | Training loss: 0.758241| lrm: 0.877112| num_tokens: 13,192
+Step 00081/00651 | Training loss: 0.766645| lrm: 0.875576| num_tokens: 5,432
+Step 00082/00651 | Training loss: 0.482810| lrm: 0.874040| num_tokens: 11,228
+Step 00083/00651 | Training loss: 0.690157| lrm: 0.872504| num_tokens: 11,759
+Step 00084/00651 | Training loss: 0.835885| lrm: 0.870968| num_tokens: 10,086
+Step 00085/00651 | Training loss: 0.562981| lrm: 0.869432| num_tokens: 8,880
+Step 00086/00651 | Training loss: 0.773114| lrm: 0.867896| num_tokens: 8,872
+Step 00087/00651 | Training loss: 1.104897| lrm: 0.866359| num_tokens: 15,917
+Step 00088/00651 | Training loss: 0.861034| lrm: 0.864823| num_tokens: 10,945
+Step 00089/00651 | Training loss: 1.000717| lrm: 0.863287| num_tokens: 12,078
+Step 00090/00651 | Training loss: 1.134576| lrm: 0.861751| num_tokens: 8,958
+Step 00091/00651 | Training loss: 1.116181| lrm: 0.860215| num_tokens: 14,061
+Step 00092/00651 | Training loss: 0.961298| lrm: 0.858679| num_tokens: 10,559
+Step 00093/00651 | Training loss: 1.135402| lrm: 0.857143| num_tokens: 9,796
+Step 00094/00651 | Training loss: 1.128104| lrm: 0.855607| num_tokens: 9,616
+Step 00095/00651 | Training loss: 0.437054| lrm: 0.854071| num_tokens: 9,641
+Step 00096/00651 | Training loss: 0.865614| lrm: 0.852535| num_tokens: 10,514
+Step 00097/00651 | Training loss: 0.526770| lrm: 0.850998| num_tokens: 8,603
+Step 00098/00651 | Training loss: 0.857646| lrm: 0.849462| num_tokens: 11,923
+Step 00099/00651 | Training loss: 1.409915| lrm: 0.847926| num_tokens: 12,097
+Step 00100 | Validation loss: 1.070969
+Step 00100/00651 | Training loss: 1.252015| lrm: 0.846390| num_tokens: 11,137
+Step 00101/00651 | Training loss: 0.775846| lrm: 0.844854| num_tokens: 10,328
+Step 00102/00651 | Training loss: 0.448002| lrm: 0.843318| num_tokens: 9,696
+Step 00103/00651 | Training loss: 0.829538| lrm: 0.841782| num_tokens: 14,299
+Step 00104/00651 | Training loss: 0.878031| lrm: 0.840246| num_tokens: 10,261
+Step 00105/00651 | Training loss: 0.936957| lrm: 0.838710| num_tokens: 9,325
+Step 00106/00651 | Training loss: 0.790830| lrm: 0.837174| num_tokens: 9,119
+Step 00107/00651 | Training loss: 0.845381| lrm: 0.835637| num_tokens: 11,796
+Step 00108/00651 | Training loss: 0.973609| lrm: 0.834101| num_tokens: 12,749
+Step 00109/00651 | Training loss: 0.976062| lrm: 0.832565| num_tokens: 10,300
+Step 00110/00651 | Training loss: 1.025686| lrm: 0.831029| num_tokens: 8,818
+Step 00111/00651 | Training loss: 0.979088| lrm: 0.829493| num_tokens: 12,372
+Step 00112/00651 | Training loss: 0.657754| lrm: 0.827957| num_tokens: 10,306
+Step 00113/00651 | Training loss: 0.893014| lrm: 0.826421| num_tokens: 10,436
+Step 00114/00651 | Training loss: 0.746135| lrm: 0.824885| num_tokens: 11,438
+Step 00115/00651 | Training loss: 0.769570| lrm: 0.823349| num_tokens: 11,048
+Step 00116/00651 | Training loss: 0.659568| lrm: 0.821813| num_tokens: 6,877
+Step 00117/00651 | Training loss: 1.239260| lrm: 0.820276| num_tokens: 15,370
+Step 00118/00651 | Training loss: 0.777247| lrm: 0.818740| num_tokens: 8,079
+Step 00119/00651 | Training loss: 1.197869| lrm: 0.817204| num_tokens: 9,282
+Step 00120/00651 | Training loss: 1.073979| lrm: 0.815668| num_tokens: 10,481
+Step 00121/00651 | Training loss: 0.912480| lrm: 0.814132| num_tokens: 12,041
+Step 00122/00651 | Training loss: 0.993829| lrm: 0.812596| num_tokens: 10,664
+Step 00123/00651 | Training loss: 0.870716| lrm: 0.811060| num_tokens: 13,230
+Step 00124/00651 | Training loss: 0.499380| lrm: 0.809524| num_tokens: 10,022
+Step 00125/00651 | Training loss: 1.110172| lrm: 0.807988| num_tokens: 5,174
+Step 00126/00651 | Training loss: 0.940923| lrm: 0.806452| num_tokens: 14,671
+Step 00127/00651 | Training loss: 1.046766| lrm: 0.804916| num_tokens: 7,599
+Step 00128/00651 | Training loss: 0.831799| lrm: 0.803379| num_tokens: 12,112
+Step 00129/00651 | Training loss: 0.921517| lrm: 0.801843| num_tokens: 10,596
+Step 00130/00651 | Training loss: 0.904284| lrm: 0.800307| num_tokens: 12,141
+Step 00131/00651 | Training loss: 1.030364| lrm: 0.798771| num_tokens: 10,161
+Step 00132/00651 | Training loss: 0.782391| lrm: 0.797235| num_tokens: 9,010
+Step 00133/00651 | Training loss: 0.784423| lrm: 0.795699| num_tokens: 12,476
+Step 00134/00651 | Training loss: 1.057781| lrm: 0.794163| num_tokens: 9,009
+Step 00135/00651 | Training loss: 1.201442| lrm: 0.792627| num_tokens: 9,288
+Step 00136/00651 | Training loss: 1.486490| lrm: 0.791091| num_tokens: 8,935
+Step 00137/00651 | Training loss: 1.408568| lrm: 0.789555| num_tokens: 6,574
+Step 00138/00651 | Training loss: 0.564485| lrm: 0.788018| num_tokens: 7,465
+Step 00139/00651 | Training loss: 1.100183| lrm: 0.786482| num_tokens: 5,888
+Step 00140/00651 | Training loss: 0.704106| lrm: 0.784946| num_tokens: 9,388
+Step 00141/00651 | Training loss: 1.392815| lrm: 0.783410| num_tokens: 9,862
+Step 00142/00651 | Training loss: 0.635897| lrm: 0.781874| num_tokens: 8,643
+Step 00143/00651 | Training loss: 1.048283| lrm: 0.780338| num_tokens: 8,862
+Step 00144/00651 | Training loss: 0.923990| lrm: 0.778802| num_tokens: 12,264
+Step 00145/00651 | Training loss: 1.142223| lrm: 0.777266| num_tokens: 11,989
+Step 00146/00651 | Training loss: 0.849463| lrm: 0.775730| num_tokens: 9,708
+Step 00147/00651 | Training loss: 0.752469| lrm: 0.774194| num_tokens: 12,823
+Step 00148/00651 | Training loss: 1.240293| lrm: 0.772657| num_tokens: 11,309
+Step 00149/00651 | Training loss: 1.332427| lrm: 0.771121| num_tokens: 9,495
+Step 00150/00651 | Training loss: 1.430155| lrm: 0.769585| num_tokens: 11,821
+Step 00151/00651 | Training loss: 0.885559| lrm: 0.768049| num_tokens: 10,076
+Step 00152/00651 | Training loss: 0.898595| lrm: 0.766513| num_tokens: 8,007
+Step 00153/00651 | Training loss: 1.149348| lrm: 0.764977| num_tokens: 8,912
+Step 00154/00651 | Training loss: 1.042212| lrm: 0.763441| num_tokens: 12,240
+Step 00155/00651 | Training loss: 0.768209| lrm: 0.761905| num_tokens: 8,162
+Step 00156/00651 | Training loss: 0.759526| lrm: 0.760369| num_tokens: 7,985
+Step 00157/00651 | Training loss: 1.197316| lrm: 0.758833| num_tokens: 8,971
+Step 00158/00651 | Training loss: 0.837580| lrm: 0.757296| num_tokens: 9,242
+Step 00159/00651 | Training loss: 0.602230| lrm: 0.755760| num_tokens: 8,496
+Step 00160/00651 | Training loss: 0.894016| lrm: 0.754224| num_tokens: 5,973
+Step 00161/00651 | Training loss: 0.796763| lrm: 0.752688| num_tokens: 8,491
+Step 00162/00651 | Training loss: 0.631786| lrm: 0.751152| num_tokens: 10,333
+Step 00163/00651 | Training loss: 0.870368| lrm: 0.749616| num_tokens: 10,138
+Step 00164/00651 | Training loss: 0.992545| lrm: 0.748080| num_tokens: 12,628
+Step 00165/00651 | Training loss: 0.581905| lrm: 0.746544| num_tokens: 10,187
+Step 00166/00651 | Training loss: 0.950854| lrm: 0.745008| num_tokens: 10,178
+Step 00167/00651 | Training loss: 1.067779| lrm: 0.743472| num_tokens: 8,455
+Step 00168/00651 | Training loss: 0.952130| lrm: 0.741935| num_tokens: 8,983
+Step 00169/00651 | Training loss: 1.104593| lrm: 0.740399| num_tokens: 11,344
+Step 00170/00651 | Training loss: 0.847431| lrm: 0.738863| num_tokens: 11,707
+Step 00171/00651 | Training loss: 0.542112| lrm: 0.737327| num_tokens: 9,019
+Step 00172/00651 | Training loss: 0.783052| lrm: 0.735791| num_tokens: 9,600
+Step 00173/00651 | Training loss: 0.609776| lrm: 0.734255| num_tokens: 11,905
+Step 00174/00651 | Training loss: 0.811171| lrm: 0.732719| num_tokens: 9,933
+Step 00175/00651 | Training loss: 0.687679| lrm: 0.731183| num_tokens: 9,022
+Step 00176/00651 | Training loss: 0.868436| lrm: 0.729647| num_tokens: 11,521
+Step 00177/00651 | Training loss: 1.099848| lrm: 0.728111| num_tokens: 14,676
+Step 00178/00651 | Training loss: 1.092041| lrm: 0.726575| num_tokens: 10,081
+Step 00179/00651 | Training loss: 1.386154| lrm: 0.725038| num_tokens: 7,047
+Step 00180/00651 | Training loss: 1.383003| lrm: 0.723502| num_tokens: 11,176
+Step 00181/00651 | Training loss: 1.215617| lrm: 0.721966| num_tokens: 14,484
+Step 00182/00651 | Training loss: 0.775437| lrm: 0.720430| num_tokens: 14,498
+Step 00183/00651 | Training loss: 0.970027| lrm: 0.718894| num_tokens: 15,877
+Step 00184/00651 | Training loss: 0.891397| lrm: 0.717358| num_tokens: 11,142
+Step 00185/00651 | Training loss: 1.176444| lrm: 0.715822| num_tokens: 10,819
+Step 00186/00651 | Training loss: 0.752023| lrm: 0.714286| num_tokens: 12,344
+Step 00187/00651 | Training loss: 0.940132| lrm: 0.712750| num_tokens: 10,585
+Step 00188/00651 | Training loss: 0.863392| lrm: 0.711214| num_tokens: 10,822
+Step 00189/00651 | Training loss: 1.281935| lrm: 0.709677| num_tokens: 9,051
+Step 00190/00651 | Training loss: 0.752394| lrm: 0.708141| num_tokens: 12,361
+Step 00191/00651 | Training loss: 0.440853| lrm: 0.706605| num_tokens: 13,431
+Step 00192/00651 | Training loss: 0.775096| lrm: 0.705069| num_tokens: 6,242
+Step 00193/00651 | Training loss: 0.702279| lrm: 0.703533| num_tokens: 10,454
+Step 00194/00651 | Training loss: 0.942527| lrm: 0.701997| num_tokens: 9,798
+Step 00195/00651 | Training loss: 0.853132| lrm: 0.700461| num_tokens: 10,987
+Step 00196/00651 | Training loss: 0.663893| lrm: 0.698925| num_tokens: 11,772
+Step 00197/00651 | Training loss: 1.069339| lrm: 0.697389| num_tokens: 8,944
+Step 00198/00651 | Training loss: 0.825694| lrm: 0.695853| num_tokens: 11,163
+Step 00199/00651 | Training loss: 0.621482| lrm: 0.694316| num_tokens: 7,834
+Step 00200 | Validation loss: 1.068913
+Final: 303/1024 (29.59%)
+Final: 316/1024 (30.86%)
+[KRank 6 | 1/1 (100.00%)[KRank 0 | 0/1 (0.00%)[KRank 7 | 0/1 (0.00%)[KRank 3 | 0/1 (0.00%)[KRank 6 | 1/2 (50.00%)[KRank 7 | 0/2 (0.00%)[KRank 0 | 0/2 (0.00%)[KRank 2 | 0/1 (0.00%)[KRank 3 | 1/2 (50.00%)[KRank 1 | 0/1 (0.00%)[KRank 6 | 1/3 (33.33%)[KRank 0 | 0/3 (0.00%)[KRank 3 | 1/3 (33.33%)[KRank 7 | 0/3 (0.00%)[KRank 0 | 0/4 (0.00%)[KRank 7 | 0/4 (0.00%)[KRank 6 | 1/4 (25.00%)[KRank 3 | 1/4 (25.00%)[KRank 5 | 0/1 (0.00%)[KRank 6 | 1/5 (20.00%)[KRank 0 | 0/5 (0.00%)[KRank 7 | 0/5 (0.00%)[KRank 1 | 0/2 (0.00%)[KRank 7 | 0/6 (0.00%)[KRank 1 | 0/3 (0.00%)[KRank 6 | 1/6 (16.67%)[KRank 4 | 0/1 (0.00%)[KRank 7 | 0/7 (0.00%)[KRank 6 | 1/7 (14.29%)[KRank 2 | 0/2 (0.00%)[KRank 6 | 1/8 (12.50%)
+[KRank 1 | 0/4 (0.00%)[KRank 2 | 1/3 (33.33%)[KRank 1 | 0/5 (0.00%)[KRank 7 | 0/8 (0.00%)
+[KRank 4 | 1/2 (50.00%)[KRank 5 | 0/2 (0.00%)[KRank 1 | 0/6 (0.00%)[KRank 3 | 1/5 (20.00%)[KRank 5 | 0/3 (0.00%)[KRank 5 | 0/4 (0.00%)[KRank 0 | 0/6 (0.00%)[KRank 3 | 1/6 (16.67%)[KRank 0 | 0/7 (0.00%)[KRank 0 | 0/8 (0.00%)
+[KRank 3 | 1/7 (14.29%)[KRank 3 | 1/8 (12.50%)
+[KRank 2 | 1/4 (25.00%)[KRank 5 | 0/5 (0.00%)[KRank 4 | 1/3 (33.33%)[KRank 2 | 1/5 (20.00%)[KRank 1 | 0/7 (0.00%)[KRank 2 | 1/6 (16.67%)[KRank 5 | 0/6 (0.00%)[KRank 2 | 1/7 (14.29%)[KRank 5 | 0/7 (0.00%)[KRank 4 | 1/4 (25.00%)[KRank 5 | 0/8 (0.00%)
+[KRank 4 | 1/5 (20.00%)[KRank 4 | 1/6 (16.67%)[KRank 1 | 0/8 (0.00%)
+[KRank 2 | 1/8 (12.50%)
+[KRank 4 | 1/7 (14.29%)[KRank 4 | 1/8 (12.50%)
+==================================================
+Final: 4/64 (6.25%)
+[KRank 2 | 1/1 (100.00%)[KRank 0 | 0/1 (0.00%)[KRank 5 | 0/1 (0.00%)[KRank 6 | 0/1 (0.00%)[KRank 2 | 1/2 (50.00%)[KRank 5 | 0/2 (0.00%)[KRank 3 | 0/1 (0.00%)[KRank 1 | 0/1 (0.00%)[KRank 0 | 0/2 (0.00%)[KRank 6 | 0/2 (0.00%)[KRank 7 | 0/1 (0.00%)[KRank 5 | 0/3 (0.00%)[KRank 0 | 0/3 (0.00%)[KRank 7 | 1/2 (50.00%)[KRank 4 | 0/1 (0.00%)[KRank 6 | 0/3 (0.00%)[KRank 3 | 0/2 (0.00%)[KRank 5 | 0/4 (0.00%)[KRank 7 | 1/3 (33.33%)[KRank 2 | 1/3 (33.33%)[KRank 1 | 0/2 (0.00%)[KRank 3 | 0/3 (0.00%)[KRank 6 | 0/4 (0.00%)[KRank 5 | 0/5 (0.00%)[KRank 2 | 1/4 (25.00%)[KRank 5 | 1/6 (16.67%)[KRank 0 | 0/4 (0.00%)[KRank 3 | 0/4 (0.00%)[KRank 4 | 0/2 (0.00%)[KRank 1 | 0/3 (0.00%)[KRank 2 | 1/5 (20.00%)[KRank 5 | 1/7 (14.29%)[KRank 0 | 0/5 (0.00%)[KRank 7 | 1/4 (25.00%)[KRank 2 | 1/6 (16.67%)[KRank 1 | 0/4 (0.00%)[KRank 0 | 0/6 (0.00%)[KRank 6 | 0/5 (0.00%)[KRank 2 | 1/7 (14.29%)[KRank 1 | 0/5 (0.00%)[KRank 0 | 0/7 (0.00%)[KRank 3 | 0/5 (0.00%)[KRank 4 | 0/3 (0.00%)[KRank 5 | 1/8 (12.50%)
+[KRank 1 | 0/6 (0.00%)[KRank 0 | 0/8 (0.00%)
+[KRank 7 | 1/5 (20.00%)[KRank 3 | 0/6 (0.00%)[KRank 1 | 1/7 (14.29%)[KRank 3 | 0/7 (0.00%)[KRank 2 | 1/8 (12.50%)
+[KRank 6 | 0/6 (0.00%)[KRank 3 | 0/8 (0.00%)
+[KRank 7 | 1/6 (16.67%)[KRank 4 | 0/4 (0.00%)[KRank 6 | 0/7 (0.00%)[KRank 7 | 1/7 (14.29%)[KRank 1 | 1/8 (12.50%)
+[KRank 6 | 0/8 (0.00%)
+[KRank 7 | 1/8 (12.50%)
+[KRank 4 | 0/5 (0.00%)[KRank 4 | 0/6 (0.00%)[KRank 4 | 0/7 (0.00%)[KRank 4 | 0/8 (0.00%)
+==================================================
+Final: 4/64 (6.25%)
+Step 00200 | mmlu_acc: 0.295898, arc_easy_acc: 0.308594, gsm8k_acc: 0.062500, humaneval_acc: 0.062500
+Step 00200/00651 | Training loss: 1.172737| lrm: 0.692780| num_tokens: 15,429
+Step 00201/00651 | Training loss: 0.990720| lrm: 0.691244| num_tokens: 13,867
+Step 00202/00651 | Training loss: 1.194885| lrm: 0.689708| num_tokens: 7,064
+Step 00203/00651 | Training loss: 1.114183| lrm: 0.688172| num_tokens: 9,197
+Step 00204/00651 | Training loss: 0.710931| lrm: 0.686636| num_tokens: 10,899
+Step 00205/00651 | Training loss: 1.205879| lrm: 0.685100| num_tokens: 12,914
+Step 00206/00651 | Training loss: 1.003503| lrm: 0.683564| num_tokens: 13,463
+Step 00207/00651 | Training loss: 1.050506| lrm: 0.682028| num_tokens: 11,750
+Step 00208/00651 | Training loss: 0.549075| lrm: 0.680492| num_tokens: 9,905
+Step 00209/00651 | Training loss: 0.917026| lrm: 0.678955| num_tokens: 10,794
+Step 00210/00651 | Training loss: 1.035309| lrm: 0.677419| num_tokens: 8,362
+Step 00211/00651 | Training loss: 0.765525| lrm: 0.675883| num_tokens: 10,282
+Step 00212/00651 | Training loss: 1.103279| lrm: 0.674347| num_tokens: 15,687
+Step 00213/00651 | Training loss: 1.021755| lrm: 0.672811| num_tokens: 13,662
+Step 00214/00651 | Training loss: 0.812532| lrm: 0.671275| num_tokens: 10,486
+Step 00215/00651 | Training loss: 1.046856| lrm: 0.669739| num_tokens: 13,922
+Step 00216/00651 | Training loss: 0.873064| lrm: 0.668203| num_tokens: 12,848
+Step 00217/00651 | Training loss: 0.695348| lrm: 0.666667| num_tokens: 13,594
+Step 00218/00651 | Training loss: 0.506297| lrm: 0.665131| num_tokens: 14,643
+Step 00219/00651 | Training loss: 1.101032| lrm: 0.663594| num_tokens: 10,606
+Step 00220/00651 | Training loss: 0.968547| lrm: 0.662058| num_tokens: 10,426
+Step 00221/00651 | Training loss: 0.564048| lrm: 0.660522| num_tokens: 9,644
+Step 00222/00651 | Training loss: 1.044107| lrm: 0.658986| num_tokens: 14,785
+Step 00223/00651 | Training loss: 0.855576| lrm: 0.657450| num_tokens: 7,587
+Step 00224/00651 | Training loss: 1.244120| lrm: 0.655914| num_tokens: 13,595
+Step 00225/00651 | Training loss: 0.687018| lrm: 0.654378| num_tokens: 10,403
+Step 00226/00651 | Training loss: 1.387992| lrm: 0.652842| num_tokens: 8,132
+Step 00227/00651 | Training loss: 1.667534| lrm: 0.651306| num_tokens: 6,353
+Step 00228/00651 | Training loss: 0.890851| lrm: 0.649770| num_tokens: 13,461
+Step 00229/00651 | Training loss: 0.747767| lrm: 0.648233| num_tokens: 10,078
+Step 00230/00651 | Training loss: 1.139614| lrm: 0.646697| num_tokens: 10,506
+Step 00231/00651 | Training loss: 0.802407| lrm: 0.645161| num_tokens: 10,366
+Step 00232/00651 | Training loss: 1.067435| lrm: 0.643625| num_tokens: 12,840
+Step 00233/00651 | Training loss: 0.694937| lrm: 0.642089| num_tokens: 12,441
+Step 00234/00651 | Training loss: 0.968604| lrm: 0.640553| num_tokens: 12,752
+Step 00235/00651 | Training loss: 0.946691| lrm: 0.639017| num_tokens: 11,592
+Step 00236/00651 | Training loss: 0.849389| lrm: 0.637481| num_tokens: 8,763
+Step 00237/00651 | Training loss: 1.119518| lrm: 0.635945| num_tokens: 11,136
+Step 00238/00651 | Training loss: 1.052790| lrm: 0.634409| num_tokens: 13,322
+Step 00239/00651 | Training loss: 1.036066| lrm: 0.632873| num_tokens: 14,562
+Step 00240/00651 | Training loss: 0.983113| lrm: 0.631336| num_tokens: 5,045
+Step 00241/00651 | Training loss: 0.977705| lrm: 0.629800| num_tokens: 10,618
+Step 00242/00651 | Training loss: 0.893381| lrm: 0.628264| num_tokens: 9,587
+Step 00243/00651 | Training loss: 0.985029| lrm: 0.626728| num_tokens: 15,035
+Step 00244/00651 | Training loss: 0.488776| lrm: 0.625192| num_tokens: 10,749
+Step 00245/00651 | Training loss: 0.580878| lrm: 0.623656| num_tokens: 7,521
+Step 00246/00651 | Training loss: 1.497324| lrm: 0.622120| num_tokens: 11,967
+Step 00247/00651 | Training loss: 1.056268| lrm: 0.620584| num_tokens: 7,464
+Step 00248/00651 | Training loss: 1.199822| lrm: 0.619048| num_tokens: 16,308
+Step 00249/00651 | Training loss: 0.725100| lrm: 0.617512| num_tokens: 12,283
+Step 00250/00651 | Training loss: 1.163596| lrm: 0.615975| num_tokens: 10,588
+Step 00251/00651 | Training loss: 1.428619| lrm: 0.614439| num_tokens: 14,202
+Step 00252/00651 | Training loss: 1.004641| lrm: 0.612903| num_tokens: 10,098
+Step 00253/00651 | Training loss: 1.190650| lrm: 0.611367| num_tokens: 13,078
+Step 00254/00651 | Training loss: 0.869250| lrm: 0.609831| num_tokens: 11,796
+Step 00255/00651 | Training loss: 0.948904| lrm: 0.608295| num_tokens: 11,245
+Step 00256/00651 | Training loss: 1.135675| lrm: 0.606759| num_tokens: 14,347
+Step 00257/00651 | Training loss: 0.705673| lrm: 0.605223| num_tokens: 10,060
+Step 00258/00651 | Training loss: 0.830838| lrm: 0.603687| num_tokens: 8,207
+Step 00259/00651 | Training loss: 0.662853| lrm: 0.602151| num_tokens: 7,391
+Step 00260/00651 | Training loss: 0.736361| lrm: 0.600614| num_tokens: 15,343
+Step 00261/00651 | Training loss: 0.556145| lrm: 0.599078| num_tokens: 8,774
+Step 00262/00651 | Training loss: 0.897896| lrm: 0.597542| num_tokens: 9,823
+Step 00263/00651 | Training loss: 0.700099| lrm: 0.596006| num_tokens: 13,402
+Step 00264/00651 | Training loss: 1.323984| lrm: 0.594470| num_tokens: 14,257
+Step 00265/00651 | Training loss: 0.918025| lrm: 0.592934| num_tokens: 13,353
+Step 00266/00651 | Training loss: 1.106121| lrm: 0.591398| num_tokens: 8,466
+Step 00267/00651 | Training loss: 1.065387| lrm: 0.589862| num_tokens: 15,492
+Step 00268/00651 | Training loss: 0.673654| lrm: 0.588326| num_tokens: 12,616
+Step 00269/00651 | Training loss: 0.919911| lrm: 0.586790| num_tokens: 12,013
+Step 00270/00651 | Training loss: 1.324437| lrm: 0.585253| num_tokens: 11,696
+Step 00271/00651 | Training loss: 0.910615| lrm: 0.583717| num_tokens: 13,298
+Step 00272/00651 | Training loss: 1.021751| lrm: 0.582181| num_tokens: 10,069
+Step 00273/00651 | Training loss: 0.931485| lrm: 0.580645| num_tokens: 15,229
+Step 00274/00651 | Training loss: 1.150938| lrm: 0.579109| num_tokens: 10,676
+Step 00275/00651 | Training loss: 0.725092| lrm: 0.577573| num_tokens: 5,638
+Step 00276/00651 | Training loss: 0.867439| lrm: 0.576037| num_tokens: 8,626
+Step 00277/00651 | Training loss: 1.063597| lrm: 0.574501| num_tokens: 10,329
+Step 00278/00651 | Training loss: 1.093859| lrm: 0.572965| num_tokens: 14,396
+Step 00279/00651 | Training loss: 1.287866| lrm: 0.571429| num_tokens: 15,605
+Step 00280/00651 | Training loss: 1.091010| lrm: 0.569892| num_tokens: 14,380
+Step 00281/00651 | Training loss: 0.901448| lrm: 0.568356| num_tokens: 7,499
+Step 00282/00651 | Training loss: 1.066309| lrm: 0.566820| num_tokens: 17,160
+Step 00283/00651 | Training loss: 0.905004| lrm: 0.565284| num_tokens: 11,100
+Step 00284/00651 | Training loss: 0.896407| lrm: 0.563748| num_tokens: 8,555
+Step 00285/00651 | Training loss: 0.782803| lrm: 0.562212| num_tokens: 9,071
+Step 00286/00651 | Training loss: 0.762839| lrm: 0.560676| num_tokens: 13,438
+Step 00287/00651 | Training loss: 0.766546| lrm: 0.559140| num_tokens: 9,591
+Step 00288/00651 | Training loss: 0.810915| lrm: 0.557604| num_tokens: 11,301
+Step 00289/00651 | Training loss: 0.812018| lrm: 0.556068| num_tokens: 7,898
+Step 00290/00651 | Training loss: 0.960698| lrm: 0.554531| num_tokens: 10,718
+Step 00291/00651 | Training loss: 0.772906| lrm: 0.552995| num_tokens: 9,719
+Step 00292/00651 | Training loss: 0.597571| lrm: 0.551459| num_tokens: 7,194
+Step 00293/00651 | Training loss: 1.013902| lrm: 0.549923| num_tokens: 8,943
+Step 00294/00651 | Training loss: 1.209687| lrm: 0.548387| num_tokens: 9,842
+Step 00295/00651 | Training loss: 0.828470| lrm: 0.546851| num_tokens: 8,584
+Step 00296/00651 | Training loss: 0.707312| lrm: 0.545315| num_tokens: 9,170
+Step 00297/00651 | Training loss: 0.538922| lrm: 0.543779| num_tokens: 8,060
+Step 00298/00651 | Training loss: 0.769633| lrm: 0.542243| num_tokens: 9,520
+Step 00299/00651 | Training loss: 0.725509| lrm: 0.540707| num_tokens: 11,546
+Step 00300 | Validation loss: 1.067096
+Step 00300/00651 | Training loss: 1.046741| lrm: 0.539171| num_tokens: 7,837
+Step 00301/00651 | Training loss: 1.300853| lrm: 0.537634| num_tokens: 9,765
+Step 00302/00651 | Training loss: 1.042967| lrm: 0.536098| num_tokens: 11,208
+Step 00303/00651 | Training loss: 1.358561| lrm: 0.534562| num_tokens: 10,564
+Step 00304/00651 | Training loss: 0.986253| lrm: 0.533026| num_tokens: 15,068
+Step 00305/00651 | Training loss: 0.996365| lrm: 0.531490| num_tokens: 14,314
+Step 00306/00651 | Training loss: 0.938236| lrm: 0.529954| num_tokens: 9,119
+Step 00307/00651 | Training loss: 0.884997| lrm: 0.528418| num_tokens: 9,822
+Step 00308/00651 | Training loss: 0.885515| lrm: 0.526882| num_tokens: 12,504
+Step 00309/00651 | Training loss: 1.033717| lrm: 0.525346| num_tokens: 10,438
+Step 00310/00651 | Training loss: 0.949927| lrm: 0.523810| num_tokens: 12,497
+Step 00311/00651 | Training loss: 1.252149| lrm: 0.522273| num_tokens: 10,564
+Step 00312/00651 | Training loss: 0.667058| lrm: 0.520737| num_tokens: 8,266
+Step 00313/00651 | Training loss: 1.188540| lrm: 0.519201| num_tokens: 10,550
+Step 00314/00651 | Training loss: 1.332625| lrm: 0.517665| num_tokens: 12,718
+Step 00315/00651 | Training loss: 1.521138| lrm: 0.516129| num_tokens: 13,975
+Step 00316/00651 | Training loss: 0.465587| lrm: 0.514593| num_tokens: 8,891
+Step 00317/00651 | Training loss: 0.694406| lrm: 0.513057| num_tokens: 9,941
+Step 00318/00651 | Training loss: 1.041369| lrm: 0.511521| num_tokens: 9,717
+Step 00319/00651 | Training loss: 0.934440| lrm: 0.509985| num_tokens: 11,772
+Step 00320/00651 | Training loss: 0.819558| lrm: 0.508449| num_tokens: 10,387
+Step 00321/00651 | Training loss: 0.473200| lrm: 0.506912| num_tokens: 9,814
+Step 00322/00651 | Training loss: 0.740173| lrm: 0.505376| num_tokens: 10,338
+Step 00323/00651 | Training loss: 0.937513| lrm: 0.503840| num_tokens: 12,200
+Step 00324/00651 | Training loss: 1.239708| lrm: 0.502304| num_tokens: 8,116
+Step 00325/00651 | Training loss: 0.933469| lrm: 0.500768| num_tokens: 10,944
+Step 00326/00651 | Training loss: 0.829591| lrm: 0.499232| num_tokens: 16,277
+Step 00327/00651 | Training loss: 1.144687| lrm: 0.497696| num_tokens: 9,288
+Step 00328/00651 | Training loss: 0.924609| lrm: 0.496160| num_tokens: 14,742
+Step 00329/00651 | Training loss: 0.693105| lrm: 0.494624| num_tokens: 13,533
+Step 00330/00651 | Training loss: 0.872073| lrm: 0.493088| num_tokens: 7,894
+Step 00331/00651 | Training loss: 0.784317| lrm: 0.491551| num_tokens: 14,764
+Step 00332/00651 | Training loss: 1.230637| lrm: 0.490015| num_tokens: 8,944
+Step 00333/00651 | Training loss: 1.031642| lrm: 0.488479| num_tokens: 6,281
+Step 00334/00651 | Training loss: 1.242005| lrm: 0.486943| num_tokens: 14,348
+Step 00335/00651 | Training loss: 0.508942| lrm: 0.485407| num_tokens: 12,918
+Step 00336/00651 | Training loss: 0.931351| lrm: 0.483871| num_tokens: 7,116
+Step 00337/00651 | Training loss: 1.194349| lrm: 0.482335| num_tokens: 9,608
+Step 00338/00651 | Training loss: 1.225786| lrm: 0.480799| num_tokens: 12,084
+Step 00339/00651 | Training loss: 1.264289| lrm: 0.479263| num_tokens: 14,108
+Step 00340/00651 | Training loss: 0.555200| lrm: 0.477727| num_tokens: 11,981
+Step 00341/00651 | Training loss: 1.141643| lrm: 0.476190| num_tokens: 10,127
+Step 00342/00651 | Training loss: 1.172786| lrm: 0.474654| num_tokens: 10,500
+Step 00343/00651 | Training loss: 0.812269| lrm: 0.473118| num_tokens: 6,191
+Step 00344/00651 | Training loss: 0.854471| lrm: 0.471582| num_tokens: 8,728
+Step 00345/00651 | Training loss: 0.381609| lrm: 0.470046| num_tokens: 8,037
+Step 00346/00651 | Training loss: 0.798088| lrm: 0.468510| num_tokens: 8,087
+Step 00347/00651 | Training loss: 0.660755| lrm: 0.466974| num_tokens: 9,347
+Step 00348/00651 | Training loss: 1.235423| lrm: 0.465438| num_tokens: 11,051
+Step 00349/00651 | Training loss: 0.478606| lrm: 0.463902| num_tokens: 13,213
+Step 00350/00651 | Training loss: 1.025433| lrm: 0.462366| num_tokens: 12,280
+Step 00351/00651 | Training loss: 1.284450| lrm: 0.460829| num_tokens: 6,453
+Step 00352/00651 | Training loss: 0.919928| lrm: 0.459293| num_tokens: 13,219
+Step 00353/00651 | Training loss: 0.862774| lrm: 0.457757| num_tokens: 8,551
+Step 00354/00651 | Training loss: 1.157030| lrm: 0.456221| num_tokens: 9,528
+Step 00355/00651 | Training loss: 0.737847| lrm: 0.454685| num_tokens: 9,314
+Step 00356/00651 | Training loss: 0.647550| lrm: 0.453149| num_tokens: 8,419
+Step 00357/00651 | Training loss: 0.877923| lrm: 0.451613| num_tokens: 13,197
+Step 00358/00651 | Training loss: 0.877643| lrm: 0.450077| num_tokens: 11,092
+Step 00359/00651 | Training loss: 0.541391| lrm: 0.448541| num_tokens: 8,997
+Step 00360/00651 | Training loss: 1.706401| lrm: 0.447005| num_tokens: 6,583
+Step 00361/00651 | Training loss: 0.915036| lrm: 0.445469| num_tokens: 11,487
+Step 00362/00651 | Training loss: 1.038514| lrm: 0.443932| num_tokens: 12,445
+Step 00363/00651 | Training loss: 0.976836| lrm: 0.442396| num_tokens: 8,777
+Step 00364/00651 | Training loss: 0.849245| lrm: 0.440860| num_tokens: 14,378
+Step 00365/00651 | Training loss: 0.976295| lrm: 0.439324| num_tokens: 14,276
+Step 00366/00651 | Training loss: 1.125322| lrm: 0.437788| num_tokens: 8,548
+Step 00367/00651 | Training loss: 1.182381| lrm: 0.436252| num_tokens: 10,785
+Step 00368/00651 | Training loss: 0.658016| lrm: 0.434716| num_tokens: 7,467
+Step 00369/00651 | Training loss: 0.960627| lrm: 0.433180| num_tokens: 10,122
+Step 00370/00651 | Training loss: 0.727682| lrm: 0.431644| num_tokens: 8,549
+Step 00371/00651 | Training loss: 1.111546| lrm: 0.430108| num_tokens: 12,663
+Step 00372/00651 | Training loss: 0.653321| lrm: 0.428571| num_tokens: 11,384
+Step 00373/00651 | Training loss: 1.227821| lrm: 0.427035| num_tokens: 7,815
+Step 00374/00651 | Training loss: 1.017676| lrm: 0.425499| num_tokens: 15,771
+Step 00375/00651 | Training loss: 1.014135| lrm: 0.423963| num_tokens: 11,019
+Step 00376/00651 | Training loss: 1.325281| lrm: 0.422427| num_tokens: 10,581
+Step 00377/00651 | Training loss: 0.774072| lrm: 0.420891| num_tokens: 10,165
+Step 00378/00651 | Training loss: 1.038853| lrm: 0.419355| num_tokens: 9,973
+Step 00379/00651 | Training loss: 0.850826| lrm: 0.417819| num_tokens: 7,814
+Step 00380/00651 | Training loss: 0.680951| lrm: 0.416283| num_tokens: 13,492
+Step 00381/00651 | Training loss: 1.147081| lrm: 0.414747| num_tokens: 11,782
+Step 00382/00651 | Training loss: 0.963200| lrm: 0.413210| num_tokens: 9,829
+Step 00383/00651 | Training loss: 1.080846| lrm: 0.411674| num_tokens: 14,081
+Step 00384/00651 | Training loss: 0.988521| lrm: 0.410138| num_tokens: 12,581
+Step 00385/00651 | Training loss: 1.358224| lrm: 0.408602| num_tokens: 10,166
+Step 00386/00651 | Training loss: 0.681927| lrm: 0.407066| num_tokens: 7,589
+Step 00387/00651 | Training loss: 0.956141| lrm: 0.405530| num_tokens: 10,038
+Step 00388/00651 | Training loss: 0.965958| lrm: 0.403994| num_tokens: 11,971
+Step 00389/00651 | Training loss: 1.111744| lrm: 0.402458| num_tokens: 8,377
+Step 00390/00651 | Training loss: 0.828236| lrm: 0.400922| num_tokens: 11,701
+Step 00391/00651 | Training loss: 1.146628| lrm: 0.399386| num_tokens: 8,925
+Step 00392/00651 | Training loss: 0.958461| lrm: 0.397849| num_tokens: 11,386
+Step 00393/00651 | Training loss: 1.085595| lrm: 0.396313| num_tokens: 9,088
+Step 00394/00651 | Training loss: 0.811237| lrm: 0.394777| num_tokens: 9,084
+Step 00395/00651 | Training loss: 1.395670| lrm: 0.393241| num_tokens: 9,033
+Step 00396/00651 | Training loss: 0.839794| lrm: 0.391705| num_tokens: 7,204
+Step 00397/00651 | Training loss: 0.682960| lrm: 0.390169| num_tokens: 8,585
+Step 00398/00651 | Training loss: 1.223663| lrm: 0.388633| num_tokens: 10,897
+Step 00399/00651 | Training loss: 0.663101| lrm: 0.387097| num_tokens: 9,307
+Step 00400 | Validation loss: 1.066365
+Final: 317/1024 (30.96%)
+Final: 341/1024 (33.30%)
+[KRank 0 | 0/1 (0.00%)[KRank 2 | 0/1 (0.00%)[KRank 7 | 0/1 (0.00%)[KRank 5 | 0/1 (0.00%)[KRank 0 | 0/2 (0.00%)[KRank 3 | 0/1 (0.00%)[KRank 7 | 0/2 (0.00%)[KRank 1 | 0/1 (0.00%)[KRank 3 | 1/2 (50.00%)[KRank 5 | 0/2 (0.00%)[KRank 0 | 0/3 (0.00%)[KRank 5 | 0/3 (0.00%)[KRank 7 | 0/3 (0.00%)[KRank 0 | 0/4 (0.00%)[KRank 5 | 0/4 (0.00%)[KRank 3 | 1/3 (33.33%)[KRank 7 | 0/4 (0.00%)[KRank 1 | 0/2 (0.00%)[KRank 0 | 1/5 (20.00%)[KRank 1 | 1/3 (33.33%)[KRank 7 | 0/5 (0.00%)[KRank 3 | 1/4 (25.00%)[KRank 1 | 1/4 (25.00%)[KRank 7 | 0/6 (0.00%)[KRank 4 | 0/1 (0.00%)[KRank 6 | 0/1 (0.00%)[KRank 1 | 1/5 (20.00%)[KRank 7 | 0/7 (0.00%)[KRank 2 | 0/2 (0.00%)[KRank 1 | 1/6 (16.67%)[KRank 2 | 1/3 (33.33%)[KRank 7 | 0/8 (0.00%)
+[KRank 6 | 0/2 (0.00%)[KRank 5 | 0/5 (0.00%)[KRank 0 | 1/6 (16.67%)[KRank 4 | 0/2 (0.00%)[KRank 3 | 1/5 (20.00%)[KRank 0 | 1/7 (14.29%)[KRank 5 | 0/6 (0.00%)[KRank 5 | 0/7 (0.00%)[KRank 0 | 1/8 (12.50%)
+[KRank 2 | 1/4 (25.00%)[KRank 5 | 0/8 (0.00%)
+[KRank 1 | 1/7 (14.29%)[KRank 2 | 1/5 (20.00%)[KRank 2 | 1/6 (16.67%)[KRank 2 | 1/7 (14.29%)[KRank 1 | 1/8 (12.50%)
+[KRank 6 | 0/3 (0.00%)[KRank 3 | 1/6 (16.67%)[KRank 4 | 0/3 (0.00%)[KRank 6 | 0/4 (0.00%)[KRank 6 | 0/5 (0.00%)[KRank 6 | 0/6 (0.00%)[KRank 2 | 1/8 (12.50%)
+[KRank 6 | 0/7 (0.00%)[KRank 6 | 0/8 (0.00%)
+[KRank 3 | 1/7 (14.29%)[KRank 4 | 0/4 (0.00%)[KRank 3 | 1/8 (12.50%)
+[KRank 4 | 0/5 (0.00%)[KRank 4 | 0/6 (0.00%)[KRank 4 | 0/7 (0.00%)[KRank 4 | 0/8 (0.00%)
+==================================================
+Final: 4/64 (6.25%)
+[KRank 1 | 0/1 (0.00%)[KRank 7 | 0/1 (0.00%)[KRank 2 | 1/1 (100.00%)[KRank 6 | 0/1 (0.00%)[KRank 0 | 0/1 (0.00%)[KRank 5 | 0/1 (0.00%)[KRank 3 | 0/1 (0.00%)[KRank 7 | 1/2 (50.00%)[KRank 1 | 0/2 (0.00%)[KRank 2 | 1/2 (50.00%)[KRank 5 | 0/2 (0.00%)[KRank 4 | 0/1 (0.00%)[KRank 6 | 0/2 (0.00%)[KRank 3 | 0/2 (0.00%)[KRank 0 | 0/2 (0.00%)[KRank 7 | 1/3 (33.33%)[KRank 5 | 0/3 (0.00%)[KRank 6 | 0/3 (0.00%)[KRank 0 | 0/3 (0.00%)[KRank 1 | 0/3 (0.00%)[KRank 3 | 0/3 (0.00%)[KRank 5 | 0/4 (0.00%)[KRank 1 | 0/4 (0.00%)[KRank 0 | 0/4 (0.00%)[KRank 6 | 0/4 (0.00%)[KRank 2 | 1/3 (33.33%)[KRank 3 | 0/4 (0.00%)[KRank 7 | 1/4 (25.00%)[KRank 4 | 0/2 (0.00%)[KRank 1 | 0/5 (0.00%)[KRank 0 | 0/5 (0.00%)[KRank 2 | 1/4 (25.00%)[KRank 7 | 1/5 (20.00%)[KRank 1 | 0/6 (0.00%)[KRank 0 | 0/6 (0.00%)[KRank 5 | 0/5 (0.00%)[KRank 3 | 0/5 (0.00%)[KRank 4 | 0/3 (0.00%)[KRank 5 | 1/6 (16.67%)[KRank 2 | 1/5 (20.00%)[KRank 1 | 1/7 (14.29%)[KRank 3 | 0/6 (0.00%)[KRank 0 | 0/7 (0.00%)[KRank 5 | 1/7 (14.29%)[KRank 6 | 0/5 (0.00%)[KRank 4 | 0/4 (0.00%)[KRank 3 | 0/7 (0.00%)[KRank 7 | 1/6 (16.67%)[KRank 0 | 0/8 (0.00%)
+[KRank 7 | 1/7 (14.29%)[KRank 3 | 0/8 (0.00%)
+[KRank 1 | 1/8 (12.50%)
+[KRank 5 | 1/8 (12.50%)
+[KRank 6 | 0/6 (0.00%)[KRank 2 | 1/6 (16.67%)[KRank 4 | 0/5 (0.00%)[KRank 6 | 0/7 (0.00%)[KRank 2 | 1/7 (14.29%)[KRank 7 | 1/8 (12.50%)
+[KRank 4 | 0/6 (0.00%)[KRank 6 | 0/8 (0.00%)
+[KRank 4 | 0/7 (0.00%)[KRank 2 | 1/8 (12.50%)
+[KRank 4 | 0/8 (0.00%)
+==================================================
+Final: 4/64 (6.25%)
+Step 00400 | mmlu_acc: 0.309570, arc_easy_acc: 0.333008, gsm8k_acc: 0.062500, humaneval_acc: 0.062500
+Step 00400/00651 | Training loss: 0.940977| lrm: 0.385561| num_tokens: 10,069
+Step 00401/00651 | Training loss: 0.582521| lrm: 0.384025| num_tokens: 7,289
+Step 00402/00651 | Training loss: 0.763008| lrm: 0.382488| num_tokens: 11,261
+Step 00403/00651 | Training loss: 0.809487| lrm: 0.380952| num_tokens: 11,205
+Step 00404/00651 | Training loss: 0.803674| lrm: 0.379416| num_tokens: 11,058
+Step 00405/00651 | Training loss: 0.862464| lrm: 0.377880| num_tokens: 9,965
+Step 00406/00651 | Training loss: 1.106367| lrm: 0.376344| num_tokens: 16,281
+Step 00407/00651 | Training loss: 1.184818| lrm: 0.374808| num_tokens: 13,582
+Step 00408/00651 | Training loss: 0.957893| lrm: 0.373272| num_tokens: 7,916
+Step 00409/00651 | Training loss: 0.664472| lrm: 0.371736| num_tokens: 8,979
+Step 00410/00651 | Training loss: 0.674008| lrm: 0.370200| num_tokens: 12,470
+Step 00411/00651 | Training loss: 0.999025| lrm: 0.368664| num_tokens: 14,287
+Step 00412/00651 | Training loss: 1.264735| lrm: 0.367127| num_tokens: 11,578
+Step 00413/00651 | Training loss: 0.983876| lrm: 0.365591| num_tokens: 10,583
+Step 00414/00651 | Training loss: 0.870341| lrm: 0.364055| num_tokens: 10,266
+Step 00415/00651 | Training loss: 1.548240| lrm: 0.362519| num_tokens: 12,067
+Step 00416/00651 | Training loss: 0.763205| lrm: 0.360983| num_tokens: 7,256
+Step 00417/00651 | Training loss: 0.882696| lrm: 0.359447| num_tokens: 9,756
+Step 00418/00651 | Training loss: 0.931991| lrm: 0.357911| num_tokens: 8,575
+Step 00419/00651 | Training loss: 0.564897| lrm: 0.356375| num_tokens: 10,529
+Step 00420/00651 | Training loss: 1.603098| lrm: 0.354839| num_tokens: 9,811
+Step 00421/00651 | Training loss: 0.929192| lrm: 0.353303| num_tokens: 12,358
+Step 00422/00651 | Training loss: 1.193098| lrm: 0.351767| num_tokens: 10,485
+Step 00423/00651 | Training loss: 1.218731| lrm: 0.350230| num_tokens: 10,488
+Step 00424/00651 | Training loss: 1.137134| lrm: 0.348694| num_tokens: 17,586
+Step 00425/00651 | Training loss: 0.817449| lrm: 0.347158| num_tokens: 7,351
+Step 00426/00651 | Training loss: 1.119099| lrm: 0.345622| num_tokens: 11,251
+Step 00427/00651 | Training loss: 0.778281| lrm: 0.344086| num_tokens: 11,875
+Step 00428/00651 | Training loss: 0.983540| lrm: 0.342550| num_tokens: 10,212
+Step 00429/00651 | Training loss: 1.047624| lrm: 0.341014| num_tokens: 10,681
+Step 00430/00651 | Training loss: 1.288209| lrm: 0.339478| num_tokens: 13,366
+Step 00431/00651 | Training loss: 0.771264| lrm: 0.337942| num_tokens: 15,619
+Step 00432/00651 | Training loss: 1.100706| lrm: 0.336406| num_tokens: 12,410
+Step 00433/00651 | Training loss: 0.881600| lrm: 0.334869| num_tokens: 5,852
+Step 00434/00651 | Training loss: 0.979290| lrm: 0.333333| num_tokens: 12,763
+Step 00435/00651 | Training loss: 1.137845| lrm: 0.331797| num_tokens: 10,625
+Step 00436/00651 | Training loss: 1.202814| lrm: 0.330261| num_tokens: 11,412
+Step 00437/00651 | Training loss: 0.510697| lrm: 0.328725| num_tokens: 6,892
+Step 00438/00651 | Training loss: 0.989086| lrm: 0.327189| num_tokens: 11,744
+Step 00439/00651 | Training loss: 0.915407| lrm: 0.325653| num_tokens: 8,341
+Step 00440/00651 | Training loss: 0.421643| lrm: 0.324117| num_tokens: 9,949
+Step 00441/00651 | Training loss: 0.690806| lrm: 0.322581| num_tokens: 7,434
+Step 00442/00651 | Training loss: 0.633499| lrm: 0.321045| num_tokens: 10,054
+Step 00443/00651 | Training loss: 1.645923| lrm: 0.319508| num_tokens: 15,539
+Step 00444/00651 | Training loss: 0.694031| lrm: 0.317972| num_tokens: 7,452
+Step 00445/00651 | Training loss: 1.062628| lrm: 0.316436| num_tokens: 8,791
+Step 00446/00651 | Training loss: 1.095940| lrm: 0.314900| num_tokens: 8,474
+Step 00447/00651 | Training loss: 1.231490| lrm: 0.313364| num_tokens: 12,295
+Step 00448/00651 | Training loss: 0.990970| lrm: 0.311828| num_tokens: 13,136
+Step 00449/00651 | Training loss: 1.172298| lrm: 0.310292| num_tokens: 12,925
+Step 00450/00651 | Training loss: 0.660452| lrm: 0.308756| num_tokens: 12,337
+Step 00451/00651 | Training loss: 1.304529| lrm: 0.307220| num_tokens: 11,883
+Step 00452/00651 | Training loss: 0.885555| lrm: 0.305684| num_tokens: 13,823
+Step 00453/00651 | Training loss: 0.577856| lrm: 0.304147| num_tokens: 10,518
+Step 00454/00651 | Training loss: 0.968875| lrm: 0.302611| num_tokens: 10,984
+Step 00455/00651 | Training loss: 0.812968| lrm: 0.301075| num_tokens: 5,678
+Step 00456/00651 | Training loss: 1.095630| lrm: 0.299539| num_tokens: 10,051
+Step 00457/00651 | Training loss: 1.407871| lrm: 0.298003| num_tokens: 11,420
+Step 00458/00651 | Training loss: 1.184854| lrm: 0.296467| num_tokens: 14,130
+Step 00459/00651 | Training loss: 1.014417| lrm: 0.294931| num_tokens: 11,706
+Step 00460/00651 | Training loss: 0.876379| lrm: 0.293395| num_tokens: 8,868
+Step 00461/00651 | Training loss: 1.093245| lrm: 0.291859| num_tokens: 8,654
+Step 00462/00651 | Training loss: 1.624707| lrm: 0.290323| num_tokens: 10,209
+Step 00463/00651 | Training loss: 1.225826| lrm: 0.288786| num_tokens: 11,255
+Step 00464/00651 | Training loss: 0.969976| lrm: 0.287250| num_tokens: 13,026
+Step 00465/00651 | Training loss: 0.643154| lrm: 0.285714| num_tokens: 13,317
+Step 00466/00651 | Training loss: 1.316452| lrm: 0.284178| num_tokens: 7,477
+Step 00467/00651 | Training loss: 0.809266| lrm: 0.282642| num_tokens: 13,697
+Step 00468/00651 | Training loss: 1.040024| lrm: 0.281106| num_tokens: 11,378
+Step 00469/00651 | Training loss: 1.460190| lrm: 0.279570| num_tokens: 13,922
+Step 00470/00651 | Training loss: 0.973316| lrm: 0.278034| num_tokens: 11,581
+Step 00471/00651 | Training loss: 0.675935| lrm: 0.276498| num_tokens: 9,393
+Step 00472/00651 | Training loss: 0.679254| lrm: 0.274962| num_tokens: 13,792
+Step 00473/00651 | Training loss: 0.731005| lrm: 0.273425| num_tokens: 13,795
+Step 00474/00651 | Training loss: 1.424688| lrm: 0.271889| num_tokens: 11,823
+Step 00475/00651 | Training loss: 0.949323| lrm: 0.270353| num_tokens: 13,836
+Step 00476/00651 | Training loss: 0.416524| lrm: 0.268817| num_tokens: 10,960
+Step 00477/00651 | Training loss: 0.520372| lrm: 0.267281| num_tokens: 9,906
+Step 00478/00651 | Training loss: 0.706868| lrm: 0.265745| num_tokens: 11,050
+Step 00479/00651 | Training loss: 0.314433| lrm: 0.264209| num_tokens: 9,703
+Step 00480/00651 | Training loss: 1.237196| lrm: 0.262673| num_tokens: 10,445
+Step 00481/00651 | Training loss: 0.641803| lrm: 0.261137| num_tokens: 11,124
+Step 00482/00651 | Training loss: 0.770679| lrm: 0.259601| num_tokens: 14,708
+Step 00483/00651 | Training loss: 0.960209| lrm: 0.258065| num_tokens: 10,922
+Step 00484/00651 | Training loss: 1.310853| lrm: 0.256528| num_tokens: 11,036
+Step 00485/00651 | Training loss: 1.028828| lrm: 0.254992| num_tokens: 16,815
+Step 00486/00651 | Training loss: 0.938201| lrm: 0.253456| num_tokens: 10,521
+Step 00487/00651 | Training loss: 0.934560| lrm: 0.251920| num_tokens: 8,584
+Step 00488/00651 | Training loss: 1.092606| lrm: 0.250384| num_tokens: 7,119
+Step 00489/00651 | Training loss: 0.968255| lrm: 0.248848| num_tokens: 10,807
+Step 00490/00651 | Training loss: 1.110758| lrm: 0.247312| num_tokens: 11,364
+Step 00491/00651 | Training loss: 0.831080| lrm: 0.245776| num_tokens: 12,647
+Step 00492/00651 | Training loss: 0.989548| lrm: 0.244240| num_tokens: 8,547
+Step 00493/00651 | Training loss: 1.266124| lrm: 0.242704| num_tokens: 8,837
+Step 00494/00651 | Training loss: 0.523362| lrm: 0.241167| num_tokens: 7,903
+Step 00495/00651 | Training loss: 0.904721| lrm: 0.239631| num_tokens: 10,706
+Step 00496/00651 | Training loss: 0.946558| lrm: 0.238095| num_tokens: 14,718
+Step 00497/00651 | Training loss: 1.402809| lrm: 0.236559| num_tokens: 11,346
+Step 00498/00651 | Training loss: 0.649695| lrm: 0.235023| num_tokens: 7,249
+Step 00499/00651 | Training loss: 1.164142| lrm: 0.233487| num_tokens: 14,019
+Step 00500 | Validation loss: 1.065234
+Step 00500/00651 | Training loss: 0.657305| lrm: 0.231951| num_tokens: 10,706
+Step 00501/00651 | Training loss: 1.156719| lrm: 0.230415| num_tokens: 14,290
+Step 00502/00651 | Training loss: 1.027068| lrm: 0.228879| num_tokens: 7,875
+Step 00503/00651 | Training loss: 0.969801| lrm: 0.227343| num_tokens: 9,390
+Step 00504/00651 | Training loss: 0.552575| lrm: 0.225806| num_tokens: 10,994
+Step 00505/00651 | Training loss: 0.606941| lrm: 0.224270| num_tokens: 11,543
+Step 00506/00651 | Training loss: 1.245293| lrm: 0.222734| num_tokens: 7,720
+Step 00507/00651 | Training loss: 1.113549| lrm: 0.221198| num_tokens: 11,644
+Step 00508/00651 | Training loss: 1.050334| lrm: 0.219662| num_tokens: 9,587
+Step 00509/00651 | Training loss: 0.767638| lrm: 0.218126| num_tokens: 10,730
+Step 00510/00651 | Training loss: 1.036582| lrm: 0.216590| num_tokens: 14,452
+Step 00511/00651 | Training loss: 1.223326| lrm: 0.215054| num_tokens: 10,391
+Step 00512/00651 | Training loss: 1.176702| lrm: 0.213518| num_tokens: 11,534
+Step 00513/00651 | Training loss: 0.836994| lrm: 0.211982| num_tokens: 8,954
+Step 00514/00651 | Training loss: 0.446312| lrm: 0.210445| num_tokens: 9,970
+Step 00515/00651 | Training loss: 0.675886| lrm: 0.208909| num_tokens: 12,328
+Step 00516/00651 | Training loss: 1.336569| lrm: 0.207373| num_tokens: 10,745
+Step 00517/00651 | Training loss: 0.869361| lrm: 0.205837| num_tokens: 9,896
+Step 00518/00651 | Training loss: 0.854440| lrm: 0.204301| num_tokens: 15,250
+Step 00519/00651 | Training loss: 1.123649| lrm: 0.202765| num_tokens: 6,959
+Step 00520/00651 | Training loss: 0.692642| lrm: 0.201229| num_tokens: 10,882
+Step 00521/00651 | Training loss: 0.912195| lrm: 0.199693| num_tokens: 11,517
+Step 00522/00651 | Training loss: 0.895710| lrm: 0.198157| num_tokens: 9,685
+Step 00523/00651 | Training loss: 0.824272| lrm: 0.196621| num_tokens: 12,653
+Step 00524/00651 | Training loss: 0.725048| lrm: 0.195084| num_tokens: 11,356
+Step 00525/00651 | Training loss: 0.695160| lrm: 0.193548| num_tokens: 15,198
+Step 00526/00651 | Training loss: 1.108894| lrm: 0.192012| num_tokens: 16,025
+Step 00527/00651 | Training loss: 1.003662| lrm: 0.190476| num_tokens: 19,734
+Step 00528/00651 | Training loss: 0.767753| lrm: 0.188940| num_tokens: 7,289
+Step 00529/00651 | Training loss: 0.763320| lrm: 0.187404| num_tokens: 10,688
+Step 00530/00651 | Training loss: 0.965712| lrm: 0.185868| num_tokens: 12,769
+Step 00531/00651 | Training loss: 0.643325| lrm: 0.184332| num_tokens: 10,135
+Step 00532/00651 | Training loss: 0.814166| lrm: 0.182796| num_tokens: 8,756
+Step 00533/00651 | Training loss: 0.759787| lrm: 0.181260| num_tokens: 13,664
+Step 00534/00651 | Training loss: 0.518095| lrm: 0.179724| num_tokens: 12,230
+Step 00535/00651 | Training loss: 0.993018| lrm: 0.178187| num_tokens: 9,711
+Step 00536/00651 | Training loss: 0.893143| lrm: 0.176651| num_tokens: 12,256
+Step 00537/00651 | Training loss: 0.648670| lrm: 0.175115| num_tokens: 13,063
+Step 00538/00651 | Training loss: 1.106228| lrm: 0.173579| num_tokens: 10,457
+Step 00539/00651 | Training loss: 1.328575| lrm: 0.172043| num_tokens: 8,718
+Step 00540/00651 | Training loss: 0.499493| lrm: 0.170507| num_tokens: 14,377
+Step 00541/00651 | Training loss: 0.985090| lrm: 0.168971| num_tokens: 8,559
+Step 00542/00651 | Training loss: 1.047263| lrm: 0.167435| num_tokens: 14,571
+Step 00543/00651 | Training loss: 0.956260| lrm: 0.165899| num_tokens: 8,908
+Step 00544/00651 | Training loss: 0.922240| lrm: 0.164363| num_tokens: 16,188
+Step 00545/00651 | Training loss: 0.891578| lrm: 0.162826| num_tokens: 7,703
+Step 00546/00651 | Training loss: 1.064786| lrm: 0.161290| num_tokens: 11,132
+Step 00547/00651 | Training loss: 0.967987| lrm: 0.159754| num_tokens: 8,526
+Step 00548/00651 | Training loss: 1.314349| lrm: 0.158218| num_tokens: 10,872
+Step 00549/00651 | Training loss: 0.979712| lrm: 0.156682| num_tokens: 10,465
+Step 00550/00651 | Training loss: 1.183554| lrm: 0.155146| num_tokens: 12,778
+Step 00551/00651 | Training loss: 0.748931| lrm: 0.153610| num_tokens: 9,183
+Step 00552/00651 | Training loss: 0.981518| lrm: 0.152074| num_tokens: 11,893
+Step 00553/00651 | Training loss: 1.004931| lrm: 0.150538| num_tokens: 12,204
+Step 00554/00651 | Training loss: 0.462969| lrm: 0.149002| num_tokens: 9,101
+Step 00555/00651 | Training loss: 1.064427| lrm: 0.147465| num_tokens: 10,504
+Step 00556/00651 | Training loss: 0.891077| lrm: 0.145929| num_tokens: 11,314
+Step 00557/00651 | Training loss: 1.308570| lrm: 0.144393| num_tokens: 8,084
+Step 00558/00651 | Training loss: 0.842071| lrm: 0.142857| num_tokens: 10,908
+Step 00559/00651 | Training loss: 1.021999| lrm: 0.141321| num_tokens: 9,322
+Step 00560/00651 | Training loss: 0.233250| lrm: 0.139785| num_tokens: 9,534
+Step 00561/00651 | Training loss: 1.251293| lrm: 0.138249| num_tokens: 10,250
+Step 00562/00651 | Training loss: 0.770117| lrm: 0.136713| num_tokens: 10,466
+Step 00563/00651 | Training loss: 0.986909| lrm: 0.135177| num_tokens: 7,877
+Step 00564/00651 | Training loss: 0.545905| lrm: 0.133641| num_tokens: 12,521
+Step 00565/00651 | Training loss: 0.994709| lrm: 0.132104| num_tokens: 14,790
+Step 00566/00651 | Training loss: 0.991344| lrm: 0.130568| num_tokens: 10,584
+Step 00567/00651 | Training loss: 0.712406| lrm: 0.129032| num_tokens: 12,756
+Step 00568/00651 | Training loss: 0.912248| lrm: 0.127496| num_tokens: 6,291
+Step 00569/00651 | Training loss: 0.944005| lrm: 0.125960| num_tokens: 13,739
+Step 00570/00651 | Training loss: 1.238751| lrm: 0.124424| num_tokens: 13,487
+Step 00571/00651 | Training loss: 1.159451| lrm: 0.122888| num_tokens: 15,943
+Step 00572/00651 | Training loss: 1.146570| lrm: 0.121352| num_tokens: 9,126
+Step 00573/00651 | Training loss: 1.362785| lrm: 0.119816| num_tokens: 9,410
+Step 00574/00651 | Training loss: 0.861776| lrm: 0.118280| num_tokens: 10,302
+Step 00575/00651 | Training loss: 0.722859| lrm: 0.116743| num_tokens: 8,533
+Step 00576/00651 | Training loss: 0.685002| lrm: 0.115207| num_tokens: 10,838
+Step 00577/00651 | Training loss: 0.745022| lrm: 0.113671| num_tokens: 8,396
+Step 00578/00651 | Training loss: 1.534990| lrm: 0.112135| num_tokens: 8,760
+Step 00579/00651 | Training loss: 1.069838| lrm: 0.110599| num_tokens: 16,439
+Step 00580/00651 | Training loss: 1.129733| lrm: 0.109063| num_tokens: 12,478
+Step 00581/00651 | Training loss: 0.864782| lrm: 0.107527| num_tokens: 10,076
+Step 00582/00651 | Training loss: 0.828955| lrm: 0.105991| num_tokens: 11,961
+Step 00583/00651 | Training loss: 0.544990| lrm: 0.104455| num_tokens: 7,089
+Step 00584/00651 | Training loss: 1.341971| lrm: 0.102919| num_tokens: 10,678
+Step 00585/00651 | Training loss: 1.176488| lrm: 0.101382| num_tokens: 13,253
+Step 00586/00651 | Training loss: 0.781817| lrm: 0.099846| num_tokens: 10,989
+Step 00587/00651 | Training loss: 0.563787| lrm: 0.098310| num_tokens: 13,932
+Step 00588/00651 | Training loss: 1.066153| lrm: 0.096774| num_tokens: 9,464
+Step 00589/00651 | Training loss: 0.598713| lrm: 0.095238| num_tokens: 9,538
+Step 00590/00651 | Training loss: 0.801782| lrm: 0.093702| num_tokens: 12,780
+Step 00591/00651 | Training loss: 1.001720| lrm: 0.092166| num_tokens: 9,249
+Step 00592/00651 | Training loss: 1.671608| lrm: 0.090630| num_tokens: 16,291
+Step 00593/00651 | Training loss: 0.536284| lrm: 0.089094| num_tokens: 7,282
+Step 00594/00651 | Training loss: 1.137530| lrm: 0.087558| num_tokens: 14,083
+Step 00595/00651 | Training loss: 1.265386| lrm: 0.086022| num_tokens: 15,910
+Step 00596/00651 | Training loss: 0.932292| lrm: 0.084485| num_tokens: 8,649
+Step 00597/00651 | Training loss: 0.620236| lrm: 0.082949| num_tokens: 12,808
+Step 00598/00651 | Training loss: 1.008139| lrm: 0.081413| num_tokens: 8,473
+Step 00599/00651 | Training loss: 2.158717| lrm: 0.079877| num_tokens: 9,837
+Step 00600 | Validation loss: 1.064965
+Final: 337/1024 (32.91%)
+Final: 375/1024 (36.62%)
+[KRank 0 | 0/1 (0.00%)[KRank 2 | 0/1 (0.00%)[KRank 7 | 0/1 (0.00%)[KRank 5 | 0/1 (0.00%)[KRank 0 | 0/2 (0.00%)[KRank 1 | 0/1 (0.00%)[KRank 7 | 0/2 (0.00%)[KRank 4 | 1/1 (100.00%)[KRank 3 | 0/1 (0.00%)[KRank 5 | 0/2 (0.00%)[KRank 0 | 0/3 (0.00%)[KRank 5 | 0/3 (0.00%)[KRank 3 | 1/2 (50.00%)[KRank 7 | 0/3 (0.00%)[KRank 0 | 1/4 (25.00%)[KRank 5 | 0/4 (0.00%)[KRank 3 | 1/3 (33.33%)[KRank 7 | 0/4 (0.00%)[KRank 1 | 0/2 (0.00%)[KRank 0 | 1/5 (20.00%)[KRank 6 | 0/1 (0.00%)[KRank 1 | 1/3 (33.33%)[KRank 7 | 0/5 (0.00%)[KRank 6 | 0/2 (0.00%)[KRank 7 | 0/6 (0.00%)[KRank 1 | 1/4 (25.00%)[KRank 4 | 1/2 (50.00%)[KRank 5 | 0/5 (0.00%)[KRank 2 | 0/2 (0.00%)[KRank 6 | 0/3 (0.00%)[KRank 1 | 1/5 (20.00%)[KRank 7 | 0/7 (0.00%)[KRank 2 | 1/3 (33.33%)[KRank 1 | 1/6 (16.67%)[KRank 7 | 0/8 (0.00%)
+[KRank 6 | 0/4 (0.00%)[KRank 6 | 0/5 (0.00%)[KRank 3 | 1/4 (25.00%)[KRank 0 | 1/6 (16.67%)[KRank 6 | 0/6 (0.00%)[KRank 0 | 1/7 (14.29%)[KRank 6 | 0/7 (0.00%)[KRank 0 | 1/8 (12.50%)
+[KRank 3 | 1/5 (20.00%)[KRank 6 | 0/8 (0.00%)
+[KRank 5 | 0/6 (0.00%)[KRank 4 | 1/3 (33.33%)[KRank 5 | 0/7 (0.00%)[KRank 2 | 1/4 (25.00%)[KRank 5 | 0/8 (0.00%)
+[KRank 1 | 1/7 (14.29%)[KRank 2 | 1/5 (20.00%)[KRank 4 | 1/4 (25.00%)[KRank 2 | 1/6 (16.67%)[KRank 2 | 1/7 (14.29%)[KRank 3 | 1/6 (16.67%)[KRank 3 | 1/7 (14.29%)[KRank 3 | 1/8 (12.50%)
+[KRank 1 | 1/8 (12.50%)
+[KRank 4 | 1/5 (20.00%)[KRank 2 | 1/8 (12.50%)
+[KRank 4 | 1/6 (16.67%)[KRank 4 | 1/7 (14.29%)[KRank 4 | 1/8 (12.50%)
+==================================================
+Final: 5/64 (7.81%)
+[KRank 5 | 0/1 (0.00%)[KRank 2 | 1/1 (100.00%)[KRank 0 | 0/1 (0.00%)[KRank 6 | 0/1 (0.00%)[KRank 5 | 0/2 (0.00%)[KRank 1 | 0/1 (0.00%)[KRank 3 | 0/1 (0.00%)[KRank 2 | 1/2 (50.00%)[KRank 0 | 0/2 (0.00%)[KRank 5 | 0/3 (0.00%)[KRank 6 | 0/2 (0.00%)[KRank 4 | 0/1 (0.00%)[KRank 1 | 0/2 (0.00%)[KRank 7 | 0/1 (0.00%)[KRank 0 | 0/3 (0.00%)[KRank 5 | 0/4 (0.00%)[KRank 6 | 0/3 (0.00%)[KRank 7 | 1/2 (50.00%)[KRank 3 | 0/2 (0.00%)[KRank 1 | 0/3 (0.00%)[KRank 0 | 0/4 (0.00%)[KRank 7 | 1/3 (33.33%)[KRank 3 | 0/3 (0.00%)[KRank 2 | 1/3 (33.33%)[KRank 0 | 0/5 (0.00%)[KRank 6 | 0/4 (0.00%)[KRank 1 | 0/4 (0.00%)[KRank 4 | 0/2 (0.00%)[KRank 3 | 0/4 (0.00%)[KRank 0 | 0/6 (0.00%)[KRank 5 | 0/5 (0.00%)[KRank 2 | 1/4 (25.00%)[KRank 1 | 0/5 (0.00%)[KRank 5 | 1/6 (16.67%)[KRank 4 | 0/3 (0.00%)[KRank 2 | 1/5 (20.00%)[KRank 7 | 1/4 (25.00%)[KRank 0 | 0/7 (0.00%)[KRank 1 | 0/6 (0.00%)[KRank 5 | 1/7 (14.29%)[KRank 7 | 1/5 (20.00%)[KRank 0 | 0/8 (0.00%)
+[KRank 1 | 1/7 (14.29%)[KRank 6 | 0/5 (0.00%)[KRank 3 | 0/5 (0.00%)[KRank 3 | 0/6 (0.00%)[KRank 3 | 0/7 (0.00%)[KRank 7 | 1/6 (16.67%)[KRank 4 | 0/4 (0.00%)[KRank 5 | 1/8 (12.50%)
+[KRank 3 | 0/8 (0.00%)[KRank 7 | 1/7 (14.29%)
+[KRank 2 | 1/6 (16.67%)[KRank 1 | 1/8 (12.50%)
+[KRank 6 | 0/6 (0.00%)[KRank 2 | 1/7 (14.29%)[KRank 6 | 0/7 (0.00%)[KRank 4 | 0/5 (0.00%)[KRank 6 | 0/8 (0.00%)
+[KRank 7 | 1/8 (12.50%)
+[KRank 4 | 0/6 (0.00%)[KRank 2 | 1/8 (12.50%)
+[KRank 4 | 0/7 (0.00%)[KRank 4 | 0/8 (0.00%)
+==================================================
+Final: 4/64 (6.25%)
+Step 00600 | mmlu_acc: 0.329102, arc_easy_acc: 0.366211, gsm8k_acc: 0.078125, humaneval_acc: 0.062500
+Step 00600/00651 | Training loss: 0.721537| lrm: 0.078341| num_tokens: 15,795
+Step 00601/00651 | Training loss: 1.448703| lrm: 0.076805| num_tokens: 7,592
+Step 00602/00651 | Training loss: 0.518008| lrm: 0.075269| num_tokens: 11,173
+Step 00603/00651 | Training loss: 0.597674| lrm: 0.073733| num_tokens: 10,357
+Step 00604/00651 | Training loss: 1.082867| lrm: 0.072197| num_tokens: 8,968
+Step 00605/00651 | Training loss: 0.981001| lrm: 0.070661| num_tokens: 14,177
+Step 00606/00651 | Training loss: 1.128885| lrm: 0.069124| num_tokens: 9,795
+Step 00607/00651 | Training loss: 0.726951| lrm: 0.067588| num_tokens: 10,651
+Step 00608/00651 | Training loss: 0.900737| lrm: 0.066052| num_tokens: 9,912
+Step 00609/00651 | Training loss: 0.859017| lrm: 0.064516| num_tokens: 11,179
+Step 00610/00651 | Training loss: 0.813746| lrm: 0.062980| num_tokens: 10,254
+Step 00611/00651 | Training loss: 0.856323| lrm: 0.061444| num_tokens: 10,447
+Step 00612/00651 | Training loss: 0.571160| lrm: 0.059908| num_tokens: 10,956
+Step 00613/00651 | Training loss: 1.410563| lrm: 0.058372| num_tokens: 10,613
+Step 00614/00651 | Training loss: 0.909469| lrm: 0.056836| num_tokens: 8,603
+Step 00615/00651 | Training loss: 0.816727| lrm: 0.055300| num_tokens: 9,507
+Step 00616/00651 | Training loss: 1.032832| lrm: 0.053763| num_tokens: 8,454
+Step 00617/00651 | Training loss: 0.872846| lrm: 0.052227| num_tokens: 10,053
+Step 00618/00651 | Training loss: 1.002175| lrm: 0.050691| num_tokens: 9,565
+Step 00619/00651 | Training loss: 0.895629| lrm: 0.049155| num_tokens: 12,420
+Step 00620/00651 | Training loss: 0.690156| lrm: 0.047619| num_tokens: 12,122
+Step 00621/00651 | Training loss: 0.762460| lrm: 0.046083| num_tokens: 10,023
+Step 00622/00651 | Training loss: 0.870724| lrm: 0.044547| num_tokens: 11,180
+Step 00623/00651 | Training loss: 1.373438| lrm: 0.043011| num_tokens: 12,840
+Step 00624/00651 | Training loss: 0.601471| lrm: 0.041475| num_tokens: 8,216
+Step 00625/00651 | Training loss: 1.082538| lrm: 0.039939| num_tokens: 9,814
+Step 00626/00651 | Training loss: 1.074885| lrm: 0.038402| num_tokens: 7,907
+Step 00627/00651 | Training loss: 0.620280| lrm: 0.036866| num_tokens: 11,923
+Step 00628/00651 | Training loss: 0.784870| lrm: 0.035330| num_tokens: 12,447
+Step 00629/00651 | Training loss: 1.181813| lrm: 0.033794| num_tokens: 13,878
+Step 00630/00651 | Training loss: 1.219939| lrm: 0.032258| num_tokens: 11,991
+Step 00631/00651 | Training loss: 0.450293| lrm: 0.030722| num_tokens: 7,544
+Step 00632/00651 | Training loss: 1.233630| lrm: 0.029186| num_tokens: 16,856
+Step 00633/00651 | Training loss: 0.624366| lrm: 0.027650| num_tokens: 8,286
+Step 00634/00651 | Training loss: 0.807477| lrm: 0.026114| num_tokens: 11,098
+Step 00635/00651 | Training loss: 0.814167| lrm: 0.024578| num_tokens: 10,807
+Step 00636/00651 | Training loss: 0.644548| lrm: 0.023041| num_tokens: 9,891
+Step 00637/00651 | Training loss: 0.597202| lrm: 0.021505| num_tokens: 10,200
+Step 00638/00651 | Training loss: 0.895882| lrm: 0.019969| num_tokens: 12,536
+Step 00639/00651 | Training loss: 1.192818| lrm: 0.018433| num_tokens: 10,384
+Step 00640/00651 | Training loss: 0.896399| lrm: 0.016897| num_tokens: 12,824
+Step 00641/00651 | Training loss: 0.525920| lrm: 0.015361| num_tokens: 8,300
+Step 00642/00651 | Training loss: 1.067824| lrm: 0.013825| num_tokens: 10,060
+Step 00643/00651 | Training loss: 1.061477| lrm: 0.012289| num_tokens: 12,403
+Step 00644/00651 | Training loss: 1.598729| lrm: 0.010753| num_tokens: 8,553
+Step 00645/00651 | Training loss: 1.295074| lrm: 0.009217| num_tokens: 12,359
+Step 00646/00651 | Training loss: 0.799822| lrm: 0.007680| num_tokens: 9,297
+Step 00647/00651 | Training loss: 0.767838| lrm: 0.006144| num_tokens: 12,760
+Step 00648/00651 | Training loss: 1.423278| lrm: 0.004608| num_tokens: 7,386
+Step 00649/00651 | Training loss: 1.207180| lrm: 0.003072| num_tokens: 11,678
+Step 00650 | Validation loss: 1.064841
+Final: 330/1024 (32.23%)
+Final: 376/1024 (36.72%)
+[KRank 0 | 0/1 (0.00%)[KRank 2 | 0/1 (0.00%)[KRank 5 | 0/1 (0.00%)[KRank 0 | 0/2 (0.00%)[KRank 7 | 0/1 (0.00%)[KRank 4 | 1/1 (100.00%)[KRank 3 | 0/1 (0.00%)[KRank 1 | 0/1 (0.00%)[KRank 7 | 0/2 (0.00%)[KRank 5 | 0/2 (0.00%)[KRank 0 | 0/3 (0.00%)[KRank 3 | 1/2 (50.00%)[KRank 5 | 0/3 (0.00%)[KRank 4 | 1/2 (50.00%)[KRank 0 | 1/4 (25.00%)[KRank 7 | 0/3 (0.00%)[KRank 5 | 0/4 (0.00%)[KRank 1 | 0/2 (0.00%)[KRank 3 | 1/3 (33.33%)[KRank 1 | 1/3 (33.33%)[KRank 0 | 1/5 (20.00%)[KRank 7 | 0/4 (0.00%)[KRank 3 | 1/4 (25.00%)[KRank 1 | 1/4 (25.00%)[KRank 7 | 0/5 (0.00%)[KRank 6 | 0/1 (0.00%)[KRank 1 | 1/5 (20.00%)[KRank 7 | 0/6 (0.00%)[KRank 2 | 0/2 (0.00%)[KRank 6 | 0/2 (0.00%)[KRank 1 | 1/6 (16.67%)[KRank 3 | 1/5 (20.00%)[KRank 2 | 1/3 (33.33%)[KRank 7 | 0/7 (0.00%)[KRank 6 | 0/3 (0.00%)[KRank 7 | 0/8 (0.00%)
+[KRank 5 | 0/5 (0.00%)[KRank 6 | 0/4 (0.00%)[KRank 4 | 1/3 (33.33%)[KRank 0 | 1/6 (16.67%)[KRank 6 | 0/5 (0.00%)[KRank 0 | 1/7 (14.29%)[KRank 6 | 0/6 (0.00%)[KRank 0 | 1/8 (12.50%)
+[KRank 3 | 1/6 (16.67%)[KRank 6 | 0/7 (0.00%)[KRank 1 | 1/7 (14.29%)[KRank 6 | 0/8 (0.00%)
+[KRank 2 | 1/4 (25.00%)[KRank 2 | 1/5 (20.00%)[KRank 5 | 0/6 (0.00%)[KRank 2 | 1/6 (16.67%)[KRank 5 | 0/7 (0.00%)[KRank 2 | 1/7 (14.29%)[KRank 4 | 1/4 (25.00%)[KRank 5 | 0/8 (0.00%)
+[KRank 3 | 1/7 (14.29%)[KRank 3 | 1/8 (12.50%)
+[KRank 1 | 1/8 (12.50%)
+[KRank 2 | 1/8 (12.50%)
+[KRank 4 | 1/5 (20.00%)[KRank 4 | 1/6 (16.67%)[KRank 4 | 1/7 (14.29%)[KRank 4 | 1/8 (12.50%)
+==================================================
+Final: 5/64 (7.81%)
+[KRank 0 | 0/1 (0.00%)[KRank 5 | 0/1 (0.00%)[KRank 6 | 0/1 (0.00%)[KRank 2 | 1/1 (100.00%)[KRank 5 | 0/2 (0.00%)[KRank 3 | 0/1 (0.00%)[KRank 1 | 0/1 (0.00%)[KRank 4 | 0/1 (0.00%)[KRank 0 | 0/2 (0.00%)[KRank 5 | 0/3 (0.00%)[KRank 2 | 1/2 (50.00%)[KRank 6 | 0/2 (0.00%)[KRank 7 | 0/1 (0.00%)[KRank 1 | 0/2 (0.00%)[KRank 0 | 0/3 (0.00%)[KRank 7 | 1/2 (50.00%)[KRank 5 | 0/4 (0.00%)[KRank 6 | 0/3 (0.00%)[KRank 3 | 0/2 (0.00%)[KRank 7 | 1/3 (33.33%)[KRank 0 | 0/4 (0.00%)[KRank 1 | 0/3 (0.00%)[KRank 3 | 0/3 (0.00%)[KRank 0 | 0/5 (0.00%)[KRank 4 | 0/2 (0.00%)[KRank 6 | 0/4 (0.00%)[KRank 2 | 1/3 (33.33%)[KRank 1 | 0/4 (0.00%)[KRank 0 | 0/6 (0.00%)[KRank 3 | 0/4 (0.00%)[KRank 5 | 0/5 (0.00%)[KRank 2 | 1/4 (25.00%)[KRank 1 | 0/5 (0.00%)[KRank 5 | 1/6 (16.67%)[KRank 4 | 0/3 (0.00%)[KRank 7 | 1/4 (25.00%)[KRank 0 | 0/7 (0.00%)[KRank 2 | 1/5 (20.00%)[KRank 7 | 1/5 (20.00%)[KRank 5 | 1/7 (14.29%)[KRank 0 | 0/8 (0.00%)
+[KRank 6 | 0/5 (0.00%)[KRank 3 | 0/5 (0.00%)[KRank 1 | 0/6 (0.00%)[KRank 7 | 1/6 (16.67%)[KRank 4 | 0/4 (0.00%)[KRank 3 | 0/6 (0.00%)[KRank 1 | 1/7 (14.29%)[KRank 5 | 1/8 (12.50%)
+[KRank 3 | 0/7 (0.00%)[KRank 7 | 1/7 (14.29%)[KRank 3 | 0/8 (0.00%)
+[KRank 2 | 1/6 (16.67%)[KRank 6 | 0/6 (0.00%)[KRank 2 | 1/7 (14.29%)[KRank 6 | 0/7 (0.00%)[KRank 4 | 0/5 (0.00%)[KRank 1 | 1/8 (12.50%)
+[KRank 6 | 0/8 (0.00%)
+[KRank 7 | 1/8 (12.50%)
+[KRank 4 | 0/6 (0.00%)[KRank 4 | 0/7 (0.00%)[KRank 2 | 1/8 (12.50%)
+[KRank 4 | 0/8 (0.00%)
+==================================================
+Final: 4/64 (6.25%)
+Step 00650 | mmlu_acc: 0.322266, arc_easy_acc: 0.367188, gsm8k_acc: 0.078125, humaneval_acc: 0.062500
+2025-10-15 11:42:09,641 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatsft_checkpoints/d20/model_000650.pt
+2025-10-15 11:42:09,641 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatsft_checkpoints/d20/meta_000650.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatsft_checkpoints/d20

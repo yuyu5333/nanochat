@@ -1,0 +1,2384 @@
+nohup: ignoring input
+W1015 14:16:21.495000 1372076 torch/distributed/run.py:774] 
+W1015 14:16:21.495000 1372076 torch/distributed/run.py:774] *****************************************
+W1015 14:16:21.495000 1372076 torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1015 14:16:21.495000 1372076 torch/distributed/run.py:774] *****************************************
+Overriding: run = dummy
+2025-10-15 14:16:31,224 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 8
+2025-10-15 14:16:31,226 - nanochat.checkpoint_manager - [32m[1mINFO[0m - No model tag provided, guessing model tag: d20
+2025-10-15 14:16:31,226 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Loading model from /root/.cache/nanochat/chatsft_checkpoints/d20 with step 650
+2025-10-15 14:16:32,259 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Building model with config: {'sequence_len': 2048, 'vocab_size': 65536, 'n_layer': 20, 'n_head': 10, 'n_kv_head': 10, 'n_embd': 1280}
+Calculated number of steps: 467
+Scaling the LR for the AdamW parameters ∝1/√(1280/768) = 0.774597
+Muon: Grouping 80 params of shape torch.Size([1280, 1280]), device cuda:0, dtype torch.float32
+Muon: Grouping 20 params of shape torch.Size([1280, 5120]), device cuda:0, dtype torch.float32
+Muon: Grouping 20 params of shape torch.Size([5120, 1280]), device cuda:0, dtype torch.float32
+Total sequences per step: 256
+Calculated examples per rank: 2
+Step 0 | Pass@1: 0.0200, Pass@2: 0.0250, Pass@3: 0.0450, Pass@4: 0.0750, Pass@5: 0.1025, Pass@6: 0.1150, Pass@7: 0.1350, Pass@8: 0.1500
+Step 0/467 | Example step 0 | Pass 0 | loss: -0.007654 | Average reward: 0.125
+Step 0/467 | Example step 0 | Pass 1 | loss: -0.003050 | Average reward: 0.125
+Step 0/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 0/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 0/467 | Average reward: 0.01953125 | Average sequence length: 207.73
+Step 1/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 1/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 1/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 1/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 1/467 | Average reward: 0.01171875 | Average sequence length: 196.74
+Step 2/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 2/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 2/467 | Example step 1 | Pass 0 | loss: -0.018112 | Average reward: 0.0
+Step 2/467 | Example step 1 | Pass 1 | loss: 0.003813 | Average reward: 0.125
+Step 2/467 | Average reward: 0.015625 | Average sequence length: 178.92
+Step 3/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 3/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 3/467 | Example step 1 | Pass 0 | loss: 0.006215 | Average reward: 0.125
+Step 3/467 | Example step 1 | Pass 1 | loss: -0.010637 | Average reward: 0.0
+Step 3/467 | Average reward: 0.015625 | Average sequence length: 183.61
+Step 4/467 | Example step 0 | Pass 0 | loss: -0.011127 | Average reward: 0.0
+Step 4/467 | Example step 0 | Pass 1 | loss: 0.018680 | Average reward: 0.125
+Step 4/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 4/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 4/467 | Average reward: 0.015625 | Average sequence length: 171.35
+Step 5/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 5/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 5/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 5/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 5/467 | Average reward: 0.00390625 | Average sequence length: 169.77
+Step 6/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 6/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 6/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 6/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 6/467 | Average reward: 0.03125 | Average sequence length: 147.20
+Step 7/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 7/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 7/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 7/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 7/467 | Average reward: 0.00390625 | Average sequence length: 177.61
+Step 8/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 8/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 8/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 8/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 8/467 | Average reward: 0.03125 | Average sequence length: 173.52
+Step 9/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 9/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 9/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 9/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 9/467 | Average reward: 0.03515625 | Average sequence length: 152.46
+Step 10/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 10/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 10/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 10/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 10/467 | Average reward: 0.0234375 | Average sequence length: 167.62
+Step 11/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 11/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 11/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 11/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 11/467 | Average reward: 0.0078125 | Average sequence length: 183.15
+Step 12/467 | Example step 0 | Pass 0 | loss: 0.010462 | Average reward: 0.25
+Step 12/467 | Example step 0 | Pass 1 | loss: -0.011256 | Average reward: 0.125
+Step 12/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 12/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 12/467 | Average reward: 0.02734375 | Average sequence length: 169.40
+Step 13/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 13/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 13/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 13/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 13/467 | Average reward: 0.01953125 | Average sequence length: 188.42
+Step 14/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 14/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 14/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 14/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 14/467 | Average reward: 0.01953125 | Average sequence length: 175.97
+Step 15/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 15/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 15/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 15/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 15/467 | Average reward: 0.0390625 | Average sequence length: 169.34
+Step 16/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 16/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 16/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 16/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 16/467 | Average reward: 0.0078125 | Average sequence length: 180.87
+Step 17/467 | Example step 0 | Pass 0 | loss: -0.018324 | Average reward: 0.125
+Step 17/467 | Example step 0 | Pass 1 | loss: 0.027995 | Average reward: 0.125
+Step 17/467 | Example step 1 | Pass 0 | loss: -0.016069 | Average reward: 0.0
+Step 17/467 | Example step 1 | Pass 1 | loss: 0.013778 | Average reward: 0.125
+Step 17/467 | Average reward: 0.046875 | Average sequence length: 175.80
+Step 18/467 | Example step 0 | Pass 0 | loss: -0.013747 | Average reward: 0.0
+Step 18/467 | Example step 0 | Pass 1 | loss: 0.001386 | Average reward: 0.125
+Step 18/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 18/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 18/467 | Average reward: 0.0234375 | Average sequence length: 154.15
+Step 19/467 | Example step 0 | Pass 0 | loss: -0.029300 | Average reward: 0.0
+Step 19/467 | Example step 0 | Pass 1 | loss: 0.004932 | Average reward: 0.375
+Step 19/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 19/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 19/467 | Average reward: 0.0390625 | Average sequence length: 147.70
+Step 20/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 20/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 20/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 20/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 20/467 | Average reward: 0.015625 | Average sequence length: 182.81
+Step 21/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 21/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 21/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 21/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 21/467 | Average reward: 0.03515625 | Average sequence length: 196.56
+Step 22/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 22/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 22/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 22/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 22/467 | Average reward: 0.0078125 | Average sequence length: 152.58
+Step 23/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 23/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 23/467 | Example step 1 | Pass 0 | loss: -0.013125 | Average reward: 0.0
+Step 23/467 | Example step 1 | Pass 1 | loss: 0.005240 | Average reward: 0.125
+Step 23/467 | Average reward: 0.01953125 | Average sequence length: 166.20
+Step 24/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 24/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 24/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 24/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 24/467 | Average reward: 0.015625 | Average sequence length: 173.16
+Step 25/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 25/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 25/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 25/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 25/467 | Average reward: 0.03515625 | Average sequence length: 165.18
+Step 26/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 26/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 26/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 26/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 26/467 | Average reward: 0.02734375 | Average sequence length: 143.43
+Step 27/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 27/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 27/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 27/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 27/467 | Average reward: 0.04296875 | Average sequence length: 147.79
+Step 28/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 28/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 28/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 28/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 28/467 | Average reward: 0.03515625 | Average sequence length: 172.64
+Step 29/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 29/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 29/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 29/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 29/467 | Average reward: 0.03515625 | Average sequence length: 161.04
+Step 30/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 30/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 30/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 30/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 30/467 | Average reward: 0.0078125 | Average sequence length: 163.22
+Step 31/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 31/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 31/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 31/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 31/467 | Average reward: 0.015625 | Average sequence length: 154.88
+Step 32/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 32/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 32/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 32/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 32/467 | Average reward: 0.0234375 | Average sequence length: 167.48
+Step 33/467 | Example step 0 | Pass 0 | loss: -0.011479 | Average reward: 0.0
+Step 33/467 | Example step 0 | Pass 1 | loss: 0.014859 | Average reward: 0.125
+Step 33/467 | Example step 1 | Pass 0 | loss: -0.014092 | Average reward: 0.0
+Step 33/467 | Example step 1 | Pass 1 | loss: 0.007422 | Average reward: 0.125
+Step 33/467 | Average reward: 0.0234375 | Average sequence length: 153.29
+Step 34/467 | Example step 0 | Pass 0 | loss: -0.030721 | Average reward: 0.125
+Step 34/467 | Example step 0 | Pass 1 | loss: 0.013002 | Average reward: 0.5
+Step 34/467 | Example step 1 | Pass 0 | loss: -0.002662 | Average reward: 0.125
+Step 34/467 | Example step 1 | Pass 1 | loss: -0.011243 | Average reward: 0.0
+Step 34/467 | Average reward: 0.03515625 | Average sequence length: 149.22
+Step 35/467 | Example step 0 | Pass 0 | loss: 0.021392 | Average reward: 0.25
+Step 35/467 | Example step 0 | Pass 1 | loss: -0.019630 | Average reward: 0.0
+Step 35/467 | Example step 1 | Pass 0 | loss: 0.012348 | Average reward: 0.125
+Step 35/467 | Example step 1 | Pass 1 | loss: -0.012463 | Average reward: 0.0
+Step 35/467 | Average reward: 0.02734375 | Average sequence length: 153.29
+Step 36/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 36/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 36/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 36/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 36/467 | Average reward: 0.015625 | Average sequence length: 159.93
+Step 37/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 37/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 37/467 | Example step 1 | Pass 0 | loss: 0.000708 | Average reward: 0.125
+Step 37/467 | Example step 1 | Pass 1 | loss: -0.008469 | Average reward: 0.0
+Step 37/467 | Average reward: 0.04296875 | Average sequence length: 134.59
+Step 38/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 38/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 38/467 | Example step 1 | Pass 0 | loss: -0.003142 | Average reward: 0.125
+Step 38/467 | Example step 1 | Pass 1 | loss: -0.003700 | Average reward: 0.125
+Step 38/467 | Average reward: 0.03515625 | Average sequence length: 146.81
+Step 39/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 39/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 39/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 39/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 39/467 | Average reward: 0.0234375 | Average sequence length: 152.20
+Step 40/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 40/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 40/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 40/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 40/467 | Average reward: 0.01953125 | Average sequence length: 149.52
+Step 41/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 41/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 41/467 | Example step 1 | Pass 0 | loss: -0.024997 | Average reward: 0.0
+Step 41/467 | Example step 1 | Pass 1 | loss: 0.012374 | Average reward: 0.375
+Step 41/467 | Average reward: 0.05078125 | Average sequence length: 147.13
+Step 42/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 42/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 42/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 42/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 42/467 | Average reward: 0.0390625 | Average sequence length: 149.25
+Step 43/467 | Example step 0 | Pass 0 | loss: -0.015225 | Average reward: 0.0
+Step 43/467 | Example step 0 | Pass 1 | loss: 0.001061 | Average reward: 0.125
+Step 43/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 43/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 43/467 | Average reward: 0.06640625 | Average sequence length: 154.49
+Step 44/467 | Example step 0 | Pass 0 | loss: -0.008030 | Average reward: 0.0
+Step 44/467 | Example step 0 | Pass 1 | loss: 0.005304 | Average reward: 0.125
+Step 44/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 44/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 44/467 | Average reward: 0.0390625 | Average sequence length: 141.05
+Step 45/467 | Example step 0 | Pass 0 | loss: -0.019844 | Average reward: 0.0
+Step 45/467 | Example step 0 | Pass 1 | loss: 0.015564 | Average reward: 0.25
+Step 45/467 | Example step 1 | Pass 0 | loss: -0.003196 | Average reward: 0.125
+Step 45/467 | Example step 1 | Pass 1 | loss: 0.010069 | Average reward: 0.125
+Step 45/467 | Average reward: 0.0625 | Average sequence length: 151.72
+Step 46/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 46/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 46/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 46/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 46/467 | Average reward: 0.02734375 | Average sequence length: 168.52
+Step 47/467 | Example step 0 | Pass 0 | loss: -0.000150 | Average reward: 0.125
+Step 47/467 | Example step 0 | Pass 1 | loss: -0.017744 | Average reward: 0.0
+Step 47/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 47/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 47/467 | Average reward: 0.02734375 | Average sequence length: 160.07
+Step 48/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 48/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 48/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 48/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 48/467 | Average reward: 0.0234375 | Average sequence length: 154.59
+Step 49/467 | Example step 0 | Pass 0 | loss: -0.010843 | Average reward: 0.0
+Step 49/467 | Example step 0 | Pass 1 | loss: 0.006115 | Average reward: 0.125
+Step 49/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 49/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 49/467 | Average reward: 0.0625 | Average sequence length: 132.52
+Step 50/467 | Example step 0 | Pass 0 | loss: 0.012981 | Average reward: 0.125
+Step 50/467 | Example step 0 | Pass 1 | loss: -0.010665 | Average reward: 0.0
+Step 50/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 50/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 50/467 | Average reward: 0.06640625 | Average sequence length: 148.55
+Step 51/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 51/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 51/467 | Example step 1 | Pass 0 | loss: -0.021021 | Average reward: 0.25
+Step 51/467 | Example step 1 | Pass 1 | loss: 0.010606 | Average reward: 0.375
+Step 51/467 | Average reward: 0.04296875 | Average sequence length: 151.74
+Step 52/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 52/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 52/467 | Example step 1 | Pass 0 | loss: -0.020782 | Average reward: 0.0
+Step 52/467 | Example step 1 | Pass 1 | loss: 0.010105 | Average reward: 0.25
+Step 52/467 | Average reward: 0.0625 | Average sequence length: 136.08
+Step 53/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 53/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 53/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 53/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 53/467 | Average reward: 0.0625 | Average sequence length: 130.44
+Step 54/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 54/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 54/467 | Example step 1 | Pass 0 | loss: 0.000162 | Average reward: 0.5
+Step 54/467 | Example step 1 | Pass 1 | loss: -0.026921 | Average reward: 0.25
+Step 54/467 | Average reward: 0.05078125 | Average sequence length: 148.43
+Step 55/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 55/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 55/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 55/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 55/467 | Average reward: 0.0390625 | Average sequence length: 142.07
+Step 56/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 56/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 56/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 56/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 56/467 | Average reward: 0.01953125 | Average sequence length: 163.66
+Step 57/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 57/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 57/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 57/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 57/467 | Average reward: 0.0546875 | Average sequence length: 140.68
+Step 58/467 | Example step 0 | Pass 0 | loss: -0.011053 | Average reward: 0.0
+Step 58/467 | Example step 0 | Pass 1 | loss: 0.003323 | Average reward: 0.125
+Step 58/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 58/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 58/467 | Average reward: 0.02734375 | Average sequence length: 167.54
+Step 59/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 59/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 59/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 59/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 59/467 | Average reward: 0.01953125 | Average sequence length: 156.91
+Step 60 | Pass@1: 0.0500, Pass@2: 0.0850, Pass@3: 0.1250, Pass@4: 0.1475, Pass@5: 0.1700, Pass@6: 0.1900, Pass@7: 0.2125, Pass@8: 0.2175
+Step 60/467 | Example step 0 | Pass 0 | loss: -0.007949 | Average reward: 0.0
+Step 60/467 | Example step 0 | Pass 1 | loss: -0.000969 | Average reward: 0.125
+Step 60/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 60/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 60/467 | Average reward: 0.0390625 | Average sequence length: 163.27
+2025-10-15 14:27:41,132 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatrl_checkpoints/d20/model_000060.pt
+2025-10-15 14:27:41,133 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatrl_checkpoints/d20/meta_000060.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatrl_checkpoints/d20
+Step 61/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 61/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 61/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 61/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 61/467 | Average reward: 0.03125 | Average sequence length: 135.95
+Step 62/467 | Example step 0 | Pass 0 | loss: 0.006811 | Average reward: 0.125
+Step 62/467 | Example step 0 | Pass 1 | loss: -0.009519 | Average reward: 0.0
+Step 62/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 62/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 62/467 | Average reward: 0.015625 | Average sequence length: 164.55
+Step 63/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 63/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 63/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 63/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 63/467 | Average reward: 0.046875 | Average sequence length: 141.77
+Step 64/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 64/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 64/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 64/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 64/467 | Average reward: 0.00390625 | Average sequence length: 164.38
+Step 65/467 | Example step 0 | Pass 0 | loss: -0.010237 | Average reward: 0.0
+Step 65/467 | Example step 0 | Pass 1 | loss: 0.006703 | Average reward: 0.125
+Step 65/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 65/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 65/467 | Average reward: 0.01953125 | Average sequence length: 165.18
+Step 66/467 | Example step 0 | Pass 0 | loss: 0.006424 | Average reward: 0.375
+Step 66/467 | Example step 0 | Pass 1 | loss: -0.031036 | Average reward: 0.0
+Step 66/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 66/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 66/467 | Average reward: 0.03125 | Average sequence length: 155.98
+Step 67/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 67/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 67/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 67/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 67/467 | Average reward: 0.03515625 | Average sequence length: 165.78
+Step 68/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 68/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 68/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 68/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 68/467 | Average reward: 0.0234375 | Average sequence length: 157.09
+Step 69/467 | Example step 0 | Pass 0 | loss: -0.005572 | Average reward: 0.0
+Step 69/467 | Example step 0 | Pass 1 | loss: 0.007508 | Average reward: 0.125
+Step 69/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 69/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 69/467 | Average reward: 0.03125 | Average sequence length: 150.98
+Step 70/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 70/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 70/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 70/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 70/467 | Average reward: 0.01171875 | Average sequence length: 157.13
+Step 71/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 71/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 71/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 71/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 71/467 | Average reward: 0.03125 | Average sequence length: 160.36
+Step 72/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 72/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 72/467 | Example step 1 | Pass 0 | loss: -0.006029 | Average reward: 0.125
+Step 72/467 | Example step 1 | Pass 1 | loss: -0.011463 | Average reward: 0.125
+Step 72/467 | Average reward: 0.11328125 | Average sequence length: 158.56
+Step 73/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 73/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 73/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 73/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 73/467 | Average reward: 0.0234375 | Average sequence length: 179.29
+Step 74/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 74/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 74/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 74/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 74/467 | Average reward: 0.00390625 | Average sequence length: 162.34
+Step 75/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 75/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 75/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 75/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 75/467 | Average reward: 0.078125 | Average sequence length: 137.34
+Step 76/467 | Example step 0 | Pass 0 | loss: 0.011743 | Average reward: 0.125
+Step 76/467 | Example step 0 | Pass 1 | loss: -0.005765 | Average reward: 0.0
+Step 76/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 76/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 76/467 | Average reward: 0.05078125 | Average sequence length: 147.16
+Step 77/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 77/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 77/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 77/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 77/467 | Average reward: 0.06640625 | Average sequence length: 143.08
+Step 78/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 78/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 78/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 78/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 78/467 | Average reward: 0.03125 | Average sequence length: 154.35
+Step 79/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 79/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 79/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 79/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 79/467 | Average reward: 0.03125 | Average sequence length: 157.75
+Step 80/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 80/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 80/467 | Example step 1 | Pass 0 | loss: -0.002946 | Average reward: 0.125
+Step 80/467 | Example step 1 | Pass 1 | loss: -0.003702 | Average reward: 0.125
+Step 80/467 | Average reward: 0.0390625 | Average sequence length: 172.60
+Step 81/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 81/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 81/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 81/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 81/467 | Average reward: 0.0234375 | Average sequence length: 155.34
+Step 82/467 | Example step 0 | Pass 0 | loss: 0.010613 | Average reward: 0.125
+Step 82/467 | Example step 0 | Pass 1 | loss: -0.005599 | Average reward: 0.0
+Step 82/467 | Example step 1 | Pass 0 | loss: 0.002573 | Average reward: 0.375
+Step 82/467 | Example step 1 | Pass 1 | loss: -0.018067 | Average reward: 0.125
+Step 82/467 | Average reward: 0.08203125 | Average sequence length: 147.94
+Step 83/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 83/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 83/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 83/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 83/467 | Average reward: 0.046875 | Average sequence length: 169.05
+Step 84/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 84/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 84/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 84/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 84/467 | Average reward: 0.0625 | Average sequence length: 171.00
+Step 85/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 85/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 85/467 | Example step 1 | Pass 0 | loss: 0.004914 | Average reward: 0.125
+Step 85/467 | Example step 1 | Pass 1 | loss: -0.005778 | Average reward: 0.0
+Step 85/467 | Average reward: 0.05859375 | Average sequence length: 153.68
+Step 86/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 86/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 86/467 | Example step 1 | Pass 0 | loss: -0.005972 | Average reward: 0.0
+Step 86/467 | Example step 1 | Pass 1 | loss: 0.011546 | Average reward: 0.125
+Step 86/467 | Average reward: 0.04296875 | Average sequence length: 161.29
+Step 87/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 87/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 87/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 87/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 87/467 | Average reward: 0.015625 | Average sequence length: 162.51
+Step 88/467 | Example step 0 | Pass 0 | loss: -0.024146 | Average reward: 0.5
+Step 88/467 | Example step 0 | Pass 1 | loss: 0.009497 | Average reward: 0.875
+Step 88/467 | Example step 1 | Pass 0 | loss: 0.011749 | Average reward: 0.125
+Step 88/467 | Example step 1 | Pass 1 | loss: -0.006085 | Average reward: 0.0
+Step 88/467 | Average reward: 0.07421875 | Average sequence length: 153.81
+Step 89/467 | Example step 0 | Pass 0 | loss: 0.000036 | Average reward: 0.125
+Step 89/467 | Example step 0 | Pass 1 | loss: 0.000128 | Average reward: 0.125
+Step 89/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 89/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 89/467 | Average reward: 0.0546875 | Average sequence length: 173.62
+Step 90/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 90/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 90/467 | Example step 1 | Pass 0 | loss: -0.007285 | Average reward: 0.0
+Step 90/467 | Example step 1 | Pass 1 | loss: 0.024791 | Average reward: 0.125
+Step 90/467 | Average reward: 0.0390625 | Average sequence length: 157.46
+Step 91/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 91/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 91/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 91/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 91/467 | Average reward: 0.03515625 | Average sequence length: 158.02
+Step 92/467 | Example step 0 | Pass 0 | loss: 0.009869 | Average reward: 0.25
+Step 92/467 | Example step 0 | Pass 1 | loss: -0.010832 | Average reward: 0.0
+Step 92/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 92/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 92/467 | Average reward: 0.046875 | Average sequence length: 164.49
+Step 93/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 93/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 93/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 93/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 93/467 | Average reward: 0.03125 | Average sequence length: 154.07
+Step 94/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 94/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 94/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 94/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 94/467 | Average reward: 0.02734375 | Average sequence length: 168.86
+Step 95/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 95/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 95/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 95/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 95/467 | Average reward: 0.01953125 | Average sequence length: 154.21
+Step 96/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 96/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 96/467 | Example step 1 | Pass 0 | loss: -0.003850 | Average reward: 0.0
+Step 96/467 | Example step 1 | Pass 1 | loss: 0.010261 | Average reward: 0.125
+Step 96/467 | Average reward: 0.0625 | Average sequence length: 179.59
+Step 97/467 | Example step 0 | Pass 0 | loss: -0.023016 | Average reward: 0.125
+Step 97/467 | Example step 0 | Pass 1 | loss: 0.004942 | Average reward: 0.5
+Step 97/467 | Example step 1 | Pass 0 | loss: -0.001467 | Average reward: 0.25
+Step 97/467 | Example step 1 | Pass 1 | loss: -0.004453 | Average reward: 0.25
+Step 97/467 | Average reward: 0.06640625 | Average sequence length: 165.23
+Step 98/467 | Example step 0 | Pass 0 | loss: 0.004278 | Average reward: 0.125
+Step 98/467 | Example step 0 | Pass 1 | loss: -0.002945 | Average reward: 0.0
+Step 98/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 98/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 98/467 | Average reward: 0.10546875 | Average sequence length: 160.73
+Step 99/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 99/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 99/467 | Example step 1 | Pass 0 | loss: 0.005428 | Average reward: 0.125
+Step 99/467 | Example step 1 | Pass 1 | loss: -0.007931 | Average reward: 0.0
+Step 99/467 | Average reward: 0.0234375 | Average sequence length: 172.57
+Step 100/467 | Example step 0 | Pass 0 | loss: -0.006479 | Average reward: 0.0
+Step 100/467 | Example step 0 | Pass 1 | loss: 0.006255 | Average reward: 0.125
+Step 100/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 100/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 100/467 | Average reward: 0.046875 | Average sequence length: 176.83
+Step 101/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 101/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 101/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 101/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 101/467 | Average reward: 0.0390625 | Average sequence length: 166.85
+Step 102/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 102/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 102/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 102/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 102/467 | Average reward: 0.0234375 | Average sequence length: 173.89
+Step 103/467 | Example step 0 | Pass 0 | loss: 0.001377 | Average reward: 0.125
+Step 103/467 | Example step 0 | Pass 1 | loss: -0.005949 | Average reward: 0.0
+Step 103/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 103/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 103/467 | Average reward: 0.015625 | Average sequence length: 167.66
+Step 104/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 104/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 104/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 104/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 104/467 | Average reward: 0.02734375 | Average sequence length: 172.04
+Step 105/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 105/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 105/467 | Example step 1 | Pass 0 | loss: -0.009236 | Average reward: 0.0
+Step 105/467 | Example step 1 | Pass 1 | loss: 0.004407 | Average reward: 0.125
+Step 105/467 | Average reward: 0.04296875 | Average sequence length: 145.05
+Step 106/467 | Example step 0 | Pass 0 | loss: 0.002403 | Average reward: 0.125
+Step 106/467 | Example step 0 | Pass 1 | loss: -0.003687 | Average reward: 0.125
+Step 106/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 106/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 106/467 | Average reward: 0.01953125 | Average sequence length: 160.72
+Step 107/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 107/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 107/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 107/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 107/467 | Average reward: 0.05859375 | Average sequence length: 159.26
+Step 108/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 108/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 108/467 | Example step 1 | Pass 0 | loss: 0.007508 | Average reward: 0.125
+Step 108/467 | Example step 1 | Pass 1 | loss: -0.007430 | Average reward: 0.0
+Step 108/467 | Average reward: 0.03125 | Average sequence length: 168.35
+Step 109/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 109/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 109/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 109/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 109/467 | Average reward: 0.00390625 | Average sequence length: 171.42
+Step 110/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 110/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 110/467 | Example step 1 | Pass 0 | loss: 0.007568 | Average reward: 0.125
+Step 110/467 | Example step 1 | Pass 1 | loss: -0.009455 | Average reward: 0.0
+Step 110/467 | Average reward: 0.07421875 | Average sequence length: 179.38
+Step 111/467 | Example step 0 | Pass 0 | loss: 0.005817 | Average reward: 0.125
+Step 111/467 | Example step 0 | Pass 1 | loss: -0.007026 | Average reward: 0.0
+Step 111/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 111/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 111/467 | Average reward: 0.0234375 | Average sequence length: 163.88
+Step 112/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 112/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 112/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 112/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 112/467 | Average reward: 0.07421875 | Average sequence length: 179.13
+Step 113/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 113/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 113/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 113/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 113/467 | Average reward: 0.09765625 | Average sequence length: 176.05
+Step 114/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 114/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 114/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 114/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 114/467 | Average reward: 0.0390625 | Average sequence length: 199.92
+Step 115/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 115/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 115/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 115/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 115/467 | Average reward: 0.05859375 | Average sequence length: 152.04
+Step 116/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 116/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 116/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 116/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 116/467 | Average reward: 0.01953125 | Average sequence length: 167.37
+Step 117/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 117/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 117/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 117/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 117/467 | Average reward: 0.07421875 | Average sequence length: 160.17
+Step 118/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 118/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 118/467 | Example step 1 | Pass 0 | loss: -0.009140 | Average reward: 0.125
+Step 118/467 | Example step 1 | Pass 1 | loss: 0.005777 | Average reward: 0.375
+Step 118/467 | Average reward: 0.125 | Average sequence length: 159.12
+Step 119/467 | Example step 0 | Pass 0 | loss: 0.008832 | Average reward: 0.125
+Step 119/467 | Example step 0 | Pass 1 | loss: -0.004491 | Average reward: 0.0
+Step 119/467 | Example step 1 | Pass 0 | loss: 0.045809 | Average reward: 0.25
+Step 119/467 | Example step 1 | Pass 1 | loss: -0.013503 | Average reward: 0.0
+Step 119/467 | Average reward: 0.0703125 | Average sequence length: 148.17
+Step 120 | Pass@1: 0.0350, Pass@2: 0.0675, Pass@3: 0.0850, Pass@4: 0.1100, Pass@5: 0.1450, Pass@6: 0.1575, Pass@7: 0.1750, Pass@8: 0.1825
+Step 120/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 120/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 120/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 120/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 120/467 | Average reward: 0.0390625 | Average sequence length: 154.03
+2025-10-15 14:36:34,086 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatrl_checkpoints/d20/model_000120.pt
+2025-10-15 14:36:34,086 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatrl_checkpoints/d20/meta_000120.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatrl_checkpoints/d20
+Step 121/467 | Example step 0 | Pass 0 | loss: -0.006082 | Average reward: 0.125
+Step 121/467 | Example step 0 | Pass 1 | loss: -0.007882 | Average reward: 0.125
+Step 121/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 121/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 121/467 | Average reward: 0.01953125 | Average sequence length: 160.50
+Step 122/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 122/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 122/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 122/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 122/467 | Average reward: 0.0546875 | Average sequence length: 144.95
+Step 123/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 123/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 123/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 123/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 123/467 | Average reward: 0.05078125 | Average sequence length: 139.41
+Step 124/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 124/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 124/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 124/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 124/467 | Average reward: 0.00390625 | Average sequence length: 164.32
+Step 125/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 125/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 125/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 125/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 125/467 | Average reward: 0.0625 | Average sequence length: 138.11
+Step 126/467 | Example step 0 | Pass 0 | loss: -0.003905 | Average reward: 0.0
+Step 126/467 | Example step 0 | Pass 1 | loss: 0.000399 | Average reward: 0.125
+Step 126/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 126/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 126/467 | Average reward: 0.0234375 | Average sequence length: 183.37
+Step 127/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 127/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 127/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 127/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 127/467 | Average reward: 0.078125 | Average sequence length: 156.68
+Step 128/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 128/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 128/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 128/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 128/467 | Average reward: 0.07421875 | Average sequence length: 147.30
+Step 129/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 129/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 129/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 129/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 129/467 | Average reward: 0.0390625 | Average sequence length: 150.56
+Step 130/467 | Example step 0 | Pass 0 | loss: 0.015076 | Average reward: 0.25
+Step 130/467 | Example step 0 | Pass 1 | loss: -0.014857 | Average reward: 0.0
+Step 130/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 130/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 130/467 | Average reward: 0.09375 | Average sequence length: 153.82
+Step 131/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 131/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 131/467 | Example step 1 | Pass 0 | loss: -0.008145 | Average reward: 0.0
+Step 131/467 | Example step 1 | Pass 1 | loss: 0.003061 | Average reward: 0.125
+Step 131/467 | Average reward: 0.05859375 | Average sequence length: 147.75
+Step 132/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 132/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 132/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 132/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 132/467 | Average reward: 0.05859375 | Average sequence length: 143.91
+Step 133/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 133/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 133/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 133/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 133/467 | Average reward: 0.0234375 | Average sequence length: 150.89
+Step 134/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 134/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 134/467 | Example step 1 | Pass 0 | loss: -0.005242 | Average reward: 0.0
+Step 134/467 | Example step 1 | Pass 1 | loss: 0.004563 | Average reward: 0.125
+Step 134/467 | Average reward: 0.078125 | Average sequence length: 129.62
+Step 135/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 135/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 135/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 135/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 135/467 | Average reward: 0.05078125 | Average sequence length: 135.13
+Step 136/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 136/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 136/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 136/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 136/467 | Average reward: 0.015625 | Average sequence length: 131.28
+Step 137/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 137/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 137/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 137/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 137/467 | Average reward: 0.0234375 | Average sequence length: 152.23
+Step 138/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 138/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 138/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 138/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 138/467 | Average reward: 0.03515625 | Average sequence length: 137.84
+Step 139/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 139/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 139/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 139/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 139/467 | Average reward: 0.1171875 | Average sequence length: 161.60
+Step 140/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 140/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 140/467 | Example step 1 | Pass 0 | loss: -0.002028 | Average reward: 0.25
+Step 140/467 | Example step 1 | Pass 1 | loss: -0.009114 | Average reward: 0.125
+Step 140/467 | Average reward: 0.0390625 | Average sequence length: 153.12
+Step 141/467 | Example step 0 | Pass 0 | loss: -0.002085 | Average reward: 0.125
+Step 141/467 | Example step 0 | Pass 1 | loss: 0.002646 | Average reward: 0.25
+Step 141/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 141/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 141/467 | Average reward: 0.046875 | Average sequence length: 138.38
+Step 142/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 142/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 142/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 142/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 142/467 | Average reward: 0.09765625 | Average sequence length: 124.01
+Step 143/467 | Example step 0 | Pass 0 | loss: -0.008583 | Average reward: 0.0
+Step 143/467 | Example step 0 | Pass 1 | loss: 0.010117 | Average reward: 0.125
+Step 143/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 143/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 143/467 | Average reward: 0.01171875 | Average sequence length: 161.53
+Step 144/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 144/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 144/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 144/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 144/467 | Average reward: 0.0546875 | Average sequence length: 139.91
+Step 145/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 145/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 145/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 145/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 145/467 | Average reward: 0.04296875 | Average sequence length: 128.99
+Step 146/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 146/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 146/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 146/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 146/467 | Average reward: 0.0703125 | Average sequence length: 155.35
+Step 147/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 147/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 147/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 147/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 147/467 | Average reward: 0.03125 | Average sequence length: 144.90
+Step 148/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 148/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 148/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 148/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 148/467 | Average reward: 0.046875 | Average sequence length: 136.56
+Step 149/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 149/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 149/467 | Example step 1 | Pass 0 | loss: -0.009262 | Average reward: 0.0
+Step 149/467 | Example step 1 | Pass 1 | loss: 0.004412 | Average reward: 0.125
+Step 149/467 | Average reward: 0.02734375 | Average sequence length: 137.32
+Step 150/467 | Example step 0 | Pass 0 | loss: 0.000827 | Average reward: 0.25
+Step 150/467 | Example step 0 | Pass 1 | loss: -0.003565 | Average reward: 0.125
+Step 150/467 | Example step 1 | Pass 0 | loss: 0.004354 | Average reward: 0.125
+Step 150/467 | Example step 1 | Pass 1 | loss: -0.005443 | Average reward: 0.0
+Step 150/467 | Average reward: 0.09765625 | Average sequence length: 149.73
+Step 151/467 | Example step 0 | Pass 0 | loss: 0.009545 | Average reward: 0.125
+Step 151/467 | Example step 0 | Pass 1 | loss: -0.006553 | Average reward: 0.0
+Step 151/467 | Example step 1 | Pass 0 | loss: -0.003002 | Average reward: 0.125
+Step 151/467 | Example step 1 | Pass 1 | loss: 0.005956 | Average reward: 0.125
+Step 151/467 | Average reward: 0.046875 | Average sequence length: 127.42
+Step 152/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 152/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 152/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 152/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 152/467 | Average reward: 0.0078125 | Average sequence length: 131.14
+Step 153/467 | Example step 0 | Pass 0 | loss: 0.001592 | Average reward: 0.125
+Step 153/467 | Example step 0 | Pass 1 | loss: 0.005296 | Average reward: 0.125
+Step 153/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 153/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 153/467 | Average reward: 0.0390625 | Average sequence length: 133.88
+Step 154/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 154/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 154/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 154/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 154/467 | Average reward: 0.06640625 | Average sequence length: 148.38
+Step 155/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 155/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 155/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 155/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 155/467 | Average reward: 0.03125 | Average sequence length: 135.56
+Step 156/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 156/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 156/467 | Example step 1 | Pass 0 | loss: -0.006958 | Average reward: 0.0
+Step 156/467 | Example step 1 | Pass 1 | loss: 0.003874 | Average reward: 0.125
+Step 156/467 | Average reward: 0.01171875 | Average sequence length: 135.86
+Step 157/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 157/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 157/467 | Example step 1 | Pass 0 | loss: 0.002680 | Average reward: 0.125
+Step 157/467 | Example step 1 | Pass 1 | loss: -0.007942 | Average reward: 0.0
+Step 157/467 | Average reward: 0.0234375 | Average sequence length: 133.17
+Step 158/467 | Example step 0 | Pass 0 | loss: -0.004007 | Average reward: 0.0
+Step 158/467 | Example step 0 | Pass 1 | loss: 0.004931 | Average reward: 0.125
+Step 158/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 158/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 158/467 | Average reward: 0.0546875 | Average sequence length: 144.95
+Step 159/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 159/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 159/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 159/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 159/467 | Average reward: 0.05859375 | Average sequence length: 147.16
+Step 160/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 160/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 160/467 | Example step 1 | Pass 0 | loss: -0.022796 | Average reward: 0.0
+Step 160/467 | Example step 1 | Pass 1 | loss: 0.012801 | Average reward: 0.5
+Step 160/467 | Average reward: 0.07421875 | Average sequence length: 126.71
+Step 161/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 161/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 161/467 | Example step 1 | Pass 0 | loss: -0.004345 | Average reward: 0.0
+Step 161/467 | Example step 1 | Pass 1 | loss: 0.010260 | Average reward: 0.125
+Step 161/467 | Average reward: 0.07421875 | Average sequence length: 124.62
+Step 162/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 162/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 162/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 162/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 162/467 | Average reward: 0.05859375 | Average sequence length: 142.46
+Step 163/467 | Example step 0 | Pass 0 | loss: -0.008468 | Average reward: 0.0
+Step 163/467 | Example step 0 | Pass 1 | loss: 0.003133 | Average reward: 0.125
+Step 163/467 | Example step 1 | Pass 0 | loss: 0.017080 | Average reward: 0.125
+Step 163/467 | Example step 1 | Pass 1 | loss: -0.005750 | Average reward: 0.0
+Step 163/467 | Average reward: 0.04296875 | Average sequence length: 140.00
+Step 164/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 164/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 164/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 164/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 164/467 | Average reward: 0.03515625 | Average sequence length: 138.27
+Step 165/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 165/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 165/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 165/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 165/467 | Average reward: 0.05078125 | Average sequence length: 143.33
+Step 166/467 | Example step 0 | Pass 0 | loss: -0.005275 | Average reward: 0.25
+Step 166/467 | Example step 0 | Pass 1 | loss: 0.004522 | Average reward: 0.375
+Step 166/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 166/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 166/467 | Average reward: 0.05859375 | Average sequence length: 134.62
+Step 167/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 167/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 167/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 167/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 167/467 | Average reward: 0.03515625 | Average sequence length: 142.29
+Step 168/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 168/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 168/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 168/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 168/467 | Average reward: 0.04296875 | Average sequence length: 134.31
+Step 169/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 169/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 169/467 | Example step 1 | Pass 0 | loss: 0.003331 | Average reward: 0.125
+Step 169/467 | Example step 1 | Pass 1 | loss: -0.006218 | Average reward: 0.0
+Step 169/467 | Average reward: 0.046875 | Average sequence length: 140.17
+Step 170/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 170/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 170/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 170/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 170/467 | Average reward: 0.01171875 | Average sequence length: 136.48
+Step 171/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 171/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 171/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 171/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 171/467 | Average reward: 0.03515625 | Average sequence length: 140.50
+Step 172/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 172/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 172/467 | Example step 1 | Pass 0 | loss: 0.008774 | Average reward: 0.125
+Step 172/467 | Example step 1 | Pass 1 | loss: -0.004016 | Average reward: 0.0
+Step 172/467 | Average reward: 0.015625 | Average sequence length: 131.09
+Step 173/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 173/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 173/467 | Example step 1 | Pass 0 | loss: -0.007392 | Average reward: 0.0
+Step 173/467 | Example step 1 | Pass 1 | loss: 0.008101 | Average reward: 0.125
+Step 173/467 | Average reward: 0.0546875 | Average sequence length: 144.04
+Step 174/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 174/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 174/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 174/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 174/467 | Average reward: 0.01953125 | Average sequence length: 133.08
+Step 175/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 175/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 175/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 175/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 175/467 | Average reward: 0.078125 | Average sequence length: 136.60
+Step 176/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 176/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 176/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 176/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 176/467 | Average reward: 0.07421875 | Average sequence length: 140.43
+Step 177/467 | Example step 0 | Pass 0 | loss: -0.008920 | Average reward: 0.375
+Step 177/467 | Example step 0 | Pass 1 | loss: 0.005153 | Average reward: 0.5
+Step 177/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 177/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 177/467 | Average reward: 0.06640625 | Average sequence length: 128.38
+Step 178/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 178/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 178/467 | Example step 1 | Pass 0 | loss: -0.002459 | Average reward: 0.0
+Step 178/467 | Example step 1 | Pass 1 | loss: 0.005905 | Average reward: 0.125
+Step 178/467 | Average reward: 0.046875 | Average sequence length: 134.46
+Step 179/467 | Example step 0 | Pass 0 | loss: 0.001802 | Average reward: 0.25
+Step 179/467 | Example step 0 | Pass 1 | loss: 0.001632 | Average reward: 0.125
+Step 179/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 179/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 179/467 | Average reward: 0.08203125 | Average sequence length: 128.04
+Step 180 | Pass@1: 0.0500, Pass@2: 0.0775, Pass@3: 0.1075, Pass@4: 0.1225, Pass@5: 0.1475, Pass@6: 0.1600, Pass@7: 0.1775, Pass@8: 0.1975
+Step 180/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 180/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 180/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 180/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 180/467 | Average reward: 0.01953125 | Average sequence length: 150.95
+2025-10-15 14:43:36,315 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatrl_checkpoints/d20/model_000180.pt
+2025-10-15 14:43:36,315 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatrl_checkpoints/d20/meta_000180.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatrl_checkpoints/d20
+Step 181/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 181/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 181/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 181/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 181/467 | Average reward: 0.03515625 | Average sequence length: 126.68
+Step 182/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 182/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 182/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 182/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 182/467 | Average reward: 0.07421875 | Average sequence length: 144.28
+Step 183/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 183/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 183/467 | Example step 1 | Pass 0 | loss: -0.014205 | Average reward: 0.125
+Step 183/467 | Example step 1 | Pass 1 | loss: 0.022437 | Average reward: 0.375
+Step 183/467 | Average reward: 0.09765625 | Average sequence length: 140.58
+Step 184/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 184/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 184/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 184/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 184/467 | Average reward: 0.08203125 | Average sequence length: 143.45
+Step 185/467 | Example step 0 | Pass 0 | loss: -0.000351 | Average reward: 0.125
+Step 185/467 | Example step 0 | Pass 1 | loss: -0.005888 | Average reward: 0.0
+Step 185/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 185/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 185/467 | Average reward: 0.03125 | Average sequence length: 134.61
+Step 186/467 | Example step 0 | Pass 0 | loss: -0.011247 | Average reward: 0.0
+Step 186/467 | Example step 0 | Pass 1 | loss: 0.023735 | Average reward: 0.25
+Step 186/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 186/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 186/467 | Average reward: 0.1875 | Average sequence length: 140.21
+Step 187/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 187/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 187/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 187/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 187/467 | Average reward: 0.0625 | Average sequence length: 139.10
+Step 188/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 188/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 188/467 | Example step 1 | Pass 0 | loss: 0.013385 | Average reward: 0.125
+Step 188/467 | Example step 1 | Pass 1 | loss: -0.002685 | Average reward: 0.0
+Step 188/467 | Average reward: 0.10546875 | Average sequence length: 139.42
+Step 189/467 | Example step 0 | Pass 0 | loss: 0.004629 | Average reward: 0.25
+Step 189/467 | Example step 0 | Pass 1 | loss: -0.007481 | Average reward: 0.125
+Step 189/467 | Example step 1 | Pass 0 | loss: -0.007439 | Average reward: 0.125
+Step 189/467 | Example step 1 | Pass 1 | loss: 0.003532 | Average reward: 0.375
+Step 189/467 | Average reward: 0.1015625 | Average sequence length: 134.59
+Step 190/467 | Example step 0 | Pass 0 | loss: 0.002059 | Average reward: 0.125
+Step 190/467 | Example step 0 | Pass 1 | loss: -0.004970 | Average reward: 0.0
+Step 190/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 190/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 190/467 | Average reward: 0.04296875 | Average sequence length: 138.09
+Step 191/467 | Example step 0 | Pass 0 | loss: 0.005808 | Average reward: 0.625
+Step 191/467 | Example step 0 | Pass 1 | loss: -0.018443 | Average reward: 0.125
+Step 191/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 191/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 191/467 | Average reward: 0.0703125 | Average sequence length: 154.74
+Step 192/467 | Example step 0 | Pass 0 | loss: 0.011361 | Average reward: 0.5
+Step 192/467 | Example step 0 | Pass 1 | loss: -0.009570 | Average reward: 0.25
+Step 192/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 192/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 192/467 | Average reward: 0.0234375 | Average sequence length: 146.81
+Step 193/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 193/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 193/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 193/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 193/467 | Average reward: 0.03125 | Average sequence length: 154.25
+Step 194/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 194/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 194/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 194/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 194/467 | Average reward: 0.0859375 | Average sequence length: 159.39
+Step 195/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 195/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 195/467 | Example step 1 | Pass 0 | loss: 0.036808 | Average reward: 0.25
+Step 195/467 | Example step 1 | Pass 1 | loss: -0.019499 | Average reward: 0.0
+Step 195/467 | Average reward: 0.05078125 | Average sequence length: 144.00
+Step 196/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 196/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 196/467 | Example step 1 | Pass 0 | loss: -0.002007 | Average reward: 0.125
+Step 196/467 | Example step 1 | Pass 1 | loss: -0.003192 | Average reward: 0.125
+Step 196/467 | Average reward: 0.08984375 | Average sequence length: 148.29
+Step 197/467 | Example step 0 | Pass 0 | loss: 0.001297 | Average reward: 0.125
+Step 197/467 | Example step 0 | Pass 1 | loss: -0.005110 | Average reward: 0.0
+Step 197/467 | Example step 1 | Pass 0 | loss: -0.003971 | Average reward: 0.0
+Step 197/467 | Example step 1 | Pass 1 | loss: 0.003018 | Average reward: 0.125
+Step 197/467 | Average reward: 0.0859375 | Average sequence length: 128.29
+Step 198/467 | Example step 0 | Pass 0 | loss: 0.010518 | Average reward: 0.625
+Step 198/467 | Example step 0 | Pass 1 | loss: -0.017497 | Average reward: 0.25
+Step 198/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 198/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 198/467 | Average reward: 0.0625 | Average sequence length: 168.54
+Step 199/467 | Example step 0 | Pass 0 | loss: -0.009489 | Average reward: 0.0
+Step 199/467 | Example step 0 | Pass 1 | loss: 0.009500 | Average reward: 0.25
+Step 199/467 | Example step 1 | Pass 0 | loss: 0.028229 | Average reward: 0.25
+Step 199/467 | Example step 1 | Pass 1 | loss: -0.014129 | Average reward: 0.0
+Step 199/467 | Average reward: 0.0546875 | Average sequence length: 140.24
+Step 200/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 200/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 200/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 200/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 200/467 | Average reward: 0.05078125 | Average sequence length: 142.41
+Step 201/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 201/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 201/467 | Example step 1 | Pass 0 | loss: -0.033392 | Average reward: 0.375
+Step 201/467 | Example step 1 | Pass 1 | loss: 0.015533 | Average reward: 0.875
+Step 201/467 | Average reward: 0.109375 | Average sequence length: 145.90
+Step 202/467 | Example step 0 | Pass 0 | loss: -0.003110 | Average reward: 0.125
+Step 202/467 | Example step 0 | Pass 1 | loss: -0.002066 | Average reward: 0.125
+Step 202/467 | Example step 1 | Pass 0 | loss: 0.001640 | Average reward: 0.125
+Step 202/467 | Example step 1 | Pass 1 | loss: -0.005904 | Average reward: 0.0
+Step 202/467 | Average reward: 0.0859375 | Average sequence length: 141.40
+Step 203/467 | Example step 0 | Pass 0 | loss: -0.008438 | Average reward: 0.125
+Step 203/467 | Example step 0 | Pass 1 | loss: -0.003547 | Average reward: 0.125
+Step 203/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 203/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 203/467 | Average reward: 0.08203125 | Average sequence length: 145.47
+Step 204/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 204/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 204/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 204/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 204/467 | Average reward: 0.015625 | Average sequence length: 163.12
+Step 205/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 205/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 205/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 205/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 205/467 | Average reward: 0.08203125 | Average sequence length: 137.29
+Step 206/467 | Example step 0 | Pass 0 | loss: 0.004434 | Average reward: 0.125
+Step 206/467 | Example step 0 | Pass 1 | loss: -0.003173 | Average reward: 0.0
+Step 206/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 206/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 206/467 | Average reward: 0.08984375 | Average sequence length: 146.69
+Step 207/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 207/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 207/467 | Example step 1 | Pass 0 | loss: 0.006209 | Average reward: 0.625
+Step 207/467 | Example step 1 | Pass 1 | loss: -0.009488 | Average reward: 0.25
+Step 207/467 | Average reward: 0.15234375 | Average sequence length: 139.15
+Step 208/467 | Example step 0 | Pass 0 | loss: -0.007729 | Average reward: 0.125
+Step 208/467 | Example step 0 | Pass 1 | loss: -0.002408 | Average reward: 0.375
+Step 208/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 208/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 208/467 | Average reward: 0.0859375 | Average sequence length: 155.02
+Step 209/467 | Example step 0 | Pass 0 | loss: -0.008932 | Average reward: 0.0
+Step 209/467 | Example step 0 | Pass 1 | loss: -0.000746 | Average reward: 0.25
+Step 209/467 | Example step 1 | Pass 0 | loss: 0.004972 | Average reward: 0.125
+Step 209/467 | Example step 1 | Pass 1 | loss: -0.011330 | Average reward: 0.0
+Step 209/467 | Average reward: 0.078125 | Average sequence length: 151.38
+Step 210/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 210/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 210/467 | Example step 1 | Pass 0 | loss: -0.012822 | Average reward: 0.625
+Step 210/467 | Example step 1 | Pass 1 | loss: -0.008989 | Average reward: 0.5
+Step 210/467 | Average reward: 0.06640625 | Average sequence length: 137.48
+Step 211/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 211/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 211/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 211/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 211/467 | Average reward: 0.1171875 | Average sequence length: 145.96
+Step 212/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 212/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 212/467 | Example step 1 | Pass 0 | loss: -0.013674 | Average reward: 0.125
+Step 212/467 | Example step 1 | Pass 1 | loss: -0.031581 | Average reward: 0.25
+Step 212/467 | Average reward: 0.03125 | Average sequence length: 170.36
+Step 213/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 213/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 213/467 | Example step 1 | Pass 0 | loss: 0.008949 | Average reward: 0.125
+Step 213/467 | Example step 1 | Pass 1 | loss: -0.000945 | Average reward: 0.125
+Step 213/467 | Average reward: 0.05078125 | Average sequence length: 138.54
+Step 214/467 | Example step 0 | Pass 0 | loss: 0.001952 | Average reward: 0.125
+Step 214/467 | Example step 0 | Pass 1 | loss: -0.003642 | Average reward: 0.0
+Step 214/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 214/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 214/467 | Average reward: 0.046875 | Average sequence length: 153.54
+Step 215/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 215/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 215/467 | Example step 1 | Pass 0 | loss: 0.011960 | Average reward: 0.375
+Step 215/467 | Example step 1 | Pass 1 | loss: -0.008847 | Average reward: 0.0
+Step 215/467 | Average reward: 0.0546875 | Average sequence length: 144.88
+Step 216/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 216/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 216/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 216/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 216/467 | Average reward: 0.08984375 | Average sequence length: 143.73
+Step 217/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 217/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 217/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 217/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 217/467 | Average reward: 0.07421875 | Average sequence length: 143.16
+Step 218/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 218/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 218/467 | Example step 1 | Pass 0 | loss: -0.004670 | Average reward: 0.0
+Step 218/467 | Example step 1 | Pass 1 | loss: 0.004074 | Average reward: 0.125
+Step 218/467 | Average reward: 0.14453125 | Average sequence length: 146.38
+Step 219/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 219/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 219/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 219/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 219/467 | Average reward: 0.0546875 | Average sequence length: 136.09
+Step 220/467 | Example step 0 | Pass 0 | loss: -0.008827 | Average reward: 0.0
+Step 220/467 | Example step 0 | Pass 1 | loss: 0.009492 | Average reward: 0.125
+Step 220/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 220/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 220/467 | Average reward: 0.0234375 | Average sequence length: 157.38
+Step 221/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 221/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 221/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 221/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 221/467 | Average reward: 0.02734375 | Average sequence length: 147.74
+Step 222/467 | Example step 0 | Pass 0 | loss: -0.008045 | Average reward: 0.0
+Step 222/467 | Example step 0 | Pass 1 | loss: 0.016985 | Average reward: 0.25
+Step 222/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 222/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 222/467 | Average reward: 0.09765625 | Average sequence length: 142.50
+Step 223/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 223/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 223/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 223/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 223/467 | Average reward: 0.01171875 | Average sequence length: 160.20
+Step 224/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 224/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 224/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 224/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 224/467 | Average reward: 0.0234375 | Average sequence length: 169.19
+Step 225/467 | Example step 0 | Pass 0 | loss: 0.003175 | Average reward: 0.125
+Step 225/467 | Example step 0 | Pass 1 | loss: -0.003852 | Average reward: 0.0
+Step 225/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 225/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 225/467 | Average reward: 0.0625 | Average sequence length: 148.89
+Step 226/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 226/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 226/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 226/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 226/467 | Average reward: 0.0703125 | Average sequence length: 141.46
+Step 227/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 227/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 227/467 | Example step 1 | Pass 0 | loss: -0.004949 | Average reward: 0.375
+Step 227/467 | Example step 1 | Pass 1 | loss: -0.007800 | Average reward: 0.5
+Step 227/467 | Average reward: 0.1171875 | Average sequence length: 153.44
+Step 228/467 | Example step 0 | Pass 0 | loss: -0.007029 | Average reward: 0.75
+Step 228/467 | Example step 0 | Pass 1 | loss: -0.027709 | Average reward: 0.375
+Step 228/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 228/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 228/467 | Average reward: 0.046875 | Average sequence length: 131.17
+Step 229/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 229/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 229/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 229/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 229/467 | Average reward: 0.03125 | Average sequence length: 148.31
+Step 230/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 230/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 230/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 230/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 230/467 | Average reward: 0.09375 | Average sequence length: 136.00
+Step 231/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 231/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 231/467 | Example step 1 | Pass 0 | loss: -0.003378 | Average reward: 0.25
+Step 231/467 | Example step 1 | Pass 1 | loss: -0.008476 | Average reward: 0.125
+Step 231/467 | Average reward: 0.1171875 | Average sequence length: 135.61
+Step 232/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 232/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 232/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 232/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 232/467 | Average reward: 0.0234375 | Average sequence length: 170.32
+Step 233/467 | Example step 0 | Pass 0 | loss: 0.008046 | Average reward: 0.5
+Step 233/467 | Example step 0 | Pass 1 | loss: -0.011188 | Average reward: 0.25
+Step 233/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 233/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 233/467 | Average reward: 0.078125 | Average sequence length: 148.40
+Step 234/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 234/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 234/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 234/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 234/467 | Average reward: 0.03125 | Average sequence length: 140.70
+Step 235/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 235/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 235/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 235/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 235/467 | Average reward: 0.11328125 | Average sequence length: 146.53
+Step 236/467 | Example step 0 | Pass 0 | loss: 0.004308 | Average reward: 0.125
+Step 236/467 | Example step 0 | Pass 1 | loss: -0.006272 | Average reward: 0.0
+Step 236/467 | Example step 1 | Pass 0 | loss: 0.003835 | Average reward: 0.125
+Step 236/467 | Example step 1 | Pass 1 | loss: -0.005277 | Average reward: 0.0
+Step 236/467 | Average reward: 0.0390625 | Average sequence length: 143.54
+Step 237/467 | Example step 0 | Pass 0 | loss: -0.003480 | Average reward: 0.125
+Step 237/467 | Example step 0 | Pass 1 | loss: -0.002606 | Average reward: 0.125
+Step 237/467 | Example step 1 | Pass 0 | loss: 0.003539 | Average reward: 0.875
+Step 237/467 | Example step 1 | Pass 1 | loss: -0.018229 | Average reward: 0.5
+Step 237/467 | Average reward: 0.08203125 | Average sequence length: 136.91
+Step 238/467 | Example step 0 | Pass 0 | loss: 0.003808 | Average reward: 0.375
+Step 238/467 | Example step 0 | Pass 1 | loss: -0.005964 | Average reward: 0.25
+Step 238/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 238/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 238/467 | Average reward: 0.10546875 | Average sequence length: 151.57
+Step 239/467 | Example step 0 | Pass 0 | loss: -0.005804 | Average reward: 0.0
+Step 239/467 | Example step 0 | Pass 1 | loss: 0.008675 | Average reward: 0.125
+Step 239/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 239/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 239/467 | Average reward: 0.08203125 | Average sequence length: 154.45
+Step 240 | Pass@1: 0.0550, Pass@2: 0.0875, Pass@3: 0.1225, Pass@4: 0.1350, Pass@5: 0.1575, Pass@6: 0.1775, Pass@7: 0.1975, Pass@8: 0.2100
+Step 240/467 | Example step 0 | Pass 0 | loss: 0.000441 | Average reward: 0.125
+Step 240/467 | Example step 0 | Pass 1 | loss: -0.002736 | Average reward: 0.0
+Step 240/467 | Example step 1 | Pass 0 | loss: 0.009044 | Average reward: 0.125
+Step 240/467 | Example step 1 | Pass 1 | loss: -0.004508 | Average reward: 0.0
+Step 240/467 | Average reward: 0.07421875 | Average sequence length: 130.59
+2025-10-15 14:51:07,530 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatrl_checkpoints/d20/model_000240.pt
+2025-10-15 14:51:07,530 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatrl_checkpoints/d20/meta_000240.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatrl_checkpoints/d20
+Step 241/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 241/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 241/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 241/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 241/467 | Average reward: 0.09765625 | Average sequence length: 130.55
+Step 242/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 242/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 242/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 242/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 242/467 | Average reward: 0.0078125 | Average sequence length: 136.02
+Step 243/467 | Example step 0 | Pass 0 | loss: -0.003784 | Average reward: 0.0
+Step 243/467 | Example step 0 | Pass 1 | loss: 0.008439 | Average reward: 0.125
+Step 243/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 243/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 243/467 | Average reward: 0.0078125 | Average sequence length: 142.68
+Step 244/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 244/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 244/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 244/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 244/467 | Average reward: 0.01953125 | Average sequence length: 154.72
+Step 245/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 245/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 245/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 245/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 245/467 | Average reward: 0.125 | Average sequence length: 152.59
+Step 246/467 | Example step 0 | Pass 0 | loss: 0.002835 | Average reward: 0.125
+Step 246/467 | Example step 0 | Pass 1 | loss: -0.007320 | Average reward: 0.0
+Step 246/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 246/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 246/467 | Average reward: 0.09375 | Average sequence length: 142.82
+Step 247/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 247/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 247/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 247/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 247/467 | Average reward: 0.02734375 | Average sequence length: 139.45
+Step 248/467 | Example step 0 | Pass 0 | loss: 0.008198 | Average reward: 0.875
+Step 248/467 | Example step 0 | Pass 1 | loss: -0.012303 | Average reward: 0.5
+Step 248/467 | Example step 1 | Pass 0 | loss: 0.004394 | Average reward: 0.125
+Step 248/467 | Example step 1 | Pass 1 | loss: -0.006342 | Average reward: 0.0
+Step 248/467 | Average reward: 0.08203125 | Average sequence length: 152.54
+Step 249/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 249/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 249/467 | Example step 1 | Pass 0 | loss: -0.003414 | Average reward: 0.0
+Step 249/467 | Example step 1 | Pass 1 | loss: 0.006636 | Average reward: 0.125
+Step 249/467 | Average reward: 0.04296875 | Average sequence length: 149.96
+Step 250/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 250/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 250/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 250/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 250/467 | Average reward: 0.08203125 | Average sequence length: 159.58
+Step 251/467 | Example step 0 | Pass 0 | loss: -0.003781 | Average reward: 0.0
+Step 251/467 | Example step 0 | Pass 1 | loss: 0.002356 | Average reward: 0.125
+Step 251/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 251/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 251/467 | Average reward: 0.08984375 | Average sequence length: 143.02
+Step 252/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 252/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 252/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 252/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 252/467 | Average reward: 0.03515625 | Average sequence length: 157.41
+Step 253/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 253/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 253/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 253/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 253/467 | Average reward: 0.08203125 | Average sequence length: 140.30
+Step 254/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 254/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 254/467 | Example step 1 | Pass 0 | loss: 0.010580 | Average reward: 0.125
+Step 254/467 | Example step 1 | Pass 1 | loss: -0.008239 | Average reward: 0.0
+Step 254/467 | Average reward: 0.16015625 | Average sequence length: 145.71
+Step 255/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 255/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 255/467 | Example step 1 | Pass 0 | loss: -0.007063 | Average reward: 0.625
+Step 255/467 | Example step 1 | Pass 1 | loss: -0.017906 | Average reward: 0.375
+Step 255/467 | Average reward: 0.078125 | Average sequence length: 138.54
+Step 256/467 | Example step 0 | Pass 0 | loss: 0.001855 | Average reward: 0.125
+Step 256/467 | Example step 0 | Pass 1 | loss: -0.005393 | Average reward: 0.0
+Step 256/467 | Example step 1 | Pass 0 | loss: 0.021008 | Average reward: 0.125
+Step 256/467 | Example step 1 | Pass 1 | loss: -0.008142 | Average reward: 0.0
+Step 256/467 | Average reward: 0.0703125 | Average sequence length: 140.96
+Step 257/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 257/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 257/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 257/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 257/467 | Average reward: 0.01171875 | Average sequence length: 146.85
+Step 258/467 | Example step 0 | Pass 0 | loss: -0.003299 | Average reward: 0.0
+Step 258/467 | Example step 0 | Pass 1 | loss: 0.004717 | Average reward: 0.125
+Step 258/467 | Example step 1 | Pass 0 | loss: 0.001204 | Average reward: 0.125
+Step 258/467 | Example step 1 | Pass 1 | loss: -0.004369 | Average reward: 0.0
+Step 258/467 | Average reward: 0.03515625 | Average sequence length: 139.54
+Step 259/467 | Example step 0 | Pass 0 | loss: 0.002717 | Average reward: 0.125
+Step 259/467 | Example step 0 | Pass 1 | loss: -0.006507 | Average reward: 0.0
+Step 259/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 259/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 259/467 | Average reward: 0.015625 | Average sequence length: 150.22
+Step 260/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 260/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 260/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 260/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 260/467 | Average reward: 0.125 | Average sequence length: 136.53
+Step 261/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 261/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 261/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 261/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 261/467 | Average reward: 0.015625 | Average sequence length: 152.73
+Step 262/467 | Example step 0 | Pass 0 | loss: -0.003572 | Average reward: 0.0
+Step 262/467 | Example step 0 | Pass 1 | loss: 0.004108 | Average reward: 0.125
+Step 262/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 262/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 262/467 | Average reward: 0.03515625 | Average sequence length: 162.04
+Step 263/467 | Example step 0 | Pass 0 | loss: 0.008546 | Average reward: 0.125
+Step 263/467 | Example step 0 | Pass 1 | loss: -0.007566 | Average reward: 0.0
+Step 263/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 263/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 263/467 | Average reward: 0.08203125 | Average sequence length: 144.45
+Step 264/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 264/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 264/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 264/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 264/467 | Average reward: 0.0234375 | Average sequence length: 143.15
+Step 265/467 | Example step 0 | Pass 0 | loss: -0.002971 | Average reward: 0.0
+Step 265/467 | Example step 0 | Pass 1 | loss: 0.001296 | Average reward: 0.125
+Step 265/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 265/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 265/467 | Average reward: 0.05078125 | Average sequence length: 135.15
+Step 266/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 266/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 266/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 266/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 266/467 | Average reward: 0.03515625 | Average sequence length: 158.60
+Step 267/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 267/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 267/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 267/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 267/467 | Average reward: 0.04296875 | Average sequence length: 151.55
+Step 268/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 268/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 268/467 | Example step 1 | Pass 0 | loss: -0.009118 | Average reward: 0.25
+Step 268/467 | Example step 1 | Pass 1 | loss: 0.005072 | Average reward: 0.25
+Step 268/467 | Average reward: 0.1015625 | Average sequence length: 158.61
+Step 269/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 269/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 269/467 | Example step 1 | Pass 0 | loss: -0.002605 | Average reward: 0.125
+Step 269/467 | Example step 1 | Pass 1 | loss: -0.005081 | Average reward: 0.125
+Step 269/467 | Average reward: 0.078125 | Average sequence length: 143.24
+Step 270/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 270/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 270/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 270/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 270/467 | Average reward: 0.05078125 | Average sequence length: 162.36
+Step 271/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 271/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 271/467 | Example step 1 | Pass 0 | loss: -0.004519 | Average reward: 0.0
+Step 271/467 | Example step 1 | Pass 1 | loss: 0.004255 | Average reward: 0.125
+Step 271/467 | Average reward: 0.0390625 | Average sequence length: 139.52
+Step 272/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 272/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 272/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 272/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 272/467 | Average reward: 0.03125 | Average sequence length: 153.91
+Step 273/467 | Example step 0 | Pass 0 | loss: 0.007624 | Average reward: 0.25
+Step 273/467 | Example step 0 | Pass 1 | loss: -0.007027 | Average reward: 0.0
+Step 273/467 | Example step 1 | Pass 0 | loss: 0.007491 | Average reward: 0.125
+Step 273/467 | Example step 1 | Pass 1 | loss: -0.005995 | Average reward: 0.0
+Step 273/467 | Average reward: 0.01171875 | Average sequence length: 141.24
+Step 274/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 274/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 274/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 274/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 274/467 | Average reward: 0.0234375 | Average sequence length: 154.88
+Step 275/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 275/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 275/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 275/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 275/467 | Average reward: 0.0859375 | Average sequence length: 139.31
+Step 276/467 | Example step 0 | Pass 0 | loss: 0.007739 | Average reward: 0.375
+Step 276/467 | Example step 0 | Pass 1 | loss: -0.021678 | Average reward: 0.0
+Step 276/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 276/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 276/467 | Average reward: 0.03125 | Average sequence length: 143.29
+Step 277/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 277/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 277/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 277/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 277/467 | Average reward: 0.06640625 | Average sequence length: 158.60
+Step 278/467 | Example step 0 | Pass 0 | loss: 0.003860 | Average reward: 0.125
+Step 278/467 | Example step 0 | Pass 1 | loss: 0.012791 | Average reward: 0.125
+Step 278/467 | Example step 1 | Pass 0 | loss: 0.001128 | Average reward: 0.375
+Step 278/467 | Example step 1 | Pass 1 | loss: -0.008193 | Average reward: 0.25
+Step 278/467 | Average reward: 0.0546875 | Average sequence length: 146.18
+Step 279/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 279/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 279/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 279/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 279/467 | Average reward: 0.046875 | Average sequence length: 151.58
+Step 280/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 280/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 280/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 280/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 280/467 | Average reward: 0.125 | Average sequence length: 142.56
+Step 281/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 281/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 281/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 281/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 281/467 | Average reward: 0.01171875 | Average sequence length: 169.05
+Step 282/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 282/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 282/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 282/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 282/467 | Average reward: 0.05078125 | Average sequence length: 142.87
+Step 283/467 | Example step 0 | Pass 0 | loss: -0.009222 | Average reward: 0.0
+Step 283/467 | Example step 0 | Pass 1 | loss: 0.012700 | Average reward: 0.25
+Step 283/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 283/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 283/467 | Average reward: 0.1171875 | Average sequence length: 132.26
+Step 284/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 284/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 284/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 284/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 284/467 | Average reward: 0.01953125 | Average sequence length: 147.01
+Step 285/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 285/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 285/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 285/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 285/467 | Average reward: 0.01953125 | Average sequence length: 134.89
+Step 286/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 286/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 286/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 286/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 286/467 | Average reward: 0.109375 | Average sequence length: 168.76
+Step 287/467 | Example step 0 | Pass 0 | loss: 0.001308 | Average reward: 0.25
+Step 287/467 | Example step 0 | Pass 1 | loss: 0.005438 | Average reward: 0.5
+Step 287/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 287/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 287/467 | Average reward: 0.08203125 | Average sequence length: 136.80
+Step 288/467 | Example step 0 | Pass 0 | loss: -0.007274 | Average reward: 0.125
+Step 288/467 | Example step 0 | Pass 1 | loss: 0.019776 | Average reward: 0.375
+Step 288/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 288/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 288/467 | Average reward: 0.02734375 | Average sequence length: 170.21
+Step 289/467 | Example step 0 | Pass 0 | loss: 0.004256 | Average reward: 0.125
+Step 289/467 | Example step 0 | Pass 1 | loss: -0.004444 | Average reward: 0.0
+Step 289/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 289/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 289/467 | Average reward: 0.1640625 | Average sequence length: 152.58
+Step 290/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 290/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 290/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 290/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 290/467 | Average reward: 0.1328125 | Average sequence length: 154.34
+Step 291/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 291/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 291/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 291/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 291/467 | Average reward: 0.0078125 | Average sequence length: 158.39
+Step 292/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 292/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 292/467 | Example step 1 | Pass 0 | loss: -0.016962 | Average reward: 0.5
+Step 292/467 | Example step 1 | Pass 1 | loss: -0.012938 | Average reward: 0.375
+Step 292/467 | Average reward: 0.07421875 | Average sequence length: 159.81
+Step 293/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 293/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 293/467 | Example step 1 | Pass 0 | loss: -0.005323 | Average reward: 0.0
+Step 293/467 | Example step 1 | Pass 1 | loss: 0.007775 | Average reward: 0.125
+Step 293/467 | Average reward: 0.03125 | Average sequence length: 160.27
+Step 294/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 294/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 294/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 294/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 294/467 | Average reward: 0.05859375 | Average sequence length: 159.98
+Step 295/467 | Example step 0 | Pass 0 | loss: 0.003275 | Average reward: 0.125
+Step 295/467 | Example step 0 | Pass 1 | loss: -0.003043 | Average reward: 0.0
+Step 295/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 295/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 295/467 | Average reward: 0.0625 | Average sequence length: 156.90
+Step 296/467 | Example step 0 | Pass 0 | loss: 0.005027 | Average reward: 0.125
+Step 296/467 | Example step 0 | Pass 1 | loss: -0.003851 | Average reward: 0.0
+Step 296/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 296/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 296/467 | Average reward: 0.078125 | Average sequence length: 147.12
+Step 297/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 297/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 297/467 | Example step 1 | Pass 0 | loss: 0.016706 | Average reward: 0.125
+Step 297/467 | Example step 1 | Pass 1 | loss: -0.003961 | Average reward: 0.0
+Step 297/467 | Average reward: 0.109375 | Average sequence length: 151.62
+Step 298/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 298/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 298/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 298/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 298/467 | Average reward: 0.02734375 | Average sequence length: 139.37
+Step 299/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 299/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 299/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 299/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 299/467 | Average reward: 0.03125 | Average sequence length: 139.97
+Step 300 | Pass@1: 0.0650, Pass@2: 0.0900, Pass@3: 0.1175, Pass@4: 0.1300, Pass@5: 0.1500, Pass@6: 0.1775, Pass@7: 0.1925, Pass@8: 0.1950
+Step 300/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 300/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 300/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 300/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 300/467 | Average reward: 0.02734375 | Average sequence length: 157.11
+2025-10-15 14:58:24,104 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatrl_checkpoints/d20/model_000300.pt
+2025-10-15 14:58:24,104 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatrl_checkpoints/d20/meta_000300.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatrl_checkpoints/d20
+Step 301/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 301/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 301/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 301/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 301/467 | Average reward: 0.0390625 | Average sequence length: 143.91
+Step 302/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 302/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 302/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 302/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 302/467 | Average reward: 0.04296875 | Average sequence length: 138.88
+Step 303/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 303/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 303/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 303/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 303/467 | Average reward: 0.046875 | Average sequence length: 167.40
+Step 304/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 304/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 304/467 | Example step 1 | Pass 0 | loss: -0.008335 | Average reward: 0.0
+Step 304/467 | Example step 1 | Pass 1 | loss: 0.000251 | Average reward: 0.25
+Step 304/467 | Average reward: 0.10546875 | Average sequence length: 139.09
+Step 305/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 305/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 305/467 | Example step 1 | Pass 0 | loss: -0.003460 | Average reward: 0.0
+Step 305/467 | Example step 1 | Pass 1 | loss: 0.019805 | Average reward: 0.125
+Step 305/467 | Average reward: 0.06640625 | Average sequence length: 140.49
+Step 306/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 306/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 306/467 | Example step 1 | Pass 0 | loss: 0.006591 | Average reward: 0.125
+Step 306/467 | Example step 1 | Pass 1 | loss: -0.005520 | Average reward: 0.0
+Step 306/467 | Average reward: 0.03515625 | Average sequence length: 139.89
+Step 307/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 307/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 307/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 307/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 307/467 | Average reward: 0.0703125 | Average sequence length: 148.82
+Step 308/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 308/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 308/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 308/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 308/467 | Average reward: 0.015625 | Average sequence length: 149.46
+Step 309/467 | Example step 0 | Pass 0 | loss: -0.011804 | Average reward: 0.625
+Step 309/467 | Example step 0 | Pass 1 | loss: -0.007012 | Average reward: 0.75
+Step 309/467 | Example step 1 | Pass 0 | loss: 0.008512 | Average reward: 0.25
+Step 309/467 | Example step 1 | Pass 1 | loss: -0.006106 | Average reward: 0.0
+Step 309/467 | Average reward: 0.08203125 | Average sequence length: 138.70
+Step 310/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 310/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 310/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 310/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 310/467 | Average reward: 0.125 | Average sequence length: 138.24
+Step 311/467 | Example step 0 | Pass 0 | loss: 0.007018 | Average reward: 0.25
+Step 311/467 | Example step 0 | Pass 1 | loss: -0.000825 | Average reward: 0.25
+Step 311/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 311/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 311/467 | Average reward: 0.08984375 | Average sequence length: 138.31
+Step 312/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 312/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 312/467 | Example step 1 | Pass 0 | loss: -0.001310 | Average reward: 0.125
+Step 312/467 | Example step 1 | Pass 1 | loss: -0.004051 | Average reward: 0.0
+Step 312/467 | Average reward: 0.07421875 | Average sequence length: 133.92
+Step 313/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 313/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 313/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 313/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 313/467 | Average reward: 0.0078125 | Average sequence length: 129.27
+Step 314/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 314/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 314/467 | Example step 1 | Pass 0 | loss: 0.007493 | Average reward: 0.25
+Step 314/467 | Example step 1 | Pass 1 | loss: -0.008388 | Average reward: 0.0
+Step 314/467 | Average reward: 0.0078125 | Average sequence length: 137.01
+Step 315/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 315/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 315/467 | Example step 1 | Pass 0 | loss: 0.013581 | Average reward: 0.125
+Step 315/467 | Example step 1 | Pass 1 | loss: -0.004125 | Average reward: 0.0
+Step 315/467 | Average reward: 0.0234375 | Average sequence length: 151.46
+Step 316/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 316/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 316/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 316/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 316/467 | Average reward: 0.04296875 | Average sequence length: 121.35
+Step 317/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 317/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 317/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 317/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 317/467 | Average reward: 0.05078125 | Average sequence length: 155.74
+Step 318/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 318/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 318/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 318/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 318/467 | Average reward: 0.0078125 | Average sequence length: 146.93
+Step 319/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 319/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 319/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 319/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 319/467 | Average reward: 0.1015625 | Average sequence length: 127.22
+Step 320/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 320/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 320/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 320/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 320/467 | Average reward: 0.04296875 | Average sequence length: 155.92
+Step 321/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 321/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 321/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 321/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 321/467 | Average reward: 0.0 | Average sequence length: 146.36
+Step 322/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 322/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 322/467 | Example step 1 | Pass 0 | loss: 0.022879 | Average reward: 0.25
+Step 322/467 | Example step 1 | Pass 1 | loss: -0.009315 | Average reward: 0.0
+Step 322/467 | Average reward: 0.0390625 | Average sequence length: 127.90
+Step 323/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 323/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 323/467 | Example step 1 | Pass 0 | loss: -0.001826 | Average reward: 0.0
+Step 323/467 | Example step 1 | Pass 1 | loss: 0.001468 | Average reward: 0.125
+Step 323/467 | Average reward: 0.0703125 | Average sequence length: 141.56
+Step 324/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 324/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 324/467 | Example step 1 | Pass 0 | loss: 0.008616 | Average reward: 0.125
+Step 324/467 | Example step 1 | Pass 1 | loss: -0.003612 | Average reward: 0.0
+Step 324/467 | Average reward: 0.04296875 | Average sequence length: 127.75
+Step 325/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 325/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 325/467 | Example step 1 | Pass 0 | loss: 0.002926 | Average reward: 0.125
+Step 325/467 | Example step 1 | Pass 1 | loss: -0.002954 | Average reward: 0.0
+Step 325/467 | Average reward: 0.01953125 | Average sequence length: 141.11
+Step 326/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 326/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 326/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 326/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 326/467 | Average reward: 0.078125 | Average sequence length: 149.57
+Step 327/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 327/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 327/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 327/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 327/467 | Average reward: 0.0625 | Average sequence length: 145.44
+Step 328/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 328/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 328/467 | Example step 1 | Pass 0 | loss: 0.012752 | Average reward: 0.25
+Step 328/467 | Example step 1 | Pass 1 | loss: -0.005082 | Average reward: 0.0
+Step 328/467 | Average reward: 0.06640625 | Average sequence length: 141.67
+Step 329/467 | Example step 0 | Pass 0 | loss: 0.003518 | Average reward: 0.25
+Step 329/467 | Example step 0 | Pass 1 | loss: -0.010569 | Average reward: 0.0
+Step 329/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 329/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 329/467 | Average reward: 0.015625 | Average sequence length: 130.54
+Step 330/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 330/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 330/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 330/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 330/467 | Average reward: 0.125 | Average sequence length: 130.13
+Step 331/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 331/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 331/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 331/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 331/467 | Average reward: 0.08984375 | Average sequence length: 145.61
+Step 332/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 332/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 332/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 332/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 332/467 | Average reward: 0.015625 | Average sequence length: 136.30
+Step 333/467 | Example step 0 | Pass 0 | loss: -0.002218 | Average reward: 0.875
+Step 333/467 | Example step 0 | Pass 1 | loss: -0.013629 | Average reward: 0.75
+Step 333/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 333/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 333/467 | Average reward: 0.1328125 | Average sequence length: 128.56
+Step 334/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 334/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 334/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 334/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 334/467 | Average reward: 0.13671875 | Average sequence length: 122.84
+Step 335/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 335/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 335/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 335/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 335/467 | Average reward: 0.0 | Average sequence length: 149.37
+Step 336/467 | Example step 0 | Pass 0 | loss: -0.010433 | Average reward: 0.0
+Step 336/467 | Example step 0 | Pass 1 | loss: 0.006354 | Average reward: 0.25
+Step 336/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 336/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 336/467 | Average reward: 0.09375 | Average sequence length: 133.70
+Step 337/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 337/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 337/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 337/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 337/467 | Average reward: 0.171875 | Average sequence length: 125.47
+Step 338/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 338/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 338/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 338/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 338/467 | Average reward: 0.06640625 | Average sequence length: 144.93
+Step 339/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 339/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 339/467 | Example step 1 | Pass 0 | loss: -0.004941 | Average reward: 0.125
+Step 339/467 | Example step 1 | Pass 1 | loss: -0.001682 | Average reward: 0.125
+Step 339/467 | Average reward: 0.05859375 | Average sequence length: 130.77
+Step 340/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 340/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 340/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 340/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 340/467 | Average reward: 0.015625 | Average sequence length: 143.94
+Step 341/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 341/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 341/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 341/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 341/467 | Average reward: 0.11328125 | Average sequence length: 140.31
+Step 342/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 342/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 342/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 342/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 342/467 | Average reward: 0.03125 | Average sequence length: 143.94
+Step 343/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 343/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 343/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 343/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 343/467 | Average reward: 0.05078125 | Average sequence length: 141.61
+Step 344/467 | Example step 0 | Pass 0 | loss: -0.013289 | Average reward: 0.625
+Step 344/467 | Example step 0 | Pass 1 | loss: 0.004940 | Average reward: 0.75
+Step 344/467 | Example step 1 | Pass 0 | loss: -0.015677 | Average reward: 0.5
+Step 344/467 | Example step 1 | Pass 1 | loss: -0.013078 | Average reward: 0.5
+Step 344/467 | Average reward: 0.1875 | Average sequence length: 130.31
+Step 345/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 345/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 345/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 345/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 345/467 | Average reward: 0.0859375 | Average sequence length: 136.16
+Step 346/467 | Example step 0 | Pass 0 | loss: 0.003960 | Average reward: 0.125
+Step 346/467 | Example step 0 | Pass 1 | loss: -0.007037 | Average reward: 0.0
+Step 346/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 346/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 346/467 | Average reward: 0.09375 | Average sequence length: 129.65
+Step 347/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 347/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 347/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 347/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 347/467 | Average reward: 0.015625 | Average sequence length: 137.82
+Step 348/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 348/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 348/467 | Example step 1 | Pass 0 | loss: -0.007418 | Average reward: 0.625
+Step 348/467 | Example step 1 | Pass 1 | loss: -0.023203 | Average reward: 0.375
+Step 348/467 | Average reward: 0.12109375 | Average sequence length: 129.60
+Step 349/467 | Example step 0 | Pass 0 | loss: 0.007578 | Average reward: 0.25
+Step 349/467 | Example step 0 | Pass 1 | loss: 0.002195 | Average reward: 0.125
+Step 349/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 349/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 349/467 | Average reward: 0.046875 | Average sequence length: 136.47
+Step 350/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 350/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 350/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 350/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 350/467 | Average reward: 0.06640625 | Average sequence length: 145.78
+Step 351/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 351/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 351/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 351/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 351/467 | Average reward: 0.0546875 | Average sequence length: 132.59
+Step 352/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 352/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 352/467 | Example step 1 | Pass 0 | loss: 0.008580 | Average reward: 0.125
+Step 352/467 | Example step 1 | Pass 1 | loss: -0.003050 | Average reward: 0.0
+Step 352/467 | Average reward: 0.0234375 | Average sequence length: 133.16
+Step 353/467 | Example step 0 | Pass 0 | loss: -0.003782 | Average reward: 0.0
+Step 353/467 | Example step 0 | Pass 1 | loss: 0.008917 | Average reward: 0.125
+Step 353/467 | Example step 1 | Pass 0 | loss: -0.007581 | Average reward: 0.0
+Step 353/467 | Example step 1 | Pass 1 | loss: 0.009045 | Average reward: 0.25
+Step 353/467 | Average reward: 0.04296875 | Average sequence length: 135.74
+Step 354/467 | Example step 0 | Pass 0 | loss: -0.013500 | Average reward: 0.125
+Step 354/467 | Example step 0 | Pass 1 | loss: 0.016973 | Average reward: 0.5
+Step 354/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 354/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 354/467 | Average reward: 0.06640625 | Average sequence length: 133.29
+Step 355/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 355/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 355/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 355/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 355/467 | Average reward: 0.05859375 | Average sequence length: 126.90
+Step 356/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 356/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 356/467 | Example step 1 | Pass 0 | loss: -0.025653 | Average reward: 0.375
+Step 356/467 | Example step 1 | Pass 1 | loss: 0.003638 | Average reward: 0.5
+Step 356/467 | Average reward: 0.0625 | Average sequence length: 136.68
+Step 357/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 357/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 357/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 357/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 357/467 | Average reward: 0.06640625 | Average sequence length: 115.57
+Step 358/467 | Example step 0 | Pass 0 | loss: -0.003842 | Average reward: 0.375
+Step 358/467 | Example step 0 | Pass 1 | loss: -0.005302 | Average reward: 0.375
+Step 358/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 358/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 358/467 | Average reward: 0.109375 | Average sequence length: 139.74
+Step 359/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 359/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 359/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 359/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 359/467 | Average reward: 0.0390625 | Average sequence length: 119.74
+Step 360 | Pass@1: 0.0600, Pass@2: 0.0900, Pass@3: 0.1250, Pass@4: 0.1500, Pass@5: 0.1625, Pass@6: 0.1725, Pass@7: 0.1875, Pass@8: 0.2000
+Step 360/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 360/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 360/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 360/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 360/467 | Average reward: 0.05859375 | Average sequence length: 125.82
+2025-10-15 15:04:48,018 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatrl_checkpoints/d20/model_000360.pt
+2025-10-15 15:04:48,019 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatrl_checkpoints/d20/meta_000360.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatrl_checkpoints/d20
+Step 361/467 | Example step 0 | Pass 0 | loss: -0.004353 | Average reward: 0.0
+Step 361/467 | Example step 0 | Pass 1 | loss: 0.000823 | Average reward: 0.125
+Step 361/467 | Example step 1 | Pass 0 | loss: -0.003738 | Average reward: 0.125
+Step 361/467 | Example step 1 | Pass 1 | loss: -0.004532 | Average reward: 0.125
+Step 361/467 | Average reward: 0.0390625 | Average sequence length: 134.17
+Step 362/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 362/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 362/467 | Example step 1 | Pass 0 | loss: 0.001002 | Average reward: 0.125
+Step 362/467 | Example step 1 | Pass 1 | loss: 0.004586 | Average reward: 0.125
+Step 362/467 | Average reward: 0.01171875 | Average sequence length: 127.16
+Step 363/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 363/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 363/467 | Example step 1 | Pass 0 | loss: 0.000223 | Average reward: 0.125
+Step 363/467 | Example step 1 | Pass 1 | loss: 0.001145 | Average reward: 0.125
+Step 363/467 | Average reward: 0.06640625 | Average sequence length: 131.50
+Step 364/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 364/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 364/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 364/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 364/467 | Average reward: 0.08984375 | Average sequence length: 131.38
+Step 365/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 365/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 365/467 | Example step 1 | Pass 0 | loss: 0.008951 | Average reward: 0.125
+Step 365/467 | Example step 1 | Pass 1 | loss: -0.006508 | Average reward: 0.0
+Step 365/467 | Average reward: 0.08203125 | Average sequence length: 139.39
+Step 366/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 366/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 366/467 | Example step 1 | Pass 0 | loss: -0.004123 | Average reward: 0.0
+Step 366/467 | Example step 1 | Pass 1 | loss: 0.006429 | Average reward: 0.125
+Step 366/467 | Average reward: 0.02734375 | Average sequence length: 146.95
+Step 367/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 367/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 367/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 367/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 367/467 | Average reward: 0.0703125 | Average sequence length: 146.27
+Step 368/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 368/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 368/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 368/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 368/467 | Average reward: 0.05078125 | Average sequence length: 133.77
+Step 369/467 | Example step 0 | Pass 0 | loss: 0.002298 | Average reward: 0.125
+Step 369/467 | Example step 0 | Pass 1 | loss: -0.003251 | Average reward: 0.0
+Step 369/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 369/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 369/467 | Average reward: 0.10546875 | Average sequence length: 130.59
+Step 370/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 370/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 370/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 370/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 370/467 | Average reward: 0.078125 | Average sequence length: 139.40
+Step 371/467 | Example step 0 | Pass 0 | loss: -0.001942 | Average reward: 0.25
+Step 371/467 | Example step 0 | Pass 1 | loss: -0.005131 | Average reward: 0.125
+Step 371/467 | Example step 1 | Pass 0 | loss: -0.012199 | Average reward: 0.125
+Step 371/467 | Example step 1 | Pass 1 | loss: 0.007502 | Average reward: 0.375
+Step 371/467 | Average reward: 0.08984375 | Average sequence length: 134.30
+Step 372/467 | Example step 0 | Pass 0 | loss: -0.001739 | Average reward: 0.125
+Step 372/467 | Example step 0 | Pass 1 | loss: -0.007745 | Average reward: 0.0
+Step 372/467 | Example step 1 | Pass 0 | loss: -0.008466 | Average reward: 0.5
+Step 372/467 | Example step 1 | Pass 1 | loss: 0.007415 | Average reward: 0.875
+Step 372/467 | Average reward: 0.08203125 | Average sequence length: 134.87
+Step 373/467 | Example step 0 | Pass 0 | loss: -0.004097 | Average reward: 0.625
+Step 373/467 | Example step 0 | Pass 1 | loss: 0.000230 | Average reward: 0.75
+Step 373/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 373/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 373/467 | Average reward: 0.08984375 | Average sequence length: 127.05
+Step 374/467 | Example step 0 | Pass 0 | loss: -0.005556 | Average reward: 0.0
+Step 374/467 | Example step 0 | Pass 1 | loss: 0.003109 | Average reward: 0.125
+Step 374/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 374/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 374/467 | Average reward: 0.078125 | Average sequence length: 124.18
+Step 375/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 375/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 375/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 375/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 375/467 | Average reward: 0.16015625 | Average sequence length: 126.26
+Step 376/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 376/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 376/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 376/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 376/467 | Average reward: 0.14453125 | Average sequence length: 121.82
+Step 377/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 377/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 377/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 377/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 377/467 | Average reward: 0.1015625 | Average sequence length: 134.06
+Step 378/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 378/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 378/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 378/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 378/467 | Average reward: 0.10546875 | Average sequence length: 129.66
+Step 379/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 379/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 379/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 379/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 379/467 | Average reward: 0.03515625 | Average sequence length: 133.84
+Step 380/467 | Example step 0 | Pass 0 | loss: -0.006201 | Average reward: 0.0
+Step 380/467 | Example step 0 | Pass 1 | loss: 0.007703 | Average reward: 0.125
+Step 380/467 | Example step 1 | Pass 0 | loss: 0.013021 | Average reward: 0.5
+Step 380/467 | Example step 1 | Pass 1 | loss: 0.009905 | Average reward: 0.375
+Step 380/467 | Average reward: 0.11328125 | Average sequence length: 123.77
+Step 381/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 381/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 381/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 381/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 381/467 | Average reward: 0.125 | Average sequence length: 121.61
+Step 382/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 382/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 382/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 382/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 382/467 | Average reward: 0.03515625 | Average sequence length: 137.36
+Step 383/467 | Example step 0 | Pass 0 | loss: -0.006956 | Average reward: 0.625
+Step 383/467 | Example step 0 | Pass 1 | loss: -0.016355 | Average reward: 0.5
+Step 383/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 383/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 383/467 | Average reward: 0.1171875 | Average sequence length: 131.14
+Step 384/467 | Example step 0 | Pass 0 | loss: -0.009676 | Average reward: 0.0
+Step 384/467 | Example step 0 | Pass 1 | loss: 0.007205 | Average reward: 0.25
+Step 384/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 384/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 384/467 | Average reward: 0.0703125 | Average sequence length: 127.67
+Step 385/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 385/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 385/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 385/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 385/467 | Average reward: 0.04296875 | Average sequence length: 142.86
+Step 386/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 386/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 386/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 386/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 386/467 | Average reward: 0.140625 | Average sequence length: 145.62
+Step 387/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 387/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 387/467 | Example step 1 | Pass 0 | loss: -0.004276 | Average reward: 0.625
+Step 387/467 | Example step 1 | Pass 1 | loss: -0.005636 | Average reward: 0.625
+Step 387/467 | Average reward: 0.1796875 | Average sequence length: 137.54
+Step 388/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 388/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 388/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 388/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 388/467 | Average reward: 0.07421875 | Average sequence length: 136.18
+Step 389/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 389/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 389/467 | Example step 1 | Pass 0 | loss: -0.007498 | Average reward: 0.0
+Step 389/467 | Example step 1 | Pass 1 | loss: 0.007417 | Average reward: 0.125
+Step 389/467 | Average reward: 0.1796875 | Average sequence length: 122.62
+Step 390/467 | Example step 0 | Pass 0 | loss: -0.006855 | Average reward: 0.25
+Step 390/467 | Example step 0 | Pass 1 | loss: 0.009322 | Average reward: 0.75
+Step 390/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 390/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 390/467 | Average reward: 0.1015625 | Average sequence length: 129.80
+Step 391/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 391/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 391/467 | Example step 1 | Pass 0 | loss: -0.016007 | Average reward: 0.25
+Step 391/467 | Example step 1 | Pass 1 | loss: 0.019802 | Average reward: 0.75
+Step 391/467 | Average reward: 0.09765625 | Average sequence length: 130.64
+Step 392/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 392/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 392/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 392/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 392/467 | Average reward: 0.0546875 | Average sequence length: 147.71
+Step 393/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 393/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 393/467 | Example step 1 | Pass 0 | loss: -0.041031 | Average reward: 0.375
+Step 393/467 | Example step 1 | Pass 1 | loss: 0.021846 | Average reward: 1.0
+Step 393/467 | Average reward: 0.11328125 | Average sequence length: 156.09
+Step 394/467 | Example step 0 | Pass 0 | loss: 0.002919 | Average reward: 0.25
+Step 394/467 | Example step 0 | Pass 1 | loss: 0.001400 | Average reward: 0.125
+Step 394/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 394/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 394/467 | Average reward: 0.08203125 | Average sequence length: 144.05
+Step 395/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 395/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 395/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 395/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 395/467 | Average reward: 0.00390625 | Average sequence length: 158.52
+Step 396/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 396/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 396/467 | Example step 1 | Pass 0 | loss: 0.002062 | Average reward: 0.125
+Step 396/467 | Example step 1 | Pass 1 | loss: -0.005134 | Average reward: 0.0
+Step 396/467 | Average reward: 0.0546875 | Average sequence length: 123.09
+Step 397/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 397/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 397/467 | Example step 1 | Pass 0 | loss: 0.007936 | Average reward: 1.0
+Step 397/467 | Example step 1 | Pass 1 | loss: -0.020432 | Average reward: 0.625
+Step 397/467 | Average reward: 0.1171875 | Average sequence length: 123.86
+Step 398/467 | Example step 0 | Pass 0 | loss: -0.000219 | Average reward: 0.75
+Step 398/467 | Example step 0 | Pass 1 | loss: -0.010935 | Average reward: 0.5
+Step 398/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 398/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 398/467 | Average reward: 0.1171875 | Average sequence length: 134.18
+Step 399/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 399/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 399/467 | Example step 1 | Pass 0 | loss: 0.005955 | Average reward: 0.875
+Step 399/467 | Example step 1 | Pass 1 | loss: -0.002988 | Average reward: 0.75
+Step 399/467 | Average reward: 0.09375 | Average sequence length: 145.23
+Step 400/467 | Example step 0 | Pass 0 | loss: -0.008223 | Average reward: 0.5
+Step 400/467 | Example step 0 | Pass 1 | loss: 0.012822 | Average reward: 0.75
+Step 400/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 400/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 400/467 | Average reward: 0.05078125 | Average sequence length: 125.83
+Step 401/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 401/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 401/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 401/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 401/467 | Average reward: 0.06640625 | Average sequence length: 121.29
+Step 402/467 | Example step 0 | Pass 0 | loss: 0.002209 | Average reward: 0.375
+Step 402/467 | Example step 0 | Pass 1 | loss: -0.007482 | Average reward: 0.125
+Step 402/467 | Example step 1 | Pass 0 | loss: 0.003517 | Average reward: 0.875
+Step 402/467 | Example step 1 | Pass 1 | loss: -0.010139 | Average reward: 0.625
+Step 402/467 | Average reward: 0.18359375 | Average sequence length: 124.54
+Step 403/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 403/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 403/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 403/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 403/467 | Average reward: 0.046875 | Average sequence length: 139.71
+Step 404/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 404/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 404/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 404/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 404/467 | Average reward: 0.078125 | Average sequence length: 133.16
+Step 405/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 405/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 405/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 405/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 405/467 | Average reward: 0.19140625 | Average sequence length: 127.31
+Step 406/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 406/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 406/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 406/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 406/467 | Average reward: 0.01171875 | Average sequence length: 137.75
+Step 407/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 1.0
+Step 407/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 1.0
+Step 407/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 407/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 407/467 | Average reward: 0.16796875 | Average sequence length: 132.23
+Step 408/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 408/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 408/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 408/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 408/467 | Average reward: 0.0859375 | Average sequence length: 127.66
+Step 409/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 409/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 409/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 409/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 409/467 | Average reward: 0.0703125 | Average sequence length: 127.22
+Step 410/467 | Example step 0 | Pass 0 | loss: 0.001573 | Average reward: 0.375
+Step 410/467 | Example step 0 | Pass 1 | loss: -0.004086 | Average reward: 0.125
+Step 410/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 410/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 410/467 | Average reward: 0.01953125 | Average sequence length: 142.58
+Step 411/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 411/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 411/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 411/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 411/467 | Average reward: 0.02734375 | Average sequence length: 125.22
+Step 412/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 412/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 412/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 412/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 412/467 | Average reward: 0.06640625 | Average sequence length: 128.35
+Step 413/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 1.0
+Step 413/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 1.0
+Step 413/467 | Example step 1 | Pass 0 | loss: -0.000305 | Average reward: 0.375
+Step 413/467 | Example step 1 | Pass 1 | loss: -0.014996 | Average reward: 0.125
+Step 413/467 | Average reward: 0.125 | Average sequence length: 135.01
+Step 414/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 414/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 414/467 | Example step 1 | Pass 0 | loss: -0.017454 | Average reward: 0.625
+Step 414/467 | Example step 1 | Pass 1 | loss: -0.004105 | Average reward: 0.875
+Step 414/467 | Average reward: 0.05859375 | Average sequence length: 125.01
+Step 415/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 415/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 415/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 415/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 415/467 | Average reward: 0.06640625 | Average sequence length: 118.99
+Step 416/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 416/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 416/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 416/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 416/467 | Average reward: 0.15234375 | Average sequence length: 136.36
+Step 417/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 417/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 417/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 417/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 417/467 | Average reward: 0.0078125 | Average sequence length: 139.54
+Step 418/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 418/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 418/467 | Example step 1 | Pass 0 | loss: -0.000496 | Average reward: 0.125
+Step 418/467 | Example step 1 | Pass 1 | loss: -0.003549 | Average reward: 0.0
+Step 418/467 | Average reward: 0.0625 | Average sequence length: 132.79
+Step 419/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 419/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 419/467 | Example step 1 | Pass 0 | loss: -0.016765 | Average reward: 0.0
+Step 419/467 | Example step 1 | Pass 1 | loss: -0.000344 | Average reward: 0.25
+Step 419/467 | Average reward: 0.0390625 | Average sequence length: 141.79
+Step 420 | Pass@1: 0.0750, Pass@2: 0.1100, Pass@3: 0.1275, Pass@4: 0.1350, Pass@5: 0.1450, Pass@6: 0.1525, Pass@7: 0.1675, Pass@8: 0.1900
+Step 420/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 420/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 420/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 420/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 420/467 | Average reward: 0.03515625 | Average sequence length: 131.38
+2025-10-15 15:10:55,097 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatrl_checkpoints/d20/model_000420.pt
+2025-10-15 15:10:55,097 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatrl_checkpoints/d20/meta_000420.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatrl_checkpoints/d20
+Step 421/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 421/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 421/467 | Example step 1 | Pass 0 | loss: 0.003803 | Average reward: 0.125
+Step 421/467 | Example step 1 | Pass 1 | loss: -0.001669 | Average reward: 0.0
+Step 421/467 | Average reward: 0.09765625 | Average sequence length: 132.52
+Step 422/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 422/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 422/467 | Example step 1 | Pass 0 | loss: -0.011789 | Average reward: 0.375
+Step 422/467 | Example step 1 | Pass 1 | loss: 0.000276 | Average reward: 0.375
+Step 422/467 | Average reward: 0.09765625 | Average sequence length: 133.34
+Step 423/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 423/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 423/467 | Example step 1 | Pass 0 | loss: -0.010612 | Average reward: 0.0
+Step 423/467 | Example step 1 | Pass 1 | loss: 0.007545 | Average reward: 0.25
+Step 423/467 | Average reward: 0.078125 | Average sequence length: 140.01
+Step 424/467 | Example step 0 | Pass 0 | loss: -0.002748 | Average reward: 0.5
+Step 424/467 | Example step 0 | Pass 1 | loss: 0.000088 | Average reward: 0.625
+Step 424/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 424/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 424/467 | Average reward: 0.0546875 | Average sequence length: 131.36
+Step 425/467 | Example step 0 | Pass 0 | loss: -0.005117 | Average reward: 0.0
+Step 425/467 | Example step 0 | Pass 1 | loss: -0.001185 | Average reward: 0.125
+Step 425/467 | Example step 1 | Pass 0 | loss: -0.003195 | Average reward: 0.0
+Step 425/467 | Example step 1 | Pass 1 | loss: 0.000883 | Average reward: 0.125
+Step 425/467 | Average reward: 0.10546875 | Average sequence length: 134.42
+Step 426/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 426/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 426/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 426/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 426/467 | Average reward: 0.08984375 | Average sequence length: 126.86
+Step 427/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 427/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 427/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 427/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 427/467 | Average reward: 0.00390625 | Average sequence length: 141.84
+Step 428/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 428/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 428/467 | Example step 1 | Pass 0 | loss: -0.000594 | Average reward: 0.125
+Step 428/467 | Example step 1 | Pass 1 | loss: -0.005410 | Average reward: 0.0
+Step 428/467 | Average reward: 0.0546875 | Average sequence length: 120.95
+Step 429/467 | Example step 0 | Pass 0 | loss: -0.004259 | Average reward: 0.0
+Step 429/467 | Example step 0 | Pass 1 | loss: 0.007683 | Average reward: 0.125
+Step 429/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 429/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 429/467 | Average reward: 0.13671875 | Average sequence length: 117.38
+Step 430/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 430/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 430/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 430/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 430/467 | Average reward: 0.0703125 | Average sequence length: 127.37
+Step 431/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 431/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 431/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 431/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 431/467 | Average reward: 0.046875 | Average sequence length: 125.57
+Step 432/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 432/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 432/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 432/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 432/467 | Average reward: 0.0859375 | Average sequence length: 135.79
+Step 433/467 | Example step 0 | Pass 0 | loss: -0.021518 | Average reward: 0.125
+Step 433/467 | Example step 0 | Pass 1 | loss: -0.008878 | Average reward: 0.375
+Step 433/467 | Example step 1 | Pass 0 | loss: -0.036662 | Average reward: 0.5
+Step 433/467 | Example step 1 | Pass 1 | loss: -0.002846 | Average reward: 0.625
+Step 433/467 | Average reward: 0.0703125 | Average sequence length: 136.22
+Step 434/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 434/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 434/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 434/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 434/467 | Average reward: 0.0546875 | Average sequence length: 125.76
+Step 435/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 435/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 435/467 | Example step 1 | Pass 0 | loss: -0.000451 | Average reward: 0.125
+Step 435/467 | Example step 1 | Pass 1 | loss: -0.000221 | Average reward: 0.125
+Step 435/467 | Average reward: 0.07421875 | Average sequence length: 148.87
+Step 436/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 436/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 436/467 | Example step 1 | Pass 0 | loss: 0.002674 | Average reward: 0.125
+Step 436/467 | Example step 1 | Pass 1 | loss: -0.002509 | Average reward: 0.0
+Step 436/467 | Average reward: 0.1328125 | Average sequence length: 145.49
+Step 437/467 | Example step 0 | Pass 0 | loss: 0.005330 | Average reward: 0.125
+Step 437/467 | Example step 0 | Pass 1 | loss: -0.003790 | Average reward: 0.0
+Step 437/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 437/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 437/467 | Average reward: 0.01171875 | Average sequence length: 140.02
+Step 438/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 438/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 438/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 438/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 438/467 | Average reward: 0.0625 | Average sequence length: 123.39
+Step 439/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 439/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 439/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 439/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 439/467 | Average reward: 0.0234375 | Average sequence length: 136.18
+Step 440/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 440/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 440/467 | Example step 1 | Pass 0 | loss: 0.000078 | Average reward: 0.125
+Step 440/467 | Example step 1 | Pass 1 | loss: -0.003092 | Average reward: 0.0
+Step 440/467 | Average reward: 0.1484375 | Average sequence length: 132.01
+Step 441/467 | Example step 0 | Pass 0 | loss: 0.006405 | Average reward: 0.25
+Step 441/467 | Example step 0 | Pass 1 | loss: -0.013260 | Average reward: 0.125
+Step 441/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 441/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 441/467 | Average reward: 0.1171875 | Average sequence length: 138.34
+Step 442/467 | Example step 0 | Pass 0 | loss: -0.003149 | Average reward: 0.0
+Step 442/467 | Example step 0 | Pass 1 | loss: 0.004583 | Average reward: 0.125
+Step 442/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 442/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 442/467 | Average reward: 0.015625 | Average sequence length: 126.65
+Step 443/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 443/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 443/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 443/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 443/467 | Average reward: 0.0546875 | Average sequence length: 116.56
+Step 444/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 444/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 444/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 444/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 444/467 | Average reward: 0.08984375 | Average sequence length: 120.34
+Step 445/467 | Example step 0 | Pass 0 | loss: -0.000376 | Average reward: 0.625
+Step 445/467 | Example step 0 | Pass 1 | loss: -0.013895 | Average reward: 0.25
+Step 445/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 445/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 445/467 | Average reward: 0.1328125 | Average sequence length: 132.97
+Step 446/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 446/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 446/467 | Example step 1 | Pass 0 | loss: 0.003764 | Average reward: 0.25
+Step 446/467 | Example step 1 | Pass 1 | loss: 0.001223 | Average reward: 0.125
+Step 446/467 | Average reward: 0.03125 | Average sequence length: 129.71
+Step 447/467 | Example step 0 | Pass 0 | loss: 0.007458 | Average reward: 0.125
+Step 447/467 | Example step 0 | Pass 1 | loss: -0.001804 | Average reward: 0.125
+Step 447/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 447/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 447/467 | Average reward: 0.08984375 | Average sequence length: 140.07
+Step 448/467 | Example step 0 | Pass 0 | loss: -0.001377 | Average reward: 0.125
+Step 448/467 | Example step 0 | Pass 1 | loss: 0.008216 | Average reward: 0.25
+Step 448/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 448/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 448/467 | Average reward: 0.1875 | Average sequence length: 125.67
+Step 449/467 | Example step 0 | Pass 0 | loss: -0.007779 | Average reward: 0.0
+Step 449/467 | Example step 0 | Pass 1 | loss: 0.001769 | Average reward: 0.25
+Step 449/467 | Example step 1 | Pass 0 | loss: 0.001748 | Average reward: 0.125
+Step 449/467 | Example step 1 | Pass 1 | loss: -0.006256 | Average reward: 0.0
+Step 449/467 | Average reward: 0.02734375 | Average sequence length: 127.44
+Step 450/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 450/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 450/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 450/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 450/467 | Average reward: 0.078125 | Average sequence length: 134.68
+Step 451/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 451/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 451/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 451/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 451/467 | Average reward: 0.078125 | Average sequence length: 128.43
+Step 452/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 452/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 452/467 | Example step 1 | Pass 0 | loss: -0.003621 | Average reward: 0.625
+Step 452/467 | Example step 1 | Pass 1 | loss: -0.009202 | Average reward: 0.625
+Step 452/467 | Average reward: 0.07421875 | Average sequence length: 145.75
+Step 453/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 453/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 453/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 453/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 453/467 | Average reward: 0.12890625 | Average sequence length: 132.66
+Step 454/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 454/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 454/467 | Example step 1 | Pass 0 | loss: -0.006126 | Average reward: 0.0
+Step 454/467 | Example step 1 | Pass 1 | loss: 0.004163 | Average reward: 0.125
+Step 454/467 | Average reward: 0.0546875 | Average sequence length: 127.85
+Step 455/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 455/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 455/467 | Example step 1 | Pass 0 | loss: -0.003904 | Average reward: 0.375
+Step 455/467 | Example step 1 | Pass 1 | loss: -0.001868 | Average reward: 0.375
+Step 455/467 | Average reward: 0.04296875 | Average sequence length: 131.68
+Step 456/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 456/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 456/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 456/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 456/467 | Average reward: 0.07421875 | Average sequence length: 132.24
+Step 457/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 457/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 457/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 457/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 457/467 | Average reward: 0.14453125 | Average sequence length: 121.30
+Step 458/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 458/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 458/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 458/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 458/467 | Average reward: 0.11328125 | Average sequence length: 129.34
+Step 459/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 459/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 459/467 | Example step 1 | Pass 0 | loss: -0.005718 | Average reward: 0.375
+Step 459/467 | Example step 1 | Pass 1 | loss: 0.006690 | Average reward: 0.5
+Step 459/467 | Average reward: 0.109375 | Average sequence length: 128.53
+Step 460/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 460/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 460/467 | Example step 1 | Pass 0 | loss: 0.004428 | Average reward: 0.125
+Step 460/467 | Example step 1 | Pass 1 | loss: -0.003078 | Average reward: 0.0
+Step 460/467 | Average reward: 0.07421875 | Average sequence length: 127.09
+Step 461/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 461/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 461/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 461/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 461/467 | Average reward: 0.01953125 | Average sequence length: 135.52
+Step 462/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 462/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 462/467 | Example step 1 | Pass 0 | loss: -0.005928 | Average reward: 0.125
+Step 462/467 | Example step 1 | Pass 1 | loss: 0.004976 | Average reward: 0.125
+Step 462/467 | Average reward: 0.12109375 | Average sequence length: 126.20
+Step 463/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 463/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 463/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 463/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 463/467 | Average reward: 0.125 | Average sequence length: 128.89
+Step 464/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 464/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 464/467 | Example step 1 | Pass 0 | loss: 0.011459 | Average reward: 0.125
+Step 464/467 | Example step 1 | Pass 1 | loss: -0.005798 | Average reward: 0.0
+Step 464/467 | Average reward: 0.015625 | Average sequence length: 136.45
+Step 465/467 | Example step 0 | Pass 0 | loss: -0.029128 | Average reward: 0.125
+Step 465/467 | Example step 0 | Pass 1 | loss: 0.018171 | Average reward: 0.5
+Step 465/467 | Example step 1 | Pass 0 | loss: 0.004948 | Average reward: 0.75
+Step 465/467 | Example step 1 | Pass 1 | loss: -0.007163 | Average reward: 0.375
+Step 465/467 | Average reward: 0.125 | Average sequence length: 133.35
+Step 466/467 | Example step 0 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 466/467 | Example step 0 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 466/467 | Example step 1 | Pass 0 | loss: -0.000000 | Average reward: 0.0
+Step 466/467 | Example step 1 | Pass 1 | loss: -0.000000 | Average reward: 0.0
+Step 466/467 | Average reward: 0.140625 | Average sequence length: 136.63
+2025-10-15 15:15:06,108 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved model file to: /root/.cache/nanochat/chatrl_checkpoints/d20/model_000466.pt
+2025-10-15 15:15:06,109 - nanochat.checkpoint_manager - [32m[1mINFO[0m - Saved metadata file to: /root/.cache/nanochat/chatrl_checkpoints/d20/meta_000466.json
+✅ Saved model checkpoint to /root/.cache/nanochat/chatrl_checkpoints/d20
